@@ -51,7 +51,7 @@ class CONTEXT(ctypes.Structure):
         ("Ecx", ctypes.c_ulong), ("Eax", ctypes.c_ulong), ("Ebp", ctypes.c_ulong),
         ("Eip", ctypes.c_ulong), ("SegCs", ctypes.c_ulong), ("EFlags", ctypes.c_ulong),
         ("Esp", ctypes.c_ulong), ("SegSs", ctypes.c_ulong),
-        ("ExtendedRegisters", ctypes.byte * 512)
+        ("ExtendedRegisters", ctypes.c_byte * 512) # c_byte로 수정
     ]
 
 class EXCEPTION_POINTERS(ctypes.Structure):
