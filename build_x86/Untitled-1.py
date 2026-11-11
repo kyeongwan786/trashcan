@@ -173,7 +173,7 @@ class ExtractWindow(QMainWindow):
         # 스캔 스레드를 시작한 뒤 스캔 중 중복 클릭을 막기 위해 버튼을 비활성화
         try:
             # QThread.start()는 run()을 별도 스레드에서 호출하게 해
-            self.extract_thread_start()
+            self.extract_thread.start()
             self.wnd.btn_start.setEnabled(False)
             self.wnd.btn_open_folder.setEnabled(False)
         except Exception as E:
