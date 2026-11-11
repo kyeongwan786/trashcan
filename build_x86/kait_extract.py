@@ -51,7 +51,7 @@ class CONTEXT(ctypes.Structure):
         ("Ecx", ctypes.c_ulong), ("Eax", ctypes.c_ulong), ("Ebp", ctypes.c_ulong),
         ("Eip", ctypes.c_ulong), ("SegCs", ctypes.c_ulong), ("EFlags", ctypes.c_ulong),
         ("Esp", ctypes.c_ulong), ("SegSs", ctypes.c_ulong),
-        ("ExtendedRegisters", ctypes.c_byte * 512) # c_byte로 수정
+        ("ExtendedRegisters", ctypes.c_byte * 512)
     ]
 
 class EXCEPTION_POINTERS(ctypes.Structure):
@@ -60,7 +60,6 @@ class EXCEPTION_POINTERS(ctypes.Structure):
         ("ContextRecord", ctypes.POINTER(CONTEXT))
     ]
 
-# 전역 변수로 브레이크포인트 상태 관리
 _bp_info = {
     "addr": 0,
     "orig_byte": 0,
@@ -72,19 +71,15 @@ def veh_handler(exception_pointers):
         rec = exception_pointers.contents.ExceptionRecord.contents
         ctx = exception_pointers.contents.ContextRecord.contents
         
-        # EXCEPTION_BREAKPOINT (0x80000003) 확인 및 주소 일치 여부 체크
         if rec.ExceptionCode == 0x80000003 and rec.ExceptionAddress == ctypes.c_void_p(_bp_info["addr"]).value:
             if not _bp_info["hit"]:
                 _bp_info["hit"] = True
                 
-                # WinDbg의 r eax 동작 (EAX 레지스터 값 = DIB 핸들 획득)
                 handle_val = ctx.Eax
                 if handle_val != 0:
                     try:
-                        # WinDbg의 ? poi(@eax) 역참조 동작 (실제 메모리 주소 획득)
                         real_ptr = ctypes.c_void_p.from_address(handle_val).value
                         if real_ptr:
-                            # 비트맵 규격 정보 읽기
                             bi_width = ctypes.c_int.from_address(real_ptr + 4).value
                             bi_height = ctypes.c_int.from_address(real_ptr + 8).value
                             bi_bit_count = ctypes.c_ushort.from_address(real_ptr + 14).value
@@ -95,8 +90,6 @@ def veh_handler(exception_pointers):
                                 bi_size_image = row_stride * abs(bi_height)
 
                             total_size = max(40 + bi_size_image, 0x1D8828)
-                            
-                            # 메모리 데이터 통째로 읽기 (.writemem 대용)
                             raw_dib_bytes = ctypes.string_at(real_ptr, total_size)
                             
                             desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
@@ -107,33 +100,31 @@ def veh_handler(exception_pointers):
                             
                             show_error_box("DIB 덤프 성공", f"바탕화면에 원본 DIB 저장 완료:\n{dump_path}")
                     except Exception as inner_e:
-                        print(f"DIB dump process error: {inner_e}")
+                        show_error_box("DIB 덤프 내부 에러", str(inner_e))
                 
-                # 원래 명령어로 복구 후 EIP를 재조정하여 정상 실행 속개
                 kernel32 = ctypes.windll.kernel32
                 old_prot = ctypes.c_ulong()
                 kernel32.VirtualProtect(ctypes.c_void_p(_bp_info["addr"]), 1, 0x40, ctypes.byref(old_prot))
                 ctypes.c_ubyte.from_address(_bp_info["addr"]).value = _bp_info["orig_byte"]
                 kernel32.VirtualProtect(ctypes.c_void_p(_bp_info["addr"]), 1, old_prot, ctypes.byref(old_prot))
                 
-                ctx.Eip -= 1 # 브레이크포인트 명령(0xCC) 지점으로 EIP 되돌림
-                ctx.EFlags |= 0x100 # Trap Flag 설정 (단일 스텝 후 재적용용)
-                return -1 # EXCEPTION_CONTINUED_EXECUTION (-1)
+                ctx.Eip -= 1
+                ctx.EFlags |= 0x100
+                return -1
         
-        # 단일 스텝 처리 (다음 명령 실행 후 브레이크포인트 재설치)
-        if rec.ExceptionCode == 0x80000004: # EXCEPTION_SINGLE_STEP
+        if rec.ExceptionCode == 0x80000004:
             if _bp_info["hit"]:
                 kernel32 = ctypes.windll.kernel32
                 old_prot = ctypes.c_ulong()
                 kernel32.VirtualProtect(ctypes.c_void_p(_bp_info["addr"]), 1, 0x40, ctypes.byref(old_prot))
-                ctypes.c_ubyte.from_address(_bp_info["addr"]).value = 0xCC # 다시 0xCC 박기
+                ctypes.c_ubyte.from_address(_bp_info["addr"]).value = 0xCC
                 kernel32.VirtualProtect(ctypes.c_void_p(_bp_info["addr"]), 1, old_prot, ctypes.byref(old_prot))
                 _bp_info["hit"] = False
             return -1
             
     except Exception as ex:
-        print(f"VEH exception: {ex}")
-    return 0 # EXCEPTION_CONTINUE_SEARCH (0)
+        pass
+    return 0
 
 class KaitScan:
     def __init__(self, kait_dll, apiis_dll):
@@ -157,10 +148,9 @@ class KaitScan:
             if os.path.exists(twlib_path):
                 try:
                     self.twlib = ctypes.WinDLL(twlib_path)
-                    # [핵심] WinDbg의 bu TwLib!TWAIN_GetDib+0xB 오프셋 브레이크포인트 자동 설정
                     self._setup_breakpoint()
                 except Exception as e:
-                    print(f"TwLib.dll 로드 실패: {e}")
+                    show_error_box("TwLib 로드 에러", str(e))
 
             self.telecom_id = 'F3001'
             self.kp_no = None
@@ -189,36 +179,39 @@ class KaitScan:
             show_error_box("__init__ 치명적 에러", traceback.format_exc())
 
     def _setup_breakpoint(self):
-        """WinDbg의 bu TwLib!TWAIN_GetDib+0xB 명령어를 인프로세스 VEH로 완벽 구현"""
         try:
             if not self.twlib:
+                show_error_box("브레이크포인트 실패", "TwLib 인스턴스가 없습니다.")
                 return
             
-            # TWAIN_GetDib 주소 획득 후 +0xB 오프셋 적용
             get_dib_addr = ctypes.windll.kernel32.GetProcAddress(self.twlib._handle, b"TWAIN_GetDib")
             if not get_dib_addr:
+                show_error_box("주소 찾기 실패", "TWAIN_GetDib 수출 함수를 찾을 수 없습니다.")
                 return
                 
             target_addr = get_dib_addr + 0xB
             _bp_info["addr"] = target_addr
             
-            # 원래 바이트 백업
             kernel32 = ctypes.windll.kernel32
             old_prot = ctypes.c_ulong()
-            kernel32.VirtualProtect(ctypes.c_void_p(target_addr), 1, 0x40, ctypes.byref(old_prot))
+            if not kernel32.VirtualProtect(ctypes.c_void_p(target_addr), 1, 0x40, ctypes.byref(old_prot)):
+                show_error_box("메모리 보호 해제 실패", f"주소: {hex(target_addr)}")
+                return
+                
             _bp_info["orig_byte"] = ctypes.c_ubyte.from_address(target_addr).value
             
-            # 0xCC (INT 3 소프트웨어 브레이크포인트) 주입
             ctypes.c_ubyte.from_address(target_addr).value = 0xCC
             kernel32.VirtualProtect(ctypes.c_void_p(target_addr), 1, old_prot, ctypes.byref(old_prot))
             
-            # Vectored Exception Handler 등록
             CMPFUNC = ctypes.WINFUNCTYPE(ctypes.c_long, ctypes.POINTER(EXCEPTION_POINTERS))
             self._veh_callback = CMPFUNC(veh_handler)
-            kernel32.AddVectoredExceptionHandler(1, self._veh_callback)
-            print("WinDbg style TWAIN_GetDib+0xB Breakpoint successfully armed!")
+            if not kernel32.AddVectoredExceptionHandler(1, self._veh_callback):
+                show_error_box("VEH 등록 실패", "AddVectoredExceptionHandler 반환값 0")
+                return
+                
+            show_error_box("브레이크포인트 성공", f"TWAIN_GetDib+0xB ({hex(target_addr)}) 브레이크포인트 장착 완료!")
         except Exception as e:
-            print(f"Breakpoint setup exception: {e}")
+            show_error_box("Breakpoint setup exception", traceback.format_exc())
 
     def load_kp_code(self):
         num1 = self.kait_dll.kait_serverstart(0, 0, 3091, 3095, self.telecom_id)
