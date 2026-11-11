@@ -47,11 +47,11 @@ class ExtractThread(QThread):
     # Signal()은 Qt에서 다른 객체로 완료 등의 알림을 보낼때 쓸 수 있는 신호
     signal_done = Signal()
 
-    def __init__(self, kait_dll, apils_dll):
+    def __init__(self, kait_dll, apiis_dll):
         # super().__init__()은 부모 클래스(QThread)의 기본 초기화 코드를 호출
         super().__init__()
         # 이 스레드에서 사용할 KaitScan 객체를 만들어 self.kait_scan에 저장
-        self.kait_scan = KaitScan(kait_dll, apils_dll)
+        self.kait_scan = KaitScan(kait_dll, apiis_dll)
 
     # run은 QThread.start()가 호출되면 별도 스레드에서 실행되는 메서드
     def run(self):
@@ -62,7 +62,7 @@ class ExtractThread(QThread):
 class ExtractWindow(QMainWindow):
     # 클래스 변수: KAIT DLL 파일 위치를 고정 문자열로 저장한 경로
     kait_dll_path = r'C:\apps\KAIT\KAITIdLib32.dll'
-    apils_dll_path = r'C:\Windows\twain_32\VOIMT\apils.dll'
+    apiis_dll_path = r'C:\Windows\twain_32\VOIMT\apiis.dll'
 
     # 이 __init__은 창 객체가 생성될 때 실행됨.
     def __init__(self):
@@ -75,7 +75,7 @@ class ExtractWindow(QMainWindow):
         self.extract_thread = None
         self.is_done = False
         self.kait_dll = None
-        self.apils_dll = None
+        self.apiis_dll = None
         # UI 설정 함수부터 호출해 버튼과 미리보기 화면을 만듬
         self.init_ui()
         # is_admin()은 현재 프로그램이 관리자 권한으로 실행됐는지 확인
@@ -150,13 +150,13 @@ class ExtractWindow(QMainWindow):
             return
         try:
             # 기존 apils.dll 객체가 있으면 참조를 해제하고 다시 로드하려는 부분. del은 변수 연결을 지우는 동작
-            if self.apils_dll:
-                del self.apils_dll
-                self.apils_dll = None
+            if self.apiis_dll:
+                del self.apiis_dll
+                self.apiis_dll = None
             # VOIM 드라이버 쪽 보조 DLL(apils.dll)이 있는지 확인
-            if os.path.exists(self.apils_dll_path):
+            if os.path.exists(self.apiis_dll_path):
                 # ctypes.CDLL은 일반 C 호출 규약으로 DLL을 로드하는 방식. 정확한 호출 규약은 DLL API 정의를 확인
-                self.apils_dll = ctypes.CDLL(self.apils_dll_path)
+                self.apiis_dll = ctypes.CDLL(self.apiis_dll_path)
             else:
                 self.show_alert('스캐너 모듈이 설치되어 있지 않습니다. 설치 후 다시 시도해주세요.')
                 sys.exit(0)
@@ -165,7 +165,7 @@ class ExtractWindow(QMainWindow):
             return
 
         # 스캔용 스레드 객체를 만들고 KAIT DLL 객체와 apils.dll 경로 문자열을 전달
-        self.extract_thread = ExtractThread(self.kait_dll, self.apils_dll_path)
+        self.extract_thread = ExtractThread(self.kait_dll, self.apiis_dll_path)
         # kp_err_msg에 메시지가 들어 있으면 초기화 단계의 오류로 보고 사용자에게 알려줌
         if self.extract_thread.kait_scan.kp_err_msg:
             self.show_aelrt(self.extract_thread.kait_scan.kp_err_msg)
@@ -236,5 +236,3 @@ if __name__ == '__main__':
     window = ExtractWindow()
     window.show()
     sys.exit(app.exec_())
-
-
