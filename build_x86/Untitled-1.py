@@ -50,13 +50,20 @@ class ExtractThread(QThread):
     def __init__(self, kait_dll, apiis_dll):
         # super().__init__()은 부모 클래스(QThread)의 기본 초기화 코드를 호출
         super().__init__()
-        # 이 스레드에서 사용할 KaitScan 객체를 만들어 self.kait_scan에 저장
-        self.kait_scan = KaitScan(kait_dll, apiis_dll)
+        self.kait_dll = kait_dll
+        self.apiis_dll = apiis_dll
+        self.kait_scan = None
+        self.error_message = None
 
     # run은 QThread.start()가 호출되면 별도 스레드에서 실행되는 메서드
     def run(self):
-        # start_id_scan()은 KAIT 시작 인증 스캔을 순서대로 요청하는 함수
-        self.kait_scan.start_id_scan()
+        try:
+            # DLL 초기화도 작업 스레드에서 실행해 GUI가 멈추지 않게 함
+            self.kait_scan = KaitScan(self.kait_dll, self.apiis_dll)
+            if not self.kait_scan.kp_err_msg:
+                self.kait_scan.start_id_scan()
+        except Exception as e:
+            self.error_message = str(e)
 
 # 창 전체를 관리. QMainWindow를 상속하면 메뉴 중앙 위젯 등의 기본 창 기능을 사용
 class ExtractWindow(QMainWindow):
@@ -161,35 +168,50 @@ class ExtractWindow(QMainWindow):
                 self.show_alert('스캐너 모듈이 설치되어 있지 않습니다. 설치 후 다시 시도해주세요.')
                 sys.exit(0)
         # bare except는 오류 종류를 가리지 않고 잡아. 원본 복원 흐름을 보존했지만, 원인 파악이 어려워질 수 있음
-        except:
+        except Exception as e:
+            traceback.print_exc()
+            self.show_alert(f'스캐너 DLL을 불러오지 못했습니다.\n{e}')
             return
 
         # 스캔용 스레드 객체를 만들고 KAIT DLL 객체와 apils.dll 경로 문자열을 전달
         self.extract_thread = ExtractThread(self.kait_dll, self.apiis_dll_path)
-        # kp_err_msg에 메시지가 들어 있으면 초기화 단계의 오류로 보고 사용자에게 알려줌
-        if self.extract_thread.kait_scan.kp_err_msg:
-            self.show_aelrt(self.extract_thread.kait_scan.kp_err_msg)
-            return
         # 스캔 스레드를 시작한 뒤 스캔 중 중복 클릭을 막기 위해 버튼을 비활성화
         try:
-            # QThread.start()는 run()을 별도 스레드에서 호출하게 해
-            self.extract_thread.start()
+            # 작업 완료 후 GUI 스레드에서 결과 처리
+            self.extract_thread.finished.connect(self.id_scan_done)
             self.wnd.btn_start.setEnabled(False)
             self.wnd.btn_open_folder.setEnabled(False)
+            self.extract_thread.start()
         except Exception as E:
-            print(E)
-        print('3')
-        self.extract_thread.wait()
-        self.id_scane_done()
+            traceback.print_exc()
+            self.wnd.btn_start.setEnabled(True)
+            self.wnd.btn_open_folder.setEnabled(True)
+            self.show_alert(f'스캔 작업을 시작하지 못했습니다.\n{E}')
 
     # 스캔 결과 JSON을 검사하고, 성공한 경우 이미지를 창에 표시하고 1.jpg로 저장
     def id_scan_done(self):
         try:
             try:
+                if self.extract_thread.error_message:
+                    self.show_alert(f'스캔 처리 중 오류가 발생했습니다.\n{self.extract_thread.error_message}')
+                    self.wnd.btn_start.setEnabled(True)
+                    self.wnd.btn_open_folder.setEnabled(True)
+                    return
+                if not self.extract_thread.kait_scan:
+                    self.show_alert('KAIT 스캔 모듈을 초기화하지 못했습니다.')
+                    self.wnd.btn_start.setEnabled(True)
+                    self.wnd.btn_open_folder.setEnabled(True)
+                    return
+                if self.extract_thread.kait_scan.kp_err_msg:
+                    self.show_alert(self.extract_thread.kait_scan.kp_err_msg)
+                    self.wnd.btn_start.setEnabled(True)
+                    self.wnd.btn_open_folder.setEnabled(True)
+                    return
                 # self.is_done을 False로 되돌림
-                self.is_doen = False
+                self.is_done = False
                 if self.extract_thread.kait_scan.err_code != 0:
-                    self.show_alert(f'[{self.extract_thread.kait_scan.err_code}]')
+                    message = self.extract_thread.kait_scan.err_msg
+                    self.show_alert(message or f'[{self.extract_thread.kait_scan.err_code}]')
                     self.wnd.btn_start.setEnabled(True)
                     self.wnd.btn_open_folder.setEnabled(True)
                     return
@@ -225,9 +247,15 @@ class ExtractWindow(QMainWindow):
                 self.wnd.btn_start.setEnabled(True)
                 self.wnd.btn_open_folder.setEnabled(True)
             except Exception as E:
-                print (E)
+                traceback.print_exc()
+                self.show_alert(f'스캔 결과 처리 중 오류가 발생했습니다.\n{E}')
+                self.wnd.btn_start.setEnabled(True)
+                self.wnd.btn_open_folder.setEnabled(True)
         except Exception as E:
-            print(E)
+            traceback.print_exc()
+            self.show_alert(f'스캔 결과 처리 중 오류가 발생했습니다.\n{E}')
+            self.wnd.btn_start.setEnabled(True)
+            self.wnd.btn_open_folder.setEnabled(True)
             return
 
 if __name__ == '__main__':
