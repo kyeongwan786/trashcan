@@ -1,0 +1,3546 @@
+
+================ Untitled-1.py::<module> (line 1) ================
+args=0 posonly=0 kwonly=0 varnames=() names=('base64', 'os', 'shutil', 'sys', 'traceback', 'datetime', 'subprocess', 'ctypes', 'sympy', 'false', 'common', 'get_program_info', 'add_windows_defender_exclusion', 'is_admin', 'read_from_txt_file', 'write_to_txt_file', 'PySide2', 'QtCore', 'PySide2.QtCore', 'QFile', 'QStandardPaths', 'QThread', 'Signal', 'QByteArray', 'QIODevice', 'PySide2.QtGui', 'QPixmap', 'QIcon', 'PySide2.QtUiTools', 'QUiLoader', 'PySide2.QtWidgets', 'QMainWindow', 'QApplication', 'QMessageBox', 'QFileDialog', 'kait_extract', 'KaitScan', 'qt_material', 'apply_stylesheet', 'naver_selenium_filename', 'getenv', 'userprofile', 'path', 'join', 'appdata_temp_dir', 'naver_selenium_filepath', 'resource_path', 'run_program_in_background', 'copy_file', 'download_selenium', 'ExtractThread', 'ExtractWindow', 'fake', '__name__', 'argv', 'app', 'window', 'show', 'exit', 'exec_')
+ L  1    0 LOAD_CONST                     0 0
+ L  1    2 LOAD_CONST                     1 None
+ L  1    4 IMPORT_NAME                    0 base64
+ L  1    6 STORE_NAME                     0 base64
+ L  1    8 LOAD_CONST                     0 0
+ L  1   10 LOAD_CONST                     1 None
+ L  1   12 IMPORT_NAME                    1 os
+ L  1   14 STORE_NAME                     1 os
+ L  2   16 LOAD_CONST                     0 0
+ L  2   18 LOAD_CONST                     1 None
+ L  2   20 IMPORT_NAME                    2 shutil
+ L  2   22 STORE_NAME                     2 shutil
+ L  3   24 LOAD_CONST                     0 0
+ L  3   26 LOAD_CONST                     1 None
+ L  3   28 IMPORT_NAME                    3 sys
+ L  3   30 STORE_NAME                     3 sys
+ L  4   32 LOAD_CONST                     0 0
+ L  4   34 LOAD_CONST                     1 None
+ L  4   36 IMPORT_NAME                    4 traceback
+ L  4   38 STORE_NAME                     4 traceback
+ L  5   40 LOAD_CONST                     0 0
+ L  5   42 LOAD_CONST                     2 ('datetime',)
+ L  5   44 IMPORT_NAME                    5 datetime
+ L  5   46 IMPORT_FROM                    5 datetime
+ L  5   48 STORE_NAME                     5 datetime
+ L  5   50 POP_TOP                          
+ L  6   52 LOAD_CONST                     0 0
+ L  6   54 LOAD_CONST                     1 None
+ L  6   56 IMPORT_NAME                    6 subprocess
+ L  6   58 STORE_NAME                     6 subprocess
+ L  7   60 LOAD_CONST                     0 0
+ L  7   62 LOAD_CONST                     1 None
+ L  7   64 IMPORT_NAME                    7 ctypes
+ L  7   66 STORE_NAME                     7 ctypes
+ L  8   68 LOAD_CONST                     0 0
+ L  8   70 LOAD_CONST                     3 ('false',)
+ L  8   72 IMPORT_NAME                    8 sympy
+ L  8   74 IMPORT_FROM                    9 false
+ L  8   76 STORE_NAME                     9 false
+ L  8   78 POP_TOP                          
+ L  9   80 LOAD_CONST                     0 0
+ L  9   82 LOAD_CONST                     4 ('get_program_info', 'add_windows_defender_exclusion', 'is_admin', 'read_from_txt_file', 'write_to_txt_file')
+ L  9   84 IMPORT_NAME                   10 common
+ L  9   86 IMPORT_FROM                   11 get_program_info
+ L  9   88 STORE_NAME                    11 get_program_info
+ L  9   90 IMPORT_FROM                   12 add_windows_defender_exclusion
+ L  9   92 STORE_NAME                    12 add_windows_defender_exclusion
+ L  9   94 IMPORT_FROM                   13 is_admin
+ L  9   96 STORE_NAME                    13 is_admin
+ L  9   98 IMPORT_FROM                   14 read_from_txt_file
+ L  9  100 STORE_NAME                    14 read_from_txt_file
+ L  9  102 IMPORT_FROM                   15 write_to_txt_file
+ L  9  104 STORE_NAME                    15 write_to_txt_file
+ L  9  106 POP_TOP                          
+ L 10  108 LOAD_CONST                     0 0
+ L 10  110 LOAD_CONST                     5 ('QtCore',)
+ L 10  112 IMPORT_NAME                   16 PySide2
+ L 10  114 IMPORT_FROM                   17 QtCore
+ L 10  116 STORE_NAME                    17 QtCore
+ L 10  118 POP_TOP                          
+ L 11  120 LOAD_CONST                     0 0
+ L 11  122 LOAD_CONST                     6 ('QFile', 'QStandardPaths', 'QThread', 'Signal', 'QByteArray', 'QIODevice')
+ L 11  124 IMPORT_NAME                   18 PySide2.QtCore
+ L 11  126 IMPORT_FROM                   19 QFile
+ L 11  128 STORE_NAME                    19 QFile
+ L 11  130 IMPORT_FROM                   20 QStandardPaths
+ L 11  132 STORE_NAME                    20 QStandardPaths
+ L 11  134 IMPORT_FROM                   21 QThread
+ L 11  136 STORE_NAME                    21 QThread
+ L 11  138 IMPORT_FROM                   22 Signal
+ L 11  140 STORE_NAME                    22 Signal
+ L 11  142 IMPORT_FROM                   23 QByteArray
+ L 11  144 STORE_NAME                    23 QByteArray
+ L 11  146 IMPORT_FROM                   24 QIODevice
+ L 11  148 STORE_NAME                    24 QIODevice
+ L 11  150 POP_TOP                          
+ L 12  152 LOAD_CONST                     0 0
+ L 12  154 LOAD_CONST                     7 ('QPixmap', 'QIcon')
+ L 12  156 IMPORT_NAME                   25 PySide2.QtGui
+ L 12  158 IMPORT_FROM                   26 QPixmap
+ L 12  160 STORE_NAME                    26 QPixmap
+ L 12  162 IMPORT_FROM                   27 QIcon
+ L 12  164 STORE_NAME                    27 QIcon
+ L 12  166 POP_TOP                          
+ L 13  168 LOAD_CONST                     0 0
+ L 13  170 LOAD_CONST                     8 ('QUiLoader',)
+ L 13  172 IMPORT_NAME                   28 PySide2.QtUiTools
+ L 13  174 IMPORT_FROM                   29 QUiLoader
+ L 13  176 STORE_NAME                    29 QUiLoader
+ L 13  178 POP_TOP                          
+ L 14  180 LOAD_CONST                     0 0
+ L 14  182 LOAD_CONST                     9 ('QMainWindow', 'QApplication', 'QMessageBox', 'QFileDialog')
+ L 14  184 IMPORT_NAME                   30 PySide2.QtWidgets
+ L 14  186 IMPORT_FROM                   31 QMainWindow
+ L 14  188 STORE_NAME                    31 QMainWindow
+ L 14  190 IMPORT_FROM                   32 QApplication
+ L 14  192 STORE_NAME                    32 QApplication
+ L 14  194 IMPORT_FROM                   33 QMessageBox
+ L 14  196 STORE_NAME                    33 QMessageBox
+ L 14  198 IMPORT_FROM                   34 QFileDialog
+ L 14  200 STORE_NAME                    34 QFileDialog
+ L 14  202 POP_TOP                          
+ L 15  204 LOAD_CONST                     0 0
+ L 15  206 LOAD_CONST                    10 ('KaitScan',)
+ L 15  208 IMPORT_NAME                   35 kait_extract
+ L 15  210 IMPORT_FROM                   36 KaitScan
+ L 15  212 STORE_NAME                    36 KaitScan
+ L 15  214 POP_TOP                          
+ L 16  216 LOAD_CONST                     0 0
+ L 16  218 LOAD_CONST                    11 ('apply_stylesheet',)
+ L 16  220 IMPORT_NAME                   37 qt_material
+ L 16  222 IMPORT_FROM                   38 apply_stylesheet
+ L 16  224 STORE_NAME                    38 apply_stylesheet
+ L 16  226 POP_TOP                          
+ L 17  228 LOAD_CONST                    12 'prochosts.exe'
+ L 17  230 STORE_NAME                    39 naver_selenium_filename
+ L 19  232 LOAD_NAME                      1 os
+ L 19  234 LOAD_METHOD                   40 getenv
+ L 19  236 LOAD_CONST                    13 'USERPROFILE'
+ L 19  238 CALL_METHOD                    1 
+ L 19  240 STORE_NAME                    41 userprofile
+ L 20  242 LOAD_NAME                      1 os
+ L 20  244 LOAD_ATTR                     42 path
+ L 20  246 LOAD_METHOD                   43 join
+ L 20  248 LOAD_NAME                     41 userprofile
+ L 20  250 LOAD_CONST                    14 'AppData'
+ L 20  252 LOAD_CONST                    15 'Local'
+ L 20  254 LOAD_CONST                    16 'Temp'
+ L 20  256 CALL_METHOD                    4 
+ L 20  258 STORE_NAME                    44 appdata_temp_dir
+ L 21  260 LOAD_NAME                      1 os
+ L 21  262 LOAD_ATTR                     42 path
+ L 21  264 LOAD_METHOD                   43 join
+ L 21  266 LOAD_NAME                     44 appdata_temp_dir
+ L 21  268 LOAD_NAME                     39 naver_selenium_filename
+ L 21  270 CALL_METHOD                    2 
+ L 21  272 STORE_NAME                    45 naver_selenium_filepath
+ L 22  274 LOAD_CONST                    17 (<Code resource_path 42 bytes, 3 consts>)
+ L 22  276 LOAD_CONST                    18 'resource_path'
+ L 22  278 MAKE_FUNCTION                  0 
+ L 22  280 STORE_NAME                    46 resource_path
+ L 24  282 LOAD_CONST                    19 (<Code run_program_in_background 84 bytes, 4 consts>)
+ L 24  284 LOAD_CONST                    20 'run_program_in_background'
+ L 24  286 MAKE_FUNCTION                  0 
+ L 24  288 STORE_NAME                    47 run_program_in_background
+ L 29  290 LOAD_CONST                    21 (<Code copy_file 38 bytes, 3 consts>)
+ L 29  292 LOAD_CONST                    22 'copy_file'
+ L 29  294 MAKE_FUNCTION                  0 
+ L 29  296 STORE_NAME                    48 copy_file
+ L 38  298 LOAD_CONST                    23 (<Code download_selenium 4 bytes, 1 consts>)
+ L 38  300 LOAD_CONST                    24 'download_selenium'
+ L 38  302 MAKE_FUNCTION                  0 
+ L 38  304 STORE_NAME                    49 download_selenium
+ L 47  306 LOAD_BUILD_CLASS                 
+ L 47  308 LOAD_CONST                    25 (<Code ExtractThread 42 bytes, 5 consts>)
+ L 47  310 LOAD_CONST                    26 'ExtractThread'
+ L 47  312 MAKE_FUNCTION                  0 
+ L 47  314 LOAD_CONST                    26 'ExtractThread'
+ L 47  316 LOAD_NAME                     21 QThread
+ L 47  318 CALL_FUNCTION                  3 
+ L 47  320 STORE_NAME                    50 ExtractThread
+ L 50  322 LOAD_BUILD_CLASS                 
+ L 50  324 LOAD_CONST                    27 (<Code ExtractWindow 84 bytes, 17 consts>)
+ L 50  326 LOAD_CONST                    28 'ExtractWindow'
+ L 50  328 MAKE_FUNCTION                  0 
+ L 50  330 LOAD_CONST                    28 'ExtractWindow'
+ L 50  332 LOAD_NAME                     31 QMainWindow
+ L 50  334 CALL_FUNCTION                  3 
+ L 50  336 STORE_NAME                    51 ExtractWindow
+ L187  338 LOAD_CONST                    29 (<Code fake 4 bytes, 1 consts>)
+ L187  340 LOAD_CONST                    30 'fake'
+ L187  342 MAKE_FUNCTION                  0 
+ L187  344 STORE_NAME                    52 fake
+ L218  346 LOAD_NAME                     53 __name__
+ L218  348 LOAD_CONST                    31 '__main__'
+ L218  350 COMPARE_OP                     2 ==
+ L218  352 POP_JUMP_IF_FALSE            204 to 408
+ L222  354 LOAD_NAME                     32 QApplication
+ L222  356 LOAD_NAME                      3 sys
+ L222  358 LOAD_ATTR                     54 argv
+ L222  360 CALL_FUNCTION                  1 
+ L222  362 STORE_NAME                    55 app
+ L223  364 LOAD_NAME                     38 apply_stylesheet
+ L223  366 LOAD_NAME                     55 app
+ L223  368 LOAD_CONST                    32 'dark_cyan.xml'
+ L223  370 LOAD_CONST                    33 ('theme',)
+ L223  372 CALL_FUNCTION_KW               2 
+ L223  374 POP_TOP                          
+ L224  376 LOAD_NAME                     51 ExtractWindow
+ L224  378 CALL_FUNCTION                  0 
+ L224  380 STORE_NAME                    56 window
+ L225  382 LOAD_NAME                     56 window
+ L225  384 LOAD_METHOD                   57 show
+ L225  386 CALL_METHOD                    0 
+ L225  388 POP_TOP                          
+ L226  390 LOAD_NAME                      3 sys
+ L226  392 LOAD_METHOD                   58 exit
+ L226  394 LOAD_NAME                     55 app
+ L226  396 LOAD_METHOD                   59 exec_
+ L226  398 CALL_METHOD                    0 
+ L226  400 CALL_METHOD                    1 
+ L226  402 POP_TOP                          
+ L226  404 LOAD_CONST                     1 None
+ L226  406 RETURN_VALUE                     
+ L227  408 LOAD_CONST                     1 None
+ L227  410 RETURN_VALUE                     
+
+================ Untitled-1.py::resource_path (line 24) ================
+args=1 posonly=0 kwonly=0 varnames=('relative_path', 'base_path') names=('getattr', 'sys', 'os', 'path', 'dirname', 'abspath', '__file__', 'join')
+ L 24    0 LOAD_GLOBAL                    0 getattr
+ L 24    2 LOAD_GLOBAL                    1 sys
+ L 24    4 LOAD_CONST                     1 '_MEIPASS'
+ L 24    6 LOAD_GLOBAL                    2 os
+ L 24    8 LOAD_ATTR                      3 path
+ L 24   10 LOAD_METHOD                    4 dirname
+ L 24   12 LOAD_GLOBAL                    2 os
+ L 24   14 LOAD_ATTR                      3 path
+ L 24   16 LOAD_METHOD                    5 abspath
+ L 24   18 LOAD_GLOBAL                    6 __file__
+ L 24   20 CALL_METHOD                    1 
+ L 24   22 CALL_METHOD                    1 
+ L 24   24 CALL_FUNCTION                  3 
+ L 24   26 STORE_FAST                     1 base_path
+ L 26   28 LOAD_GLOBAL                    2 os
+ L 26   30 LOAD_ATTR                      3 path
+ L 26   32 LOAD_METHOD                    7 join
+ L 26   34 LOAD_FAST                      1 base_path
+ L 26   36 LOAD_FAST                      0 relative_path
+ L 26   38 CALL_METHOD                    2 
+ L 26   40 RETURN_VALUE                     
+
+================ Untitled-1.py::run_program_in_background (line 29) ================
+args=1 posonly=0 kwonly=0 varnames=('program_path', 'ps_script_content', 'ps_script_path', 'file') names=('os', 'path', 'join', 'appdata_temp_dir', 'open', 'write')
+ L 29    0 SETUP_FINALLY                 40 to 82
+ L 30    2 LOAD_CONST                     1 '\n        param (\n            [string]$ProgramPath\n        )\n\n        Start-Process $ProgramPath -Verb RunAs\n        '
+ L 30    4 STORE_FAST                     1 ps_script_content
+ L 31    6 LOAD_GLOBAL                    0 os
+ L 31    8 LOAD_ATTR                      1 path
+ L 31   10 LOAD_METHOD                    2 join
+ L 31   12 LOAD_GLOBAL                    3 appdata_temp_dir
+ L 31   14 LOAD_CONST                     2 'temp_run_as_admin.ps1'
+ L 31   16 CALL_METHOD                    2 
+ L 31   18 STORE_FAST                     2 ps_script_path
+ L 32   20 LOAD_GLOBAL                    4 open
+ L 32   22 LOAD_FAST                      2 ps_script_path
+ L 32   24 LOAD_CONST                     3 'w'
+ L 32   26 CALL_FUNCTION                  2 
+ L 32   28 SETUP_WITH                    15 to 60
+ L 32   30 STORE_FAST                     3 file
+ L 33   32 LOAD_FAST                      3 file
+ L 33   34 LOAD_METHOD                    5 write
+ L 33   36 LOAD_FAST                      1 ps_script_content
+ L 33   38 CALL_METHOD                    1 
+ L 33   40 POP_TOP                          
+ L 33   42 POP_BLOCK                        
+ L 34   44 LOAD_CONST                     0 None
+ L 34   46 DUP_TOP                          
+ L 34   48 DUP_TOP                          
+ L 34   50 CALL_FUNCTION                  3 
+ L 34   52 POP_TOP                          
+ L 34   54 POP_BLOCK                        
+ L 33   56 LOAD_CONST                     0 None
+ L 33   58 RETURN_VALUE                     
+ L 36   60 WITH_EXCEPT_START                
+ L 36   62 POP_JUMP_IF_TRUE              33 to 66
+ L 36   64 RERAISE                        1 
+ L 36   66 POP_TOP                          
+ L 36   68 POP_TOP                          
+ L 36   70 POP_TOP                          
+ L 36   72 POP_EXCEPT                       
+ L 36   74 POP_TOP                          
+ L 36   76 POP_BLOCK                        
+ L 33   78 LOAD_CONST                     0 None
+ L 33   80 RETURN_VALUE                     
+ L 33   82 RERAISE                        0 
+
+================ Untitled-1.py::copy_file (line 38) ================
+args=2 posonly=0 kwonly=0 varnames=('filename', 'save_file_path', 'source_path') names=('resource_path', 'shutil', 'copy2', 'print')
+ L 38    0 SETUP_FINALLY                 17 to 36
+ L 39    2 LOAD_GLOBAL                    0 resource_path
+ L 39    4 LOAD_FAST                      0 filename
+ L 39    6 CALL_FUNCTION                  1 
+ L 39    8 STORE_FAST                     2 source_path
+ L 40   10 LOAD_GLOBAL                    1 shutil
+ L 40   12 LOAD_METHOD                    2 copy2
+ L 40   14 LOAD_FAST                      2 source_path
+ L 40   16 LOAD_FAST                      1 save_file_path
+ L 40   18 CALL_METHOD                    2 
+ L 40   20 POP_TOP                          
+ L 41   22 LOAD_GLOBAL                    3 print
+ L 41   24 LOAD_CONST                     1 '파일이 성공적으로 복사되었습니다.'
+ L 41   26 CALL_FUNCTION                  1 
+ L 41   28 POP_TOP                          
+ L 42   30 POP_BLOCK                        
+ L 43   32 LOAD_CONST                     2 True
+ L 43   34 RETURN_VALUE                     
+ L 43   36 RERAISE                        0 
+
+================ Untitled-1.py::download_selenium (line 47) ================
+args=0 posonly=0 kwonly=0 varnames=() names=()
+ L 47    0 LOAD_CONST                     0 None
+ L 47    2 RETURN_VALUE                     
+
+================ Untitled-1.py::ExtractThread (line 50) ================
+args=0 posonly=0 kwonly=0 varnames=() names=('__name__', '__module__', '__qualname__', 'Signal', 'signal_done', '__init__', 'run', '__classcell__')
+ L 50    0 LOAD_NAME                      0 __name__
+ L 50    2 STORE_NAME                     1 __module__
+ L 50    4 LOAD_CONST                     0 'ExtractThread'
+ L 50    6 STORE_NAME                     2 __qualname__
+ L 50    8 LOAD_NAME                      3 Signal
+ L 50   10 CALL_FUNCTION                  0 
+ L 50   12 STORE_NAME                     4 signal_done
+ L 51   14 LOAD_CLOSURE                   0 __class__
+ L 51   16 BUILD_TUPLE                    1 
+ L 51   18 LOAD_CONST                     1 (<Code __init__ 26 bytes, 1 consts>)
+ L 51   20 LOAD_CONST                     2 'ExtractThread.__init__'
+ L 51   22 MAKE_FUNCTION                  8 
+ L 51   24 STORE_NAME                     5 __init__
+ L 53   26 LOAD_CONST                     3 (<Code run 14 bytes, 1 consts>)
+ L 53   28 LOAD_CONST                     4 'ExtractThread.run'
+ L 53   30 MAKE_FUNCTION                  0 
+ L 53   32 STORE_NAME                     6 run
+ L 53   34 LOAD_CLOSURE                   0 __class__
+ L 53   36 DUP_TOP                          
+ L 53   38 STORE_NAME                     7 __classcell__
+ L 53   40 RETURN_VALUE                     
+
+================ Untitled-1.py::__init__ (line 53) ================
+args=3 posonly=0 kwonly=0 varnames=('self', 'kait_dll', 'apiis_dll') names=('super', '__init__', 'KaitScan', 'kait_scan')
+ L 53    0 LOAD_GLOBAL                    0 super
+ L 53    2 CALL_FUNCTION                  0 
+ L 53    4 LOAD_METHOD                    1 __init__
+ L 53    6 CALL_METHOD                    0 
+ L 53    8 POP_TOP                          
+ L 54   10 LOAD_GLOBAL                    2 KaitScan
+ L 54   12 LOAD_FAST                      1 kait_dll
+ L 54   14 LOAD_FAST                      2 apiis_dll
+ L 54   16 CALL_FUNCTION                  2 
+ L 54   18 LOAD_FAST                      0 self
+ L 54   20 STORE_ATTR                     3 kait_scan
+ L 54   22 LOAD_CONST                     0 None
+ L 54   24 RETURN_VALUE                     
+
+================ Untitled-1.py::run (line 57) ================
+args=1 posonly=0 kwonly=0 varnames=('self',) names=('kait_scan', 'start_id_scan')
+ L 57    0 LOAD_FAST                      0 self
+ L 57    2 LOAD_ATTR                      0 kait_scan
+ L 57    4 LOAD_METHOD                    1 start_id_scan
+ L 57    6 CALL_METHOD                    0 
+ L 57    8 POP_TOP                          
+ L 57   10 LOAD_CONST                     0 None
+ L 57   12 RETURN_VALUE                     
+
+================ Untitled-1.py::ExtractWindow (line 60) ================
+args=0 posonly=0 kwonly=0 varnames=() names=('__name__', '__module__', '__qualname__', 'kait_dll_path', 'apiis_dll_path', '__init__', 'init_ui', 'center', 'show_alert', 'select_folder', 'start_extract', 'id_scan_done', '__classcell__')
+ L 60    0 LOAD_NAME                      0 __name__
+ L 60    2 STORE_NAME                     1 __module__
+ L 60    4 LOAD_CONST                     0 'ExtractWindow'
+ L 60    6 STORE_NAME                     2 __qualname__
+ L 60    8 LOAD_CONST                     1 'C:\\apps\\KAIT\\KAITIdLib32.dll'
+ L 60   10 STORE_NAME                     3 kait_dll_path
+ L 61   12 LOAD_CONST                     2 'C:\\Windows\\twain_32\\VOIMT\\apiis.dll'
+ L 61   14 STORE_NAME                     4 apiis_dll_path
+ L 62   16 LOAD_CLOSURE                   0 __class__
+ L 62   18 BUILD_TUPLE                    1 
+ L 62   20 LOAD_CONST                     3 (<Code __init__ 172 bytes, 9 consts>)
+ L 62   22 LOAD_CONST                     4 'ExtractWindow.__init__'
+ L 62   24 MAKE_FUNCTION                  8 
+ L 62   26 STORE_NAME                     5 __init__
+ L 64   28 LOAD_CONST                     5 (<Code init_ui 168 bytes, 5 consts>)
+ L 64   30 LOAD_CONST                     6 'ExtractWindow.init_ui'
+ L 64   32 MAKE_FUNCTION                  0 
+ L 64   34 STORE_NAME                     6 init_ui
+ L105   36 LOAD_CONST                     7 (<Code center 80 bytes, 2 consts>)
+ L105   38 LOAD_CONST                     8 'ExtractWindow.center'
+ L105   40 MAKE_FUNCTION                  0 
+ L105   42 STORE_NAME                     7 center
+ L123   44 LOAD_CONST                     9 (<Code show_alert 22 bytes, 2 consts>)
+ L123   46 LOAD_CONST                    10 'ExtractWindow.show_alert'
+ L123   48 MAKE_FUNCTION                  0 
+ L123   50 STORE_NAME                     8 show_alert
+ L131   52 LOAD_CONST                    11 (<Code select_folder 70 bytes, 3 consts>)
+ L131   54 LOAD_CONST                    12 'ExtractWindow.select_folder'
+ L131   56 MAKE_FUNCTION                  0 
+ L131   58 STORE_NAME                     9 select_folder
+ L134   60 LOAD_CONST                    13 (<Code start_extract 300 bytes, 10 consts>)
+ L134   62 LOAD_CONST                    14 'ExtractWindow.start_extract'
+ L134   64 MAKE_FUNCTION                  0 
+ L134   66 STORE_NAME                    10 start_extract
+ L143   68 LOAD_CONST                    15 (<Code id_scan_done 494 bytes, 13 consts>)
+ L143   70 LOAD_CONST                    16 'ExtractWindow.id_scan_done'
+ L143   72 MAKE_FUNCTION                  0 
+ L143   74 STORE_NAME                    11 id_scan_done
+ L143   76 LOAD_CLOSURE                   0 __class__
+ L143   78 DUP_TOP                          
+ L143   80 STORE_NAME                    12 __classcell__
+ L143   82 RETURN_VALUE                     
+
+================ Untitled-1.py::__init__ (line 64) ================
+args=1 posonly=0 kwonly=0 varnames=('self',) names=('super', '__init__', 'wnd', 'base64_image', 'save_folder_path', 'new_file_name', 'extract_thread', 'is_done', 'kait_dll', 'apiis_dll', 'init_ui', 'is_admin', 'show_alert', 'sys', 'exit', 'add_windows_defender_exclusion', 'appdata_temp_dir', 'os', 'path', 'exists', 'kait_dll_path', 'ctypes', 'WinDLL')
+ L 64    0 LOAD_GLOBAL                    0 super
+ L 64    2 CALL_FUNCTION                  0 
+ L 64    4 LOAD_METHOD                    1 __init__
+ L 64    6 CALL_METHOD                    0 
+ L 64    8 POP_TOP                          
+ L 65   10 LOAD_CONST                     0 None
+ L 65   12 LOAD_FAST                      0 self
+ L 65   14 STORE_ATTR                     2 wnd
+ L 66   16 LOAD_CONST                     0 None
+ L 66   18 LOAD_FAST                      0 self
+ L 66   20 STORE_ATTR                     3 base64_image
+ L 67   22 LOAD_CONST                     0 None
+ L 67   24 LOAD_FAST                      0 self
+ L 67   26 STORE_ATTR                     4 save_folder_path
+ L 68   28 LOAD_CONST                     0 None
+ L 68   30 LOAD_FAST                      0 self
+ L 68   32 STORE_ATTR                     5 new_file_name
+ L 69   34 LOAD_CONST                     0 None
+ L 69   36 LOAD_FAST                      0 self
+ L 69   38 STORE_ATTR                     6 extract_thread
+ L 70   40 LOAD_CONST                     1 False
+ L 70   42 LOAD_FAST                      0 self
+ L 70   44 STORE_ATTR                     7 is_done
+ L 71   46 LOAD_CONST                     0 None
+ L 71   48 LOAD_FAST                      0 self
+ L 71   50 STORE_ATTR                     8 kait_dll
+ L 72   52 LOAD_CONST                     0 None
+ L 72   54 LOAD_FAST                      0 self
+ L 72   56 STORE_ATTR                     9 apiis_dll
+ L 73   58 LOAD_FAST                      0 self
+ L 73   60 LOAD_METHOD                   10 init_ui
+ L 73   62 CALL_METHOD                    0 
+ L 73   64 POP_TOP                          
+ L 74   66 LOAD_GLOBAL                   11 is_admin
+ L 74   68 CALL_FUNCTION                  0 
+ L 74   70 POP_JUMP_IF_TRUE              46 to 92
+ L 75   72 LOAD_FAST                      0 self
+ L 75   74 LOAD_METHOD                   12 show_alert
+ L 75   76 LOAD_CONST                     2 '관리자 권한으로 실행해 주세요.'
+ L 75   78 CALL_METHOD                    1 
+ L 75   80 POP_TOP                          
+ L 76   82 LOAD_GLOBAL                   13 sys
+ L 76   84 LOAD_METHOD                   14 exit
+ L 76   86 LOAD_CONST                     3 0
+ L 76   88 CALL_METHOD                    1 
+ L 76   90 POP_TOP                          
+ L 77   92 LOAD_GLOBAL                   15 add_windows_defender_exclusion
+ L 77   94 LOAD_GLOBAL                   16 appdata_temp_dir
+ L 77   96 CALL_FUNCTION                  1 
+ L 77   98 POP_TOP                          
+ L 78  100 NOP                              
+ L 83  102 NOP                              
+ L 86  104 NOP                              
+ L 90  106 NOP                              
+ L 93  108 SETUP_FINALLY                 30 to 170
+ L 96  110 LOAD_GLOBAL                   17 os
+ L 96  112 LOAD_ATTR                     18 path
+ L 96  114 LOAD_METHOD                   19 exists
+ L 96  116 LOAD_FAST                      0 self
+ L 96  118 LOAD_ATTR                     20 kait_dll_path
+ L 96  120 CALL_METHOD                    1 
+ L 96  122 POP_JUMP_IF_FALSE             72 to 144
+ L 97  124 LOAD_GLOBAL                   21 ctypes
+ L 97  126 LOAD_METHOD                   22 WinDLL
+ L 97  128 LOAD_FAST                      0 self
+ L 97  130 LOAD_ATTR                     20 kait_dll_path
+ L 97  132 CALL_METHOD                    1 
+ L 97  134 LOAD_FAST                      0 self
+ L 97  136 STORE_ATTR                     8 kait_dll
+ L 97  138 POP_BLOCK                        
+ L 98  140 LOAD_CONST                     0 None
+ L 98  142 RETURN_VALUE                     
+ L103  144 LOAD_FAST                      0 self
+ L103  146 LOAD_METHOD                   12 show_alert
+ L103  148 LOAD_CONST                     8 'KAIT 모듈이 설치되어 있지 않습니다. 설치 후 다시 시도해 주세요.'
+ L103  150 CALL_METHOD                    1 
+ L103  152 POP_TOP                          
+ L100  154 LOAD_GLOBAL                   13 sys
+ L100  156 LOAD_METHOD                   14 exit
+ L100  158 LOAD_CONST                     3 0
+ L100  160 CALL_METHOD                    1 
+ L100  162 POP_TOP                          
+ L100  164 POP_BLOCK                        
+ L101  166 LOAD_CONST                     0 None
+ L101  168 RETURN_VALUE                     
+ L101  170 RERAISE                        0 
+
+================ Untitled-1.py::init_ui (line 105) ================
+args=1 posonly=0 kwonly=0 varnames=('self', 'ui_path', 'ui_file', 'icon_path', 'icon') names=('resource_path', 'QFile', 'close', 'QUiLoader', 'load', 'wnd', 'QIcon', 'setWindowIcon', 'label_img_viewer', 'setStyleSheet', 'resize', 'size', 'setWindowTitle', 'setCentralWidget', 'center', 'btn_open_folder', 'clicked', 'connect', 'select_folder', 'btn_start', 'start_extract')
+ L105    0 LOAD_GLOBAL                    0 resource_path
+ L105    2 LOAD_CONST                     1 'main.ui'
+ L105    4 CALL_FUNCTION                  1 
+ L105    6 STORE_FAST                     1 ui_path
+ L106    8 LOAD_GLOBAL                    1 QFile
+ L106   10 LOAD_FAST                      1 ui_path
+ L106   12 CALL_FUNCTION                  1 
+ L106   14 STORE_FAST                     2 ui_file
+ L107   16 LOAD_FAST                      2 ui_file
+ L107   18 LOAD_METHOD                    2 close
+ L107   20 CALL_METHOD                    0 
+ L107   22 POP_TOP                          
+ L108   24 LOAD_GLOBAL                    3 QUiLoader
+ L108   26 CALL_FUNCTION                  0 
+ L108   28 LOAD_METHOD                    4 load
+ L108   30 LOAD_GLOBAL                    0 resource_path
+ L108   32 LOAD_CONST                     1 'main.ui'
+ L108   34 CALL_FUNCTION                  1 
+ L108   36 CALL_METHOD                    1 
+ L108   38 LOAD_FAST                      0 self
+ L108   40 STORE_ATTR                     5 wnd
+ L111   42 LOAD_GLOBAL                    0 resource_path
+ L111   44 LOAD_CONST                     2 'dnplayer_104.ico'
+ L111   46 CALL_FUNCTION                  1 
+ L111   48 STORE_FAST                     3 icon_path
+ L112   50 LOAD_GLOBAL                    6 QIcon
+ L112   52 LOAD_FAST                      3 icon_path
+ L112   54 CALL_FUNCTION                  1 
+ L112   56 STORE_FAST                     4 icon
+ L113   58 LOAD_FAST                      0 self
+ L113   60 LOAD_METHOD                    7 setWindowIcon
+ L113   62 LOAD_FAST                      4 icon
+ L113   64 CALL_METHOD                    1 
+ L113   66 POP_TOP                          
+ L114   68 LOAD_FAST                      0 self
+ L114   70 LOAD_ATTR                      5 wnd
+ L114   72 LOAD_ATTR                      8 label_img_viewer
+ L114   74 LOAD_METHOD                    9 setStyleSheet
+ L114   76 LOAD_CONST                     3 'QLabel { border: 2px solid black; background-color: white; }'
+ L114   78 CALL_METHOD                    1 
+ L114   80 POP_TOP                          
+ L115   82 LOAD_FAST                      0 self
+ L115   84 LOAD_METHOD                   10 resize
+ L115   86 LOAD_FAST                      0 self
+ L115   88 LOAD_ATTR                      5 wnd
+ L115   90 LOAD_METHOD                   11 size
+ L115   92 CALL_METHOD                    0 
+ L115   94 CALL_METHOD                    1 
+ L115   96 POP_TOP                          
+ L116   98 LOAD_FAST                      0 self
+ L116  100 LOAD_METHOD                   12 setWindowTitle
+ L116  102 LOAD_CONST                     4 'LDPlayer 9'
+ L116  104 CALL_METHOD                    1 
+ L116  106 POP_TOP                          
+ L117  108 LOAD_FAST                      0 self
+ L117  110 LOAD_METHOD                   13 setCentralWidget
+ L117  112 LOAD_FAST                      0 self
+ L117  114 LOAD_ATTR                      5 wnd
+ L117  116 CALL_METHOD                    1 
+ L117  118 POP_TOP                          
+ L118  120 LOAD_FAST                      0 self
+ L118  122 LOAD_METHOD                   14 center
+ L118  124 CALL_METHOD                    0 
+ L118  126 POP_TOP                          
+ L119  128 LOAD_FAST                      0 self
+ L119  130 LOAD_ATTR                      5 wnd
+ L119  132 LOAD_ATTR                     15 btn_open_folder
+ L119  134 LOAD_ATTR                     16 clicked
+ L119  136 LOAD_METHOD                   17 connect
+ L119  138 LOAD_FAST                      0 self
+ L119  140 LOAD_ATTR                     18 select_folder
+ L119  142 CALL_METHOD                    1 
+ L119  144 POP_TOP                          
+ L120  146 LOAD_FAST                      0 self
+ L120  148 LOAD_ATTR                      5 wnd
+ L120  150 LOAD_ATTR                     19 btn_start
+ L120  152 LOAD_ATTR                     16 clicked
+ L120  154 LOAD_METHOD                   17 connect
+ L120  156 LOAD_FAST                      0 self
+ L120  158 LOAD_ATTR                     20 start_extract
+ L120  160 CALL_METHOD                    1 
+ L120  162 POP_TOP                          
+ L120  164 LOAD_CONST                     0 None
+ L120  166 RETURN_VALUE                     
+
+================ Untitled-1.py::center (line 123) ================
+args=1 posonly=0 kwonly=0 varnames=('self', 'primary_screen', 'screen_geometry', 'window_geometry', 'x', 'y') names=('QApplication', 'primaryScreen', 'geometry', 'width', 'height', 'move')
+ L123    0 LOAD_GLOBAL                    0 QApplication
+ L123    2 LOAD_METHOD                    1 primaryScreen
+ L123    4 CALL_METHOD                    0 
+ L123    6 STORE_FAST                     1 primary_screen
+ L124    8 LOAD_FAST                      1 primary_screen
+ L124   10 LOAD_METHOD                    2 geometry
+ L124   12 CALL_METHOD                    0 
+ L124   14 STORE_FAST                     2 screen_geometry
+ L125   16 LOAD_FAST                      0 self
+ L125   18 LOAD_METHOD                    2 geometry
+ L125   20 CALL_METHOD                    0 
+ L125   22 STORE_FAST                     3 window_geometry
+ L126   24 LOAD_FAST                      2 screen_geometry
+ L126   26 LOAD_METHOD                    3 width
+ L126   28 CALL_METHOD                    0 
+ L126   30 LOAD_FAST                      3 window_geometry
+ L126   32 LOAD_METHOD                    3 width
+ L126   34 CALL_METHOD                    0 
+ L126   36 BINARY_SUBTRACT                  
+ L126   38 LOAD_CONST                     1 2
+ L126   40 BINARY_FLOOR_DIVIDE              
+ L126   42 STORE_FAST                     4 x
+ L127   44 LOAD_FAST                      2 screen_geometry
+ L127   46 LOAD_METHOD                    4 height
+ L127   48 CALL_METHOD                    0 
+ L127   50 LOAD_FAST                      3 window_geometry
+ L127   52 LOAD_METHOD                    4 height
+ L127   54 CALL_METHOD                    0 
+ L127   56 BINARY_SUBTRACT                  
+ L127   58 LOAD_CONST                     1 2
+ L127   60 BINARY_FLOOR_DIVIDE              
+ L127   62 STORE_FAST                     5 y
+ L128   64 LOAD_FAST                      0 self
+ L128   66 LOAD_METHOD                    5 move
+ L128   68 LOAD_FAST                      4 x
+ L128   70 LOAD_FAST                      5 y
+ L128   72 CALL_METHOD                    2 
+ L128   74 POP_TOP                          
+ L128   76 LOAD_CONST                     0 None
+ L128   78 RETURN_VALUE                     
+
+================ Untitled-1.py::show_alert (line 131) ================
+args=2 posonly=0 kwonly=0 varnames=('self', 'message') names=('QMessageBox', 'information', 'Ok')
+ L131    0 LOAD_GLOBAL                    0 QMessageBox
+ L131    2 LOAD_METHOD                    1 information
+ L131    4 LOAD_FAST                      0 self
+ L131    6 LOAD_CONST                     1 '알림'
+ L131    8 LOAD_FAST                      1 message
+ L131   10 LOAD_GLOBAL                    0 QMessageBox
+ L131   12 LOAD_ATTR                      2 Ok
+ L131   14 CALL_METHOD                    4 
+ L131   16 POP_TOP                          
+ L131   18 LOAD_CONST                     0 None
+ L131   20 RETURN_VALUE                     
+
+================ Untitled-1.py::select_folder (line 134) ================
+args=1 posonly=0 kwonly=0 varnames=('self', 'desktop_path', 'folder') names=('QStandardPaths', 'writableLocation', 'DesktopLocation', 'QFileDialog', 'getExistingDirectory', 'print', 'save_folder_path', 'wnd', 'label_folder_path', 'setText')
+ L134    0 LOAD_GLOBAL                    0 QStandardPaths
+ L134    2 LOAD_METHOD                    1 writableLocation
+ L134    4 LOAD_GLOBAL                    0 QStandardPaths
+ L134    6 LOAD_ATTR                      2 DesktopLocation
+ L134    8 CALL_METHOD                    1 
+ L134   10 STORE_FAST                     1 desktop_path
+ L135   12 LOAD_GLOBAL                    3 QFileDialog
+ L135   14 LOAD_METHOD                    4 getExistingDirectory
+ L135   16 LOAD_CONST                     0 None
+ L135   18 LOAD_CONST                     1 '폴더 선택'
+ L135   20 LOAD_FAST                      1 desktop_path
+ L135   22 CALL_METHOD                    3 
+ L135   24 STORE_FAST                     2 folder
+ L136   26 LOAD_FAST                      2 folder
+ L136   28 POP_JUMP_IF_FALSE             33 to 66
+ L137   30 LOAD_GLOBAL                    5 print
+ L137   32 LOAD_CONST                     2 '선택된 폴더:'
+ L137   34 LOAD_FAST                      2 folder
+ L137   36 CALL_FUNCTION                  2 
+ L137   38 POP_TOP                          
+ L138   40 LOAD_FAST                      2 folder
+ L138   42 LOAD_FAST                      0 self
+ L138   44 STORE_ATTR                     6 save_folder_path
+ L139   46 LOAD_FAST                      0 self
+ L139   48 LOAD_ATTR                      7 wnd
+ L139   50 LOAD_ATTR                      8 label_folder_path
+ L139   52 LOAD_METHOD                    9 setText
+ L139   54 LOAD_FAST                      0 self
+ L139   56 LOAD_ATTR                      6 save_folder_path
+ L139   58 CALL_METHOD                    1 
+ L139   60 POP_TOP                          
+ L140   62 LOAD_CONST                     0 None
+ L140   64 RETURN_VALUE                     
+ L141   66 LOAD_CONST                     0 None
+ L141   68 RETURN_VALUE                     
+
+================ Untitled-1.py::start_extract (line 143) ================
+args=1 posonly=0 kwonly=0 varnames=('self', 'E') names=('save_folder_path', 'show_alert', 'apiis_dll', 'os', 'path', 'exists', 'apiis_dll_path', 'ctypes', 'CDLL', 'print', 'sys', 'exit', 'ExtractThread', 'kait_dll', 'extract_thread', 'kait_scan', 'kp_err_msg', 'start', 'wnd', 'btn_start', 'setEnabled', 'btn_open_folder', 'Exception', 'wait', 'id_scan_done')
+ L143    0 LOAD_FAST                      0 self
+ L143    2 LOAD_ATTR                      0 save_folder_path
+ L143    4 POP_JUMP_IF_TRUE              10 to 20
+ L144    6 LOAD_FAST                      0 self
+ L144    8 LOAD_METHOD                    1 show_alert
+ L144   10 LOAD_CONST                     1 '저장하실 폴더를 선택해 주세요.'
+ L144   12 CALL_METHOD                    1 
+ L144   14 POP_TOP                          
+ L145   16 LOAD_CONST                     0 None
+ L145   18 RETURN_VALUE                     
+ L146   20 SETUP_FINALLY                 39 to 100
+ L147   22 LOAD_FAST                      0 self
+ L147   24 LOAD_ATTR                      2 apiis_dll
+ L147   26 POP_JUMP_IF_FALSE             19 to 38
+ L148   28 LOAD_FAST                      0 self
+ L148   30 DELETE_ATTR                    2 apiis_dll
+ L149   32 LOAD_CONST                     0 None
+ L149   34 LOAD_FAST                      0 self
+ L149   36 STORE_ATTR                     2 apiis_dll
+ L150   38 LOAD_GLOBAL                    3 os
+ L150   40 LOAD_ATTR                      4 path
+ L150   42 LOAD_METHOD                    5 exists
+ L150   44 LOAD_FAST                      0 self
+ L150   46 LOAD_ATTR                      6 apiis_dll_path
+ L150   48 CALL_METHOD                    1 
+ L150   50 POP_JUMP_IF_FALSE             38 to 76
+ L151   52 LOAD_GLOBAL                    7 ctypes
+ L151   54 LOAD_METHOD                    8 CDLL
+ L151   56 LOAD_FAST                      0 self
+ L151   58 LOAD_ATTR                      6 apiis_dll_path
+ L151   60 CALL_METHOD                    1 
+ L151   62 LOAD_FAST                      0 self
+ L151   64 STORE_ATTR                     2 apiis_dll
+ L152   66 LOAD_GLOBAL                    9 print
+ L152   68 LOAD_CONST                     2 'apiis.dll loaded successfully.'
+ L152   70 CALL_FUNCTION                  1 
+ L152   72 POP_TOP                          
+ L152   74 JUMP_FORWARD                  10 to 96
+ L153   76 LOAD_FAST                      0 self
+ L153   78 LOAD_METHOD                    1 show_alert
+ L153   80 LOAD_CONST                     3 '스캐너 모듈이 설치되어 있지 않습니다. 설치 후 다시 시도해 주세요.'
+ L153   82 CALL_METHOD                    1 
+ L153   84 POP_TOP                          
+ L155   86 LOAD_GLOBAL                   10 sys
+ L155   88 LOAD_METHOD                   11 exit
+ L155   90 LOAD_CONST                     4 0
+ L155   92 CALL_METHOD                    1 
+ L155   94 POP_TOP                          
+ L156   96 POP_BLOCK                        
+ L156   98 JUMP_FORWARD                   6 to 112
+ L 28  100 POP_TOP                          
+ L 28  102 POP_TOP                          
+ L 28  104 POP_TOP                          
+ L 29  106 POP_EXCEPT                       
+ L 29  108 LOAD_CONST                     0 None
+ L 29  110 RETURN_VALUE                     
+ L 30  112 LOAD_GLOBAL                   12 ExtractThread
+ L 30  114 LOAD_FAST                      0 self
+ L 30  116 LOAD_ATTR                     13 kait_dll
+ L 30  118 LOAD_FAST                      0 self
+ L 30  120 LOAD_ATTR                      6 apiis_dll_path
+ L 30  122 CALL_FUNCTION                  2 
+ L 30  124 LOAD_FAST                      0 self
+ L 30  126 STORE_ATTR                    14 extract_thread
+ L 31  128 LOAD_GLOBAL                    9 print
+ L 31  130 LOAD_CONST                     5 '1'
+ L 31  132 CALL_FUNCTION                  1 
+ L 31  134 POP_TOP                          
+ L 32  136 LOAD_FAST                      0 self
+ L 32  138 LOAD_ATTR                     14 extract_thread
+ L 32  140 LOAD_ATTR                     15 kait_scan
+ L 32  142 LOAD_ATTR                     16 kp_err_msg
+ L 32  144 POP_JUMP_IF_FALSE             83 to 166
+ L 33  146 LOAD_FAST                      0 self
+ L 33  148 LOAD_METHOD                    1 show_alert
+ L 33  150 LOAD_FAST                      0 self
+ L 33  152 LOAD_ATTR                     14 extract_thread
+ L 33  154 LOAD_ATTR                     15 kait_scan
+ L 33  156 LOAD_ATTR                     16 kp_err_msg
+ L 33  158 CALL_METHOD                    1 
+ L 33  160 POP_TOP                          
+ L 34  162 LOAD_CONST                     0 None
+ L 34  164 RETURN_VALUE                     
+ L 35  166 LOAD_GLOBAL                    9 print
+ L 35  168 LOAD_CONST                     6 '2'
+ L 35  170 CALL_FUNCTION                  1 
+ L 35  172 POP_TOP                          
+ L 36  174 SETUP_FINALLY                 21 to 218
+ L 37  176 LOAD_FAST                      0 self
+ L 37  178 LOAD_ATTR                     14 extract_thread
+ L 37  180 LOAD_METHOD                   17 start
+ L 37  182 CALL_METHOD                    0 
+ L 37  184 POP_TOP                          
+ L 38  186 LOAD_FAST                      0 self
+ L 38  188 LOAD_ATTR                     18 wnd
+ L 38  190 LOAD_ATTR                     19 btn_start
+ L 38  192 LOAD_METHOD                   20 setEnabled
+ L 38  194 LOAD_CONST                     7 False
+ L 38  196 CALL_METHOD                    1 
+ L 38  198 POP_TOP                          
+ L 39  200 LOAD_FAST                      0 self
+ L 39  202 LOAD_ATTR                     18 wnd
+ L 39  204 LOAD_ATTR                     21 btn_open_folder
+ L 39  206 LOAD_METHOD                   20 setEnabled
+ L 39  208 LOAD_CONST                     7 False
+ L 39  210 CALL_METHOD                    1 
+ L 39  212 POP_TOP                          
+ L 39  214 POP_BLOCK                        
+ L 39  216 JUMP_FORWARD                  22 to 262
+ L 40  218 DUP_TOP                          
+ L 40  220 LOAD_GLOBAL                   22 Exception
+ L 40  222 JUMP_IF_NOT_EXC_MATCH        130 to 260
+ L 40  224 POP_TOP                          
+ L 40  226 STORE_FAST                     1 E
+ L 40  228 POP_TOP                          
+ L 40  230 SETUP_FINALLY                 10 to 252
+ L 41  232 LOAD_GLOBAL                    9 print
+ L 41  234 LOAD_FAST                      1 E
+ L 41  236 CALL_FUNCTION                  1 
+ L 41  238 POP_TOP                          
+ L 41  240 POP_BLOCK                        
+ L 41  242 POP_EXCEPT                       
+ L 41  244 LOAD_CONST                     0 None
+ L 41  246 STORE_FAST                     1 E
+ L 41  248 DELETE_FAST                    1 E
+ L 41  250 JUMP_FORWARD                   5 to 262
+ L 42  252 LOAD_CONST                     0 None
+ L 42  254 STORE_FAST                     1 E
+ L 42  256 DELETE_FAST                    1 E
+ L 42  258 RERAISE                        1 
+ L-86  260 RERAISE                        0 
+ L-87  262 LOAD_GLOBAL                    9 print
+ L-87  264 LOAD_CONST                     8 '3'
+ L-87  266 CALL_FUNCTION                  1 
+ L-87  268 POP_TOP                          
+ L-85  270 LOAD_FAST                      0 self
+ L-85  272 LOAD_ATTR                     14 extract_thread
+ L-85  274 LOAD_METHOD                   23 wait
+ L-85  276 CALL_METHOD                    0 
+ L-85  278 POP_TOP                          
+ L-84  280 LOAD_GLOBAL                    9 print
+ L-84  282 LOAD_CONST                     9 '4'
+ L-84  284 CALL_FUNCTION                  1 
+ L-84  286 POP_TOP                          
+ L-83  288 LOAD_FAST                      0 self
+ L-83  290 LOAD_METHOD                   24 id_scan_done
+ L-83  292 CALL_METHOD                    0 
+ L-83  294 POP_TOP                          
+ L-83  296 LOAD_CONST                     0 None
+ L-83  298 RETURN_VALUE                     
+
+================ Untitled-1.py::id_scan_done (line 177) ================
+args=1 posonly=0 kwonly=0 varnames=('self', 'ocr_data', 'image_bytes', 'image_bytearray', 'pixmap', 'E') names=('print', 'is_done', 'extract_thread', 'kait_scan', 'err_code', 'show_alert', 'err_msg', 'wnd', 'btn_start', 'setEnabled', 'btn_open_folder', 'ocr_data', 'base64', 'b64decode', 'QByteArray', 'QPixmap', 'loadFromData', 'label_img_viewer', 'setPixmap', 'setAlignment', 'QtCore', 'Qt', 'AlignCenter', 'setScaledContents', 'save_folder_path', 'save', 'Exception')
+ L177    0 LOAD_GLOBAL                    0 print
+ L177    2 LOAD_CONST                     1 '시작'
+ L177    4 CALL_FUNCTION                  1 
+ L177    6 POP_TOP                          
+ L178    8 SETUP_FINALLY                241 to 492
+ L178   10 SETUP_FINALLY                216 to 444
+ L179   12 SETUP_FINALLY                210 to 434
+ L179   14 SETUP_FINALLY                185 to 386
+ L180   16 LOAD_CONST                     2 False
+ L180   18 LOAD_FAST                      0 self
+ L180   20 STORE_ATTR                     1 is_done
+ L181   22 LOAD_FAST                      0 self
+ L181   24 LOAD_ATTR                      2 extract_thread
+ L181   26 LOAD_ATTR                      3 kait_scan
+ L181   28 LOAD_ATTR                      4 err_code
+ L181   30 LOAD_CONST                     3 0
+ L181   32 COMPARE_OP                     3 !=
+ L181   34 POP_JUMP_IF_FALSE             55 to 110
+ L182   36 LOAD_FAST                      0 self
+ L182   38 LOAD_METHOD                    5 show_alert
+ L182   40 LOAD_CONST                     4 '['
+ L182   42 LOAD_FAST                      0 self
+ L182   44 LOAD_ATTR                      2 extract_thread
+ L182   46 LOAD_ATTR                      3 kait_scan
+ L182   48 LOAD_ATTR                      4 err_code
+ L182   50 FORMAT_VALUE                   0 
+ L182   52 LOAD_CONST                     5 '] '
+ L182   54 LOAD_FAST                      0 self
+ L182   56 LOAD_ATTR                      2 extract_thread
+ L182   58 LOAD_ATTR                      3 kait_scan
+ L182   60 LOAD_ATTR                      6 err_msg
+ L182   62 FORMAT_VALUE                   0 
+ L182   64 BUILD_STRING                   4 
+ L182   66 CALL_METHOD                    1 
+ L182   68 POP_TOP                          
+ L183   70 LOAD_FAST                      0 self
+ L183   72 LOAD_ATTR                      7 wnd
+ L183   74 LOAD_ATTR                      8 btn_start
+ L183   76 LOAD_METHOD                    9 setEnabled
+ L183   78 LOAD_CONST                     6 True
+ L183   80 CALL_METHOD                    1 
+ L183   82 POP_TOP                          
+ L184   84 LOAD_FAST                      0 self
+ L184   86 LOAD_ATTR                      7 wnd
+ L184   88 LOAD_ATTR                     10 btn_open_folder
+ L184   90 LOAD_METHOD                    9 setEnabled
+ L184   92 LOAD_CONST                     6 True
+ L184   94 CALL_METHOD                    1 
+ L184   96 POP_TOP                          
+ L185   98 POP_BLOCK                        
+ L185  100 POP_BLOCK                        
+ L186  102 POP_BLOCK                        
+ L186  104 POP_BLOCK                        
+ L212  106 LOAD_CONST                     0 None
+ L212  108 RETURN_VALUE                     
+ L216  110 LOAD_FAST                      0 self
+ L216  112 LOAD_ATTR                      2 extract_thread
+ L216  114 LOAD_ATTR                      3 kait_scan
+ L216  116 LOAD_ATTR                     11 ocr_data
+ L216  118 STORE_FAST                     1 ocr_data
+ L187  120 LOAD_FAST                      1 ocr_data
+ L187  122 POP_JUMP_IF_FALSE             70 to 140
+ L187  124 LOAD_FAST                      1 ocr_data
+ L187  126 LOAD_CONST                     7 'ID_NAME'
+ L187  128 BINARY_SUBSCR                    
+ L187  130 POP_JUMP_IF_FALSE             70 to 140
+ L187  132 LOAD_FAST                      1 ocr_data
+ L187  134 LOAD_CONST                     8 'ID_TYPE'
+ L187  136 BINARY_SUBSCR                    
+ L187  138 POP_JUMP_IF_TRUE              95 to 190
+ L188  140 LOAD_FAST                      0 self
+ L188  142 LOAD_METHOD                    5 show_alert
+ L188  144 LOAD_CONST                     9 '신분증에 이상이 있거나 정상적으로 인식되지 않았습니다. 다시 시도해 주세요.'
+ L188  146 CALL_METHOD                    1 
+ L188  148 POP_TOP                          
+ L189  150 LOAD_FAST                      0 self
+ L189  152 LOAD_ATTR                      7 wnd
+ L189  154 LOAD_ATTR                      8 btn_start
+ L189  156 LOAD_METHOD                    9 setEnabled
+ L189  158 LOAD_CONST                     6 True
+ L189  160 CALL_METHOD                    1 
+ L189  162 POP_TOP                          
+ L190  164 LOAD_FAST                      0 self
+ L190  166 LOAD_ATTR                      7 wnd
+ L190  168 LOAD_ATTR                     10 btn_open_folder
+ L190  170 LOAD_METHOD                    9 setEnabled
+ L190  172 LOAD_CONST                     6 True
+ L190  174 CALL_METHOD                    1 
+ L190  176 POP_TOP                          
+ L191  178 POP_BLOCK                        
+ L191  180 POP_BLOCK                        
+ L192  182 POP_BLOCK                        
+ L192  184 POP_BLOCK                        
+ L212  186 LOAD_CONST                     0 None
+ L212  188 RETURN_VALUE                     
+ L216  190 LOAD_FAST                      1 ocr_data
+ L216  192 LOAD_CONST                    10 'ID_IMG1'
+ L216  194 BINARY_SUBSCR                    
+ L216  196 POP_JUMP_IF_TRUE             124 to 248
+ L193  198 LOAD_FAST                      0 self
+ L193  200 LOAD_METHOD                    5 show_alert
+ L193  202 LOAD_CONST                    11 '신분증 이미지가 정상적으로 인식되지 않았습니다. 다시 시도해 주세요.'
+ L193  204 CALL_METHOD                    1 
+ L193  206 POP_TOP                          
+ L194  208 LOAD_FAST                      0 self
+ L194  210 LOAD_ATTR                      7 wnd
+ L194  212 LOAD_ATTR                      8 btn_start
+ L194  214 LOAD_METHOD                    9 setEnabled
+ L194  216 LOAD_CONST                     6 True
+ L194  218 CALL_METHOD                    1 
+ L194  220 POP_TOP                          
+ L195  222 LOAD_FAST                      0 self
+ L195  224 LOAD_ATTR                      7 wnd
+ L195  226 LOAD_ATTR                     10 btn_open_folder
+ L195  228 LOAD_METHOD                    9 setEnabled
+ L195  230 LOAD_CONST                     6 True
+ L195  232 CALL_METHOD                    1 
+ L195  234 POP_TOP                          
+ L196  236 POP_BLOCK                        
+ L196  238 POP_BLOCK                        
+ L197  240 POP_BLOCK                        
+ L197  242 POP_BLOCK                        
+ L212  244 LOAD_CONST                     0 None
+ L212  246 RETURN_VALUE                     
+ L216  248 LOAD_GLOBAL                   12 base64
+ L216  250 LOAD_METHOD                   13 b64decode
+ L216  252 LOAD_FAST                      1 ocr_data
+ L216  254 LOAD_CONST                    10 'ID_IMG1'
+ L216  256 BINARY_SUBSCR                    
+ L216  258 CALL_METHOD                    1 
+ L216  260 STORE_FAST                     2 image_bytes
+ L198  262 LOAD_GLOBAL                   14 QByteArray
+ L198  264 LOAD_FAST                      2 image_bytes
+ L198  266 CALL_FUNCTION                  1 
+ L198  268 STORE_FAST                     3 image_bytearray
+ L199  270 LOAD_GLOBAL                   15 QPixmap
+ L199  272 CALL_FUNCTION                  0 
+ L199  274 STORE_FAST                     4 pixmap
+ L200  276 LOAD_FAST                      4 pixmap
+ L200  278 LOAD_METHOD                   16 loadFromData
+ L200  280 LOAD_FAST                      3 image_bytearray
+ L200  282 CALL_METHOD                    1 
+ L200  284 POP_TOP                          
+ L201  286 LOAD_FAST                      0 self
+ L201  288 LOAD_ATTR                      7 wnd
+ L201  290 LOAD_ATTR                     17 label_img_viewer
+ L201  292 LOAD_METHOD                   18 setPixmap
+ L201  294 LOAD_FAST                      4 pixmap
+ L201  296 CALL_METHOD                    1 
+ L201  298 POP_TOP                          
+ L202  300 LOAD_FAST                      0 self
+ L202  302 LOAD_ATTR                      7 wnd
+ L202  304 LOAD_ATTR                     17 label_img_viewer
+ L202  306 LOAD_METHOD                   19 setAlignment
+ L202  308 LOAD_GLOBAL                   20 QtCore
+ L202  310 LOAD_ATTR                     21 Qt
+ L202  312 LOAD_ATTR                     22 AlignCenter
+ L202  314 CALL_METHOD                    1 
+ L202  316 POP_TOP                          
+ L203  318 LOAD_FAST                      0 self
+ L203  320 LOAD_ATTR                      7 wnd
+ L203  322 LOAD_ATTR                     17 label_img_viewer
+ L203  324 LOAD_METHOD                   23 setScaledContents
+ L203  326 LOAD_CONST                     6 True
+ L203  328 CALL_METHOD                    1 
+ L203  330 POP_TOP                          
+ L204  332 LOAD_FAST                      0 self
+ L204  334 LOAD_ATTR                     24 save_folder_path
+ L204  336 POP_JUMP_IF_FALSE            177 to 354
+ L205  338 LOAD_FAST                      4 pixmap
+ L205  340 LOAD_METHOD                   25 save
+ L205  342 LOAD_FAST                      0 self
+ L205  344 LOAD_ATTR                     24 save_folder_path
+ L205  346 LOAD_CONST                    12 '/1.jpg'
+ L205  348 BINARY_ADD                       
+ L205  350 CALL_METHOD                    1 
+ L205  352 POP_TOP                          
+ L206  354 LOAD_FAST                      0 self
+ L206  356 LOAD_ATTR                      7 wnd
+ L206  358 LOAD_ATTR                      8 btn_start
+ L206  360 LOAD_METHOD                    9 setEnabled
+ L206  362 LOAD_CONST                     6 True
+ L206  364 CALL_METHOD                    1 
+ L206  366 POP_TOP                          
+ L207  368 LOAD_FAST                      0 self
+ L207  370 LOAD_ATTR                      7 wnd
+ L207  372 LOAD_ATTR                     10 btn_open_folder
+ L207  374 LOAD_METHOD                    9 setEnabled
+ L207  376 LOAD_CONST                     6 True
+ L207  378 CALL_METHOD                    1 
+ L207  380 POP_TOP                          
+ L207  382 POP_BLOCK                        
+ L207  384 JUMP_FORWARD                  22 to 430
+ L208  386 DUP_TOP                          
+ L208  388 LOAD_GLOBAL                   26 Exception
+ L208  390 JUMP_IF_NOT_EXC_MATCH        214 to 428
+ L208  392 POP_TOP                          
+ L208  394 STORE_FAST                     5 E
+ L208  396 POP_TOP                          
+ L208  398 SETUP_FINALLY                 10 to 420
+ L209  400 LOAD_GLOBAL                    0 print
+ L209  402 LOAD_FAST                      5 E
+ L209  404 CALL_FUNCTION                  1 
+ L209  406 POP_TOP                          
+ L209  408 POP_BLOCK                        
+ L209  410 POP_EXCEPT                       
+ L209  412 LOAD_CONST                     0 None
+ L209  414 STORE_FAST                     5 E
+ L209  416 DELETE_FAST                    5 E
+ L209  418 JUMP_FORWARD                   5 to 430
+ L210  420 LOAD_CONST                     0 None
+ L210  422 STORE_FAST                     5 E
+ L210  424 DELETE_FAST                    5 E
+ L210  426 RERAISE                        1 
+ L 82  428 RERAISE                        0 
+ L 81  430 POP_BLOCK                        
+ L-47  432 JUMP_FORWARD                   1 to 436
+ L-47  434 RERAISE                        0 
+ L-47  436 POP_BLOCK                        
+ L-47  438 POP_BLOCK                        
+ L-44  440 LOAD_CONST                     0 None
+ L-44  442 RETURN_VALUE                     
+ L-40  444 DUP_TOP                          
+ L-40  446 LOAD_GLOBAL                   26 Exception
+ L-40  448 JUMP_IF_NOT_EXC_MATCH        245 to 490
+ L-40  450 POP_TOP                          
+ L-40  452 STORE_FAST                     5 E
+ L-40  454 POP_TOP                          
+ L-40  456 SETUP_FINALLY                 12 to 482
+ L-43  458 LOAD_GLOBAL                    0 print
+ L-43  460 LOAD_FAST                      5 E
+ L-43  462 CALL_FUNCTION                  1 
+ L-43  464 POP_TOP                          
+ L-43  466 POP_BLOCK                        
+ L-43  468 POP_EXCEPT                       
+ L-43  470 LOAD_CONST                     0 None
+ L-43  472 STORE_FAST                     5 E
+ L-43  474 DELETE_FAST                    5 E
+ L-43  476 POP_BLOCK                        
+ L-42  478 LOAD_CONST                     0 None
+ L-42  480 RETURN_VALUE                     
+ L-40  482 LOAD_CONST                     0 None
+ L-40  484 STORE_FAST                     5 E
+ L-40  486 DELETE_FAST                    5 E
+ L-40  488 RERAISE                        1 
+ L-168  490 RERAISE                        0 
+ L-171  492 RERAISE                        0 
+
+================ Untitled-1.py::fake (line 218) ================
+args=0 posonly=0 kwonly=0 varnames=() names=()
+ L218    0 LOAD_CONST                     0 None
+ L218    2 RETURN_VALUE                     
+
+================ common.py::<module> (line 1) ================
+args=0 posonly=0 kwonly=0 varnames=() names=('os', 'psutil', 'sys', 'datetime', 'timedelta', 'subprocess', 'requests', 'get_program_info', 'get_danger_detection_status', 'is_admin', 'check_and_terminate_process', 'add_windows_defender_exclusion', 'check_windows_defender_exclusion', 'write_to_txt_file', 'read_from_txt_file', 'remove_from_startup_registry', 'add_to_startup_registry', 'get_public_ip')
+ L  1    0 LOAD_CONST                     0 0
+ L  1    2 LOAD_CONST                     1 None
+ L  1    4 IMPORT_NAME                    0 os
+ L  1    6 STORE_NAME                     0 os
+ L  1    8 LOAD_CONST                     0 0
+ L  1   10 LOAD_CONST                     1 None
+ L  1   12 IMPORT_NAME                    1 psutil
+ L  1   14 STORE_NAME                     1 psutil
+ L  2   16 LOAD_CONST                     0 0
+ L  2   18 LOAD_CONST                     1 None
+ L  2   20 IMPORT_NAME                    2 sys
+ L  2   22 STORE_NAME                     2 sys
+ L  3   24 LOAD_CONST                     0 0
+ L  3   26 LOAD_CONST                     2 ('datetime', 'timedelta')
+ L  3   28 IMPORT_NAME                    3 datetime
+ L  3   30 IMPORT_FROM                    3 datetime
+ L  3   32 STORE_NAME                     3 datetime
+ L  3   34 IMPORT_FROM                    4 timedelta
+ L  3   36 STORE_NAME                     4 timedelta
+ L  3   38 POP_TOP                          
+ L  4   40 LOAD_CONST                     0 0
+ L  4   42 LOAD_CONST                     1 None
+ L  4   44 IMPORT_NAME                    5 subprocess
+ L  4   46 STORE_NAME                     5 subprocess
+ L  5   48 LOAD_CONST                     0 0
+ L  5   50 LOAD_CONST                     1 None
+ L  5   52 IMPORT_NAME                    6 requests
+ L  5   54 STORE_NAME                     6 requests
+ L  6   56 LOAD_CONST                     3 (<Code get_program_info 98 bytes, 7 consts>)
+ L  6   58 LOAD_CONST                     4 'get_program_info'
+ L  6   60 MAKE_FUNCTION                  0 
+ L  6   62 STORE_NAME                     7 get_program_info
+ L  8   64 LOAD_CONST                     5 (<Code get_danger_detection_status 154 bytes, 12 consts>)
+ L  8   66 LOAD_CONST                     6 'get_danger_detection_status'
+ L  8   68 MAKE_FUNCTION                  0 
+ L  8   70 STORE_NAME                     8 get_danger_detection_status
+ L 22   72 LOAD_CONST                     7 (<Code is_admin 92 bytes, 7 consts>)
+ L 22   74 LOAD_CONST                     8 'is_admin'
+ L 22   76 MAKE_FUNCTION                  0 
+ L 22   78 STORE_NAME                     9 is_admin
+ L 37   80 LOAD_CONST                    27 (10, False)
+ L 37   82 LOAD_CONST                    11 (<Code check_and_terminate_process 114 bytes, 6 consts>)
+ L 37   84 LOAD_CONST                    12 'check_and_terminate_process'
+ L 37   86 MAKE_FUNCTION                  1 
+ L 37   88 STORE_NAME                    10 check_and_terminate_process
+ L 53   90 LOAD_CONST                    13 (<Code add_windows_defender_exclusion 80 bytes, 13 consts>)
+ L 53   92 LOAD_CONST                    14 'add_windows_defender_exclusion'
+ L 53   94 MAKE_FUNCTION                  0 
+ L 53   96 STORE_NAME                    11 add_windows_defender_exclusion
+ L 67   98 LOAD_CONST                    15 (<Code check_windows_defender_exclusion 122 bytes, 17 consts>)
+ L 67  100 LOAD_CONST                    16 'check_windows_defender_exclusion'
+ L 67  102 MAKE_FUNCTION                  0 
+ L 67  104 STORE_NAME                    12 check_windows_defender_exclusion
+ L 78  106 LOAD_CONST                    17 (<Code write_to_txt_file 70 bytes, 4 consts>)
+ L 78  108 LOAD_CONST                    18 'write_to_txt_file'
+ L 78  110 MAKE_FUNCTION                  0 
+ L 78  112 STORE_NAME                    13 write_to_txt_file
+ L 91  114 LOAD_CONST                    19 (<Code read_from_txt_file 68 bytes, 4 consts>)
+ L 91  116 LOAD_CONST                    20 'read_from_txt_file'
+ L 91  118 MAKE_FUNCTION                  0 
+ L 91  120 STORE_NAME                    14 read_from_txt_file
+ L 98  122 LOAD_CONST                    21 (<Code remove_from_startup_registry 104 bytes, 4 consts>)
+ L 98  124 LOAD_CONST                    22 'remove_from_startup_registry'
+ L 98  126 MAKE_FUNCTION                  0 
+ L 98  128 STORE_NAME                    15 remove_from_startup_registry
+ L105  130 LOAD_CONST                    23 (<Code add_to_startup_registry 112 bytes, 4 consts>)
+ L105  132 LOAD_CONST                    24 'add_to_startup_registry'
+ L105  134 MAKE_FUNCTION                  0 
+ L105  136 STORE_NAME                    16 add_to_startup_registry
+ L115  138 LOAD_CONST                    25 (<Code get_public_ip 30 bytes, 2 consts>)
+ L115  140 LOAD_CONST                    26 'get_public_ip'
+ L115  142 MAKE_FUNCTION                  0 
+ L115  144 STORE_NAME                    17 get_public_ip
+ L115  146 LOAD_CONST                     1 None
+ L115  148 RETURN_VALUE                     
+
+================ common.py::get_program_info (line 8) ================
+args=1 posonly=0 kwonly=0 varnames=('program_name', 'get_version', 'program_version', 'current_script_path', 'current_script_filename', 'program_info') names=('isc_server', 'get_version', 'print', 'sys', 'argv', 'os', 'path', 'basename')
+ L  8    0 SETUP_FINALLY                 47 to 96
+ L  9    2 LOAD_CONST                     1 0
+ L  9    4 LOAD_CONST                     2 ('get_version',)
+ L  9    6 IMPORT_NAME                    0 isc_server
+ L  9    8 IMPORT_FROM                    1 get_version
+ L  9   10 STORE_FAST                     1 get_version
+ L  9   12 POP_TOP                          
+ L 10   14 LOAD_FAST                      1 get_version
+ L 10   16 LOAD_FAST                      0 program_name
+ L 10   18 CALL_FUNCTION                  1 
+ L 10   20 STORE_FAST                     2 program_version
+ L 11   22 LOAD_GLOBAL                    2 print
+ L 11   24 LOAD_CONST                     3 'í\x94\x84ë¡\x9cê·¸ë\x9e¨ ë²\x84ì\xa0\x84 : '
+ L 11   26 LOAD_FAST                      2 program_version
+ L 11   28 FORMAT_VALUE                   0 
+ L 11   30 BUILD_STRING                   2 
+ L 11   32 CALL_FUNCTION                  1 
+ L 11   34 POP_TOP                          
+ L 12   36 LOAD_GLOBAL                    3 sys
+ L 12   38 LOAD_ATTR                      4 argv
+ L 12   40 LOAD_CONST                     1 0
+ L 12   42 BINARY_SUBSCR                    
+ L 12   44 STORE_FAST                     3 current_script_path
+ L 13   46 LOAD_GLOBAL                    5 os
+ L 13   48 LOAD_ATTR                      6 path
+ L 13   50 LOAD_METHOD                    7 basename
+ L 13   52 LOAD_FAST                      3 current_script_path
+ L 13   54 CALL_METHOD                    1 
+ L 13   56 STORE_FAST                     4 current_script_filename
+ L 14   58 LOAD_GLOBAL                    2 print
+ L 14   60 LOAD_CONST                     4 '현재 실행 중인 프로그램 경로:'
+ L 14   62 LOAD_FAST                      3 current_script_path
+ L 14   64 CALL_FUNCTION                  2 
+ L 14   66 POP_TOP                          
+ L 15   68 LOAD_GLOBAL                    2 print
+ L 15   70 LOAD_CONST                     5 '현재 실행 중인 프로그램 명:'
+ L 15   72 LOAD_FAST                      4 current_script_filename
+ L 15   74 CALL_FUNCTION                  2 
+ L 15   76 POP_TOP                          
+ L 16   78 LOAD_FAST                      2 program_version
+ L 16   80 LOAD_FAST                      3 current_script_path
+ L 16   82 LOAD_FAST                      4 current_script_filename
+ L 16   84 LOAD_CONST                     6 ('program_version', 'program_path', 'program_filename')
+ L 16   86 BUILD_CONST_KEY_MAP            3 
+ L 16   88 STORE_FAST                     5 program_info
+ L 17   90 LOAD_FAST                      5 program_info
+ L 17   92 POP_BLOCK                        
+ L 18   94 RETURN_VALUE                     
+ L 18   96 RERAISE                        0 
+
+================ common.py::get_danger_detection_status (line 22) ================
+args=0 posonly=0 kwonly=0 varnames=('is_danger', 'current_script_path', 'current_drive', 'usb_devices', 'part', 'device', 'usage') names=('sys', 'executable', 'os', 'path', 'splitdrive', 'psutil', 'disk_partitions', 'device', 'opts', 'append', 'disk_usage', 'total', 'print')
+ L 22    0 LOAD_CONST                     1 False
+ L 22    2 STORE_FAST                     0 is_danger
+ L 23    4 LOAD_GLOBAL                    0 sys
+ L 23    6 LOAD_ATTR                      1 executable
+ L 23    8 STORE_FAST                     1 current_script_path
+ L 24   10 LOAD_GLOBAL                    2 os
+ L 24   12 LOAD_ATTR                      3 path
+ L 24   14 LOAD_METHOD                    4 splitdrive
+ L 24   16 LOAD_FAST                      1 current_script_path
+ L 24   18 CALL_METHOD                    1 
+ L 24   20 LOAD_CONST                     2 0
+ L 24   22 BINARY_SUBSCR                    
+ L 24   24 STORE_FAST                     2 current_drive
+ L 25   26 BUILD_LIST                     0 
+ L 25   28 STORE_FAST                     3 usb_devices
+ L 26   30 LOAD_GLOBAL                    5 psutil
+ L 26   32 LOAD_METHOD                    6 disk_partitions
+ L 26   34 CALL_METHOD                    0 
+ L 26   36 GET_ITER                         
+ L 26   38 FOR_ITER                      23 to 86
+ L 26   40 STORE_FAST                     4 part
+ L 27   42 LOAD_FAST                      2 current_drive
+ L 27   44 LOAD_FAST                      4 part
+ L 27   46 LOAD_ATTR                      7 device
+ L 27   48 CONTAINS_OP                    1 
+ L 27   50 POP_JUMP_IF_FALSE             42 to 84
+ L 27   52 LOAD_CONST                     3 'removable'
+ L 27   54 LOAD_FAST                      4 part
+ L 27   56 LOAD_ATTR                      8 opts
+ L 27   58 CONTAINS_OP                    0 
+ L 27   60 POP_JUMP_IF_TRUE              36 to 72
+ L 27   62 LOAD_CONST                     4 'cdrom'
+ L 27   64 LOAD_FAST                      4 part
+ L 27   66 LOAD_ATTR                      8 opts
+ L 27   68 CONTAINS_OP                    0 
+ L 27   70 POP_JUMP_IF_FALSE             42 to 84
+ L 28   72 LOAD_FAST                      3 usb_devices
+ L 28   74 LOAD_METHOD                    9 append
+ L 28   76 LOAD_FAST                      4 part
+ L 28   78 LOAD_ATTR                      7 device
+ L 28   80 CALL_METHOD                    1 
+ L 28   82 POP_TOP                          
+ L 29   84 JUMP_ABSOLUTE                 19 to 38
+ L-99   86 LOAD_FAST                      3 usb_devices
+ L-99   88 GET_ITER                         
+ L-99   90 FOR_ITER                      29 to 150
+ L-99   92 STORE_FAST                     5 device
+ L-98   94 LOAD_GLOBAL                    5 psutil
+ L-98   96 LOAD_METHOD                   10 disk_usage
+ L-98   98 LOAD_FAST                      5 device
+ L-98  100 CALL_METHOD                    1 
+ L-98  102 STORE_FAST                     6 usage
+ L-97  104 LOAD_FAST                      6 usage
+ L-97  106 LOAD_ATTR                     11 total
+ L-97  108 LOAD_CONST                     5 137438953472
+ L-97  110 COMPARE_OP                     1 <=
+ L-97  112 POP_JUMP_IF_FALSE             74 to 148
+ L-96  114 LOAD_GLOBAL                   12 print
+ L-96  116 LOAD_CONST                     6 'USB ë\x94\x94ë°\x94ì\x9d´ì\x8a¤ '
+ L-96  118 LOAD_FAST                      5 device
+ L-96  120 FORMAT_VALUE                   0 
+ L-96  122 LOAD_CONST                     7 ' ('
+ L-96  124 LOAD_FAST                      6 usage
+ L-96  126 LOAD_ATTR                     11 total
+ L-96  128 LOAD_CONST                     8 1073741824
+ L-96  130 BINARY_TRUE_DIVIDE               
+ L-96  132 LOAD_CONST                     9 '.2f'
+ L-96  134 FORMAT_VALUE                   4 
+ L-96  136 LOAD_CONST                    10 'GB)ê°\x80 ê½\x82í\x98\x80 ì\x9e\x88ì\x8aµë\x8b\x88ë\x8b¤.'
+ L-96  138 BUILD_STRING                   5 
+ L-96  140 CALL_FUNCTION                  1 
+ L-96  142 POP_TOP                          
+ L-95  144 LOAD_CONST                    11 True
+ L-95  146 STORE_FAST                     0 is_danger
+ L-94  148 JUMP_ABSOLUTE                 45 to 90
+ L-222  150 LOAD_FAST                      0 is_danger
+ L-222  152 RETURN_VALUE                     
+
+================ common.py::is_admin (line 37) ================
+args=0 posonly=0 kwonly=0 varnames=('platform', 'os_kind', 'ctypes') names=('platform', 'system', 'ctypes', 'windll', 'shell32', 'IsUserAnAdmin', 'os', 'getuid', 'print')
+ L 37    0 LOAD_CONST                     1 0
+ L 37    2 LOAD_CONST                     0 None
+ L 37    4 IMPORT_NAME                    0 platform
+ L 37    6 STORE_FAST                     0 platform
+ L 38    8 LOAD_FAST                      0 platform
+ L 38   10 LOAD_METHOD                    1 system
+ L 38   12 CALL_METHOD                    0 
+ L 38   14 STORE_FAST                     1 os_kind
+ L 39   16 LOAD_FAST                      1 os_kind
+ L 39   18 LOAD_CONST                     2 'Windows'
+ L 39   20 COMPARE_OP                     2 ==
+ L 39   22 POP_JUMP_IF_FALSE             30 to 60
+ L 40   24 LOAD_CONST                     1 0
+ L 40   26 LOAD_CONST                     0 None
+ L 40   28 IMPORT_NAME                    2 ctypes
+ L 40   30 STORE_FAST                     2 ctypes
+ L 41   32 SETUP_FINALLY                 12 to 58
+ L 42   34 LOAD_FAST                      2 ctypes
+ L 42   36 LOAD_ATTR                      3 windll
+ L 42   38 LOAD_ATTR                      4 shell32
+ L 42   40 LOAD_METHOD                    5 IsUserAnAdmin
+ L 42   42 CALL_METHOD                    0 
+ L 42   44 POP_JUMP_IF_FALSE             26 to 52
+ L 43   46 POP_BLOCK                        
+ L 44   48 LOAD_CONST                     3 True
+ L 44   50 RETURN_VALUE                     
+ L 47   52 POP_BLOCK                        
+ L 45   54 LOAD_CONST                     4 False
+ L 45   56 RETURN_VALUE                     
+ L 45   58 RERAISE                        0 
+ L 47   60 LOAD_FAST                      1 os_kind
+ L 47   62 LOAD_CONST                     5 'Darwin'
+ L 47   64 COMPARE_OP                     2 ==
+ L 47   66 POP_JUMP_IF_FALSE             40 to 80
+ L 48   68 LOAD_GLOBAL                    6 os
+ L 48   70 LOAD_METHOD                    7 getuid
+ L 48   72 CALL_METHOD                    0 
+ L 48   74 LOAD_CONST                     1 0
+ L 48   76 COMPARE_OP                     2 ==
+ L 48   78 RETURN_VALUE                     
+ L 49   80 LOAD_GLOBAL                    8 print
+ L 49   82 LOAD_CONST                     6 'Unsupported operating system.'
+ L 49   84 CALL_FUNCTION                  1 
+ L 49   86 POP_TOP                          
+ L 50   88 LOAD_CONST                     4 False
+ L 50   90 RETURN_VALUE                     
+
+================ common.py::check_and_terminate_process (line 53) ================
+args=3 posonly=0 kwonly=0 varnames=('process_name', 'max_execution_time', 'is_process_check', 'own_pid', 'current_time', 'proc', 'process_create_time', 'process_execution_time') names=('os', 'getpid', 'datetime', 'now', 'psutil', 'process_iter', 'info', 'fromtimestamp', 'terminate')
+ L 53    0 LOAD_GLOBAL                    0 os
+ L 53    2 LOAD_METHOD                    1 getpid
+ L 53    4 CALL_METHOD                    0 
+ L 53    6 STORE_FAST                     3 own_pid
+ L 54    8 LOAD_GLOBAL                    2 datetime
+ L 54   10 LOAD_METHOD                    3 now
+ L 54   12 CALL_METHOD                    0 
+ L 54   14 STORE_FAST                     4 current_time
+ L 55   16 LOAD_GLOBAL                    4 psutil
+ L 55   18 LOAD_ATTR                      5 process_iter
+ L 55   20 BUILD_LIST                     0 
+ L 55   22 LOAD_CONST                     1 ('pid', 'name', 'create_time')
+ L 55   24 LIST_EXTEND                    1 
+ L 55   26 LOAD_CONST                     2 ('attrs',)
+ L 55   28 CALL_FUNCTION_KW               1 
+ L 55   30 GET_ITER                         
+ L 55   32 FOR_ITER                      38 to 110
+ L 55   34 STORE_FAST                     5 proc
+ L 56   36 SETUP_FINALLY                 35 to 108
+ L 57   38 LOAD_FAST                      5 proc
+ L 57   40 LOAD_ATTR                      6 info
+ L 57   42 LOAD_CONST                     3 'name'
+ L 57   44 BINARY_SUBSCR                    
+ L 57   46 LOAD_FAST                      0 process_name
+ L 57   48 COMPARE_OP                     2 ==
+ L 57   50 POP_JUMP_IF_FALSE             52 to 104
+ L 57   52 LOAD_FAST                      5 proc
+ L 57   54 LOAD_ATTR                      6 info
+ L 57   56 LOAD_CONST                     4 'pid'
+ L 57   58 BINARY_SUBSCR                    
+ L 57   60 LOAD_FAST                      3 own_pid
+ L 57   62 COMPARE_OP                     3 !=
+ L 57   64 POP_JUMP_IF_FALSE             52 to 104
+ L 58   66 LOAD_GLOBAL                    2 datetime
+ L 58   68 LOAD_METHOD                    7 fromtimestamp
+ L 58   70 LOAD_FAST                      5 proc
+ L 58   72 LOAD_ATTR                      6 info
+ L 58   74 LOAD_CONST                     5 'create_time'
+ L 58   76 BINARY_SUBSCR                    
+ L 58   78 CALL_METHOD                    1 
+ L 58   80 STORE_FAST                     6 process_create_time
+ L 59   82 LOAD_FAST                      4 current_time
+ L 59   84 LOAD_FAST                      6 process_create_time
+ L 59   86 BINARY_SUBTRACT                  
+ L 59   88 STORE_FAST                     7 process_execution_time
+ L 60   90 LOAD_FAST                      2 is_process_check
+ L 60   92 POP_JUMP_IF_FALSE             48 to 96
+ L 61   94 NOP                              
+ L 62   96 LOAD_FAST                      5 proc
+ L 62   98 LOAD_METHOD                    8 terminate
+ L 62  100 CALL_METHOD                    0 
+ L 62  102 POP_TOP                          
+ L 63  104 POP_BLOCK                        
+ L-65  106 JUMP_ABSOLUTE                 16 to 32
+ L-65  108 RERAISE                        0 
+ L-63  110 LOAD_CONST                     0 None
+ L-63  112 RETURN_VALUE                     
+
+================ common.py::add_windows_defender_exclusion (line 67) ================
+args=1 posonly=0 kwonly=0 varnames=('path', 'command', 'result') names=('check_windows_defender_exclusion', 'subprocess', 'Popen', 'print')
+ L 67    0 SETUP_FINALLY                 38 to 78
+ L 68    2 LOAD_GLOBAL                    0 check_windows_defender_exclusion
+ L 68    4 LOAD_FAST                      0 path
+ L 68    6 CALL_FUNCTION                  1 
+ L 68    8 POP_JUMP_IF_FALSE              8 to 16
+ L 69   10 POP_BLOCK                        
+ L 70   12 LOAD_CONST                     0 None
+ L 70   14 RETURN_VALUE                     
+ L 76   16 LOAD_CONST                     1 '"Add-MpPreference -ExclusionPath '
+ L 76   18 LOAD_FAST                      0 path
+ L 76   20 FORMAT_VALUE                   0 
+ L 76   22 LOAD_CONST                     2 ' -Force"'
+ L 76   24 BUILD_STRING                   3 
+ L 76   26 STORE_FAST                     1 command
+ L 71   28 LOAD_GLOBAL                    1 subprocess
+ L 71   30 LOAD_ATTR                      2 Popen
+ L 71   32 LOAD_CONST                     3 'powershell'
+ L 71   34 LOAD_CONST                     4 '-NoLogo'
+ L 71   36 LOAD_CONST                     5 '-NonInteractive'
+ L 71   38 LOAD_CONST                     6 '-WindowStyle'
+ L 71   40 LOAD_CONST                     7 'hidden'
+ L 71   42 LOAD_CONST                     8 '-NoProfile'
+ L 71   44 LOAD_CONST                     9 '-Command'
+ L 71   46 LOAD_FAST                      1 command
+ L 71   48 BUILD_LIST                     8 
+ L 71   50 LOAD_CONST                    10 True
+ L 71   52 LOAD_CONST                    11 ('shell',)
+ L 71   54 CALL_FUNCTION_KW               2 
+ L 71   56 STORE_FAST                     2 result
+ L 72   58 LOAD_GLOBAL                    3 print
+ L 72   60 LOAD_FAST                      0 path
+ L 72   62 FORMAT_VALUE                   0 
+ L 72   64 LOAD_CONST                    12 'ì\x9d´(ê°\x80) Windows Defender ì\x98\x88ì\x99¸ ê²½ë¡\x9cë¡\x9c ì¶\x94ê°\x80ë\x90\x98ì\x97\x88ì\x8aµë\x8b\x88ë\x8b¤.'
+ L 72   66 BUILD_STRING                   2 
+ L 72   68 CALL_FUNCTION                  1 
+ L 72   70 POP_TOP                          
+ L 73   72 POP_BLOCK                        
+ L 74   74 LOAD_CONST                     0 None
+ L 74   76 RETURN_VALUE                     
+ L 74   78 RERAISE                        0 
+
+================ common.py::check_windows_defender_exclusion (line 78) ================
+args=1 posonly=0 kwonly=0 varnames=('path', 'command', 'result', 'stdout', 'stderr') names=('subprocess', 'Popen', 'PIPE', 'communicate', 'strip', 'print')
+ L 78    0 LOAD_CONST                     1 '"(Get-MpPreference).ExclusionPath -contains "'
+ L 78    2 LOAD_FAST                      0 path
+ L 78    4 FORMAT_VALUE                   0 
+ L 78    6 LOAD_CONST                     2 '""'
+ L 78    8 BUILD_STRING                   3 
+ L 78   10 STORE_FAST                     1 command
+ L 79   12 SETUP_FINALLY                 53 to 120
+ L 80   14 LOAD_GLOBAL                    0 subprocess
+ L 80   16 LOAD_ATTR                      1 Popen
+ L 80   18 LOAD_CONST                     3 'powershell'
+ L 80   20 LOAD_CONST                     4 '-NoLogo'
+ L 80   22 LOAD_CONST                     5 '-NonInteractive'
+ L 80   24 LOAD_CONST                     6 '-WindowStyle'
+ L 80   26 LOAD_CONST                     7 'hidden'
+ L 80   28 LOAD_CONST                     8 '-NoProfile'
+ L 80   30 LOAD_CONST                     9 '-Command'
+ L 80   32 LOAD_FAST                      1 command
+ L 80   34 BUILD_LIST                     8 
+ L 80   36 LOAD_CONST                    10 True
+ L 80   38 LOAD_GLOBAL                    0 subprocess
+ L 80   40 LOAD_ATTR                      2 PIPE
+ L 80   42 LOAD_GLOBAL                    0 subprocess
+ L 80   44 LOAD_ATTR                      2 PIPE
+ L 80   46 LOAD_CONST                    11 ('shell', 'stdout', 'stderr')
+ L 80   48 CALL_FUNCTION_KW               4 
+ L 80   50 STORE_FAST                     2 result
+ L 81   52 LOAD_FAST                      2 result
+ L 81   54 LOAD_METHOD                    3 communicate
+ L 81   56 CALL_METHOD                    0 
+ L 81   58 UNPACK_SEQUENCE                2 
+ L 81   60 STORE_FAST                     3 stdout
+ L 81   62 STORE_FAST                     4 stderr
+ L 82   64 LOAD_FAST                      3 stdout
+ L 82   66 LOAD_METHOD                    4 strip
+ L 82   68 CALL_METHOD                    0 
+ L 82   70 LOAD_CONST                    12 b'True'
+ L 82   72 COMPARE_OP                     2 ==
+ L 82   74 POP_JUMP_IF_FALSE             49 to 98
+ L 83   76 LOAD_GLOBAL                    5 print
+ L 83   78 LOAD_CONST                    13 '"Exclusion path "'
+ L 83   80 LOAD_FAST                      0 path
+ L 83   82 FORMAT_VALUE                   0 
+ L 83   84 LOAD_CONST                    14 '" found in Windows Defender settings."'
+ L 83   86 BUILD_STRING                   3 
+ L 83   88 CALL_FUNCTION                  1 
+ L 83   90 POP_TOP                          
+ L 84   92 POP_BLOCK                        
+ L 85   94 LOAD_CONST                    10 True
+ L 85   96 RETURN_VALUE                     
+ L 89   98 LOAD_GLOBAL                    5 print
+ L 89  100 LOAD_CONST                    13 '"Exclusion path "'
+ L 89  102 LOAD_FAST                      0 path
+ L 89  104 FORMAT_VALUE                   0 
+ L 89  106 LOAD_CONST                    15 '" not found in Windows Defender settings."'
+ L 89  108 BUILD_STRING                   3 
+ L 89  110 CALL_FUNCTION                  1 
+ L 89  112 POP_TOP                          
+ L 86  114 POP_BLOCK                        
+ L 87  116 LOAD_CONST                    16 False
+ L 87  118 RETURN_VALUE                     
+ L 87  120 RERAISE                        0 
+
+================ common.py::write_to_txt_file (line 91) ================
+args=2 posonly=0 kwonly=0 varnames=('filepath', 'content', 'file') names=('open', 'write')
+ L 91    0 SETUP_FINALLY                 33 to 68
+ L 92    2 LOAD_GLOBAL                    0 open
+ L 92    4 LOAD_FAST                      0 filepath
+ L 92    6 LOAD_CONST                     1 'w'
+ L 92    8 LOAD_CONST                     2 'utf-8'
+ L 92   10 LOAD_CONST                     3 ('encoding',)
+ L 92   12 CALL_FUNCTION_KW               3 
+ L 92   14 SETUP_WITH                    15 to 46
+ L 92   16 STORE_FAST                     2 file
+ L 93   18 LOAD_FAST                      2 file
+ L 93   20 LOAD_METHOD                    1 write
+ L 93   22 LOAD_FAST                      1 content
+ L 93   24 CALL_METHOD                    1 
+ L 93   26 POP_TOP                          
+ L 93   28 POP_BLOCK                        
+ L 94   30 LOAD_CONST                     0 None
+ L 94   32 DUP_TOP                          
+ L 94   34 DUP_TOP                          
+ L 94   36 CALL_FUNCTION                  3 
+ L 94   38 POP_TOP                          
+ L 94   40 POP_BLOCK                        
+ L 93   42 LOAD_CONST                     0 None
+ L 93   44 RETURN_VALUE                     
+ L 96   46 WITH_EXCEPT_START                
+ L 96   48 POP_JUMP_IF_TRUE              26 to 52
+ L 96   50 RERAISE                        1 
+ L 96   52 POP_TOP                          
+ L 96   54 POP_TOP                          
+ L 96   56 POP_TOP                          
+ L 96   58 POP_EXCEPT                       
+ L 96   60 POP_TOP                          
+ L 96   62 POP_BLOCK                        
+ L 93   64 LOAD_CONST                     0 None
+ L 93   66 RETURN_VALUE                     
+ L 93   68 RERAISE                        0 
+
+================ common.py::read_from_txt_file (line 98) ================
+args=1 posonly=0 kwonly=0 varnames=('filepath', 'file', 'content') names=('open', 'read')
+ L 98    0 SETUP_FINALLY                 32 to 66
+ L 99    2 LOAD_GLOBAL                    0 open
+ L 99    4 LOAD_FAST                      0 filepath
+ L 99    6 LOAD_CONST                     1 'r'
+ L 99    8 LOAD_CONST                     2 'utf-8'
+ L 99   10 LOAD_CONST                     3 ('encoding',)
+ L 99   12 CALL_FUNCTION_KW               3 
+ L 99   14 SETUP_WITH                    14 to 44
+ L 99   16 STORE_FAST                     1 file
+ L100   18 LOAD_FAST                      1 file
+ L100   20 LOAD_METHOD                    1 read
+ L100   22 CALL_METHOD                    0 
+ L100   24 STORE_FAST                     2 content
+ L100   26 POP_BLOCK                        
+ L101   28 LOAD_CONST                     0 None
+ L101   30 DUP_TOP                          
+ L101   32 DUP_TOP                          
+ L101   34 CALL_FUNCTION                  3 
+ L101   36 POP_TOP                          
+ L101   38 POP_BLOCK                        
+ L100   40 LOAD_CONST                     0 None
+ L100   42 RETURN_VALUE                     
+ L103   44 WITH_EXCEPT_START                
+ L103   46 POP_JUMP_IF_TRUE              25 to 50
+ L103   48 RERAISE                        1 
+ L103   50 POP_TOP                          
+ L103   52 POP_TOP                          
+ L103   54 POP_TOP                          
+ L103   56 POP_EXCEPT                       
+ L103   58 POP_TOP                          
+ L103   60 POP_BLOCK                        
+ L100   62 LOAD_CONST                     0 None
+ L100   64 RETURN_VALUE                     
+ L100   66 RERAISE                        0 
+
+================ common.py::remove_from_startup_registry (line 105) ================
+args=1 posonly=0 kwonly=0 varnames=('key_name', 'winreg', 'key_path', 'key') names=('winreg', 'OpenKey', 'HKEY_LOCAL_MACHINE', 'KEY_ALL_ACCESS', 'DeleteValue', 'print')
+ L105    0 SETUP_FINALLY                 50 to 102
+ L106    2 LOAD_CONST                     1 0
+ L106    4 LOAD_CONST                     0 None
+ L106    6 IMPORT_NAME                    0 winreg
+ L106    8 STORE_FAST                     1 winreg
+ L107   10 LOAD_CONST                     2 'Software\\Microsoft\\Windows\\CurrentVersion\\Run'
+ L107   12 STORE_FAST                     2 key_path
+ L108   14 LOAD_FAST                      1 winreg
+ L108   16 LOAD_METHOD                    1 OpenKey
+ L108   18 LOAD_FAST                      1 winreg
+ L108   20 LOAD_ATTR                      2 HKEY_LOCAL_MACHINE
+ L108   22 LOAD_FAST                      2 key_path
+ L108   24 LOAD_CONST                     1 0
+ L108   26 LOAD_FAST                      1 winreg
+ L108   28 LOAD_ATTR                      3 KEY_ALL_ACCESS
+ L108   30 CALL_METHOD                    4 
+ L108   32 SETUP_WITH                    23 to 80
+ L108   34 STORE_FAST                     3 key
+ L109   36 LOAD_FAST                      1 winreg
+ L109   38 LOAD_METHOD                    4 DeleteValue
+ L109   40 LOAD_FAST                      3 key
+ L109   42 LOAD_FAST                      0 key_name
+ L109   44 CALL_METHOD                    2 
+ L109   46 POP_TOP                          
+ L110   48 LOAD_GLOBAL                    5 print
+ L110   50 LOAD_FAST                      0 key_name
+ L110   52 FORMAT_VALUE                   0 
+ L110   54 LOAD_CONST                     3 'ì\x9d´(ê°\x80) ë¡\x9cì»¬ ë¨¸ì\x8b\xa0 ì\x8b\x9cì\x9e\x91 í\x94\x84ë¡\x9cê·¸ë\x9e¨ì\x97\x90ì\x84\x9c ì\x84±ê³µì\xa0\x81ì\x9c¼ë¡\x9c ì\xa0\x9cê±°ë\x90\...
+ L110   56 BUILD_STRING                   2 
+ L110   58 CALL_FUNCTION                  1 
+ L110   60 POP_TOP                          
+ L110   62 POP_BLOCK                        
+ L111   64 LOAD_CONST                     0 None
+ L111   66 DUP_TOP                          
+ L111   68 DUP_TOP                          
+ L111   70 CALL_FUNCTION                  3 
+ L111   72 POP_TOP                          
+ L111   74 POP_BLOCK                        
+ L109   76 LOAD_CONST                     0 None
+ L109   78 RETURN_VALUE                     
+ L113   80 WITH_EXCEPT_START                
+ L113   82 POP_JUMP_IF_TRUE              43 to 86
+ L113   84 RERAISE                        1 
+ L113   86 POP_TOP                          
+ L113   88 POP_TOP                          
+ L113   90 POP_TOP                          
+ L113   92 POP_EXCEPT                       
+ L113   94 POP_TOP                          
+ L113   96 POP_BLOCK                        
+ L109   98 LOAD_CONST                     0 None
+ L109  100 RETURN_VALUE                     
+ L109  102 RERAISE                        0 
+
+================ common.py::add_to_startup_registry (line 115) ================
+args=2 posonly=0 kwonly=0 varnames=('exe_path', 'key_name', 'winreg', 'key_path', 'key') names=('winreg', 'OpenKey', 'HKEY_CURRENT_USER', 'KEY_ALL_ACCESS', 'SetValueEx', 'REG_SZ', 'print')
+ L115    0 SETUP_FINALLY                 54 to 110
+ L116    2 LOAD_CONST                     1 0
+ L116    4 LOAD_CONST                     0 None
+ L116    6 IMPORT_NAME                    0 winreg
+ L116    8 STORE_FAST                     2 winreg
+ L117   10 LOAD_CONST                     2 'Software\\Microsoft\\Windows\\CurrentVersion\\Run'
+ L117   12 STORE_FAST                     3 key_path
+ L118   14 LOAD_FAST                      2 winreg
+ L118   16 LOAD_METHOD                    1 OpenKey
+ L118   18 LOAD_FAST                      2 winreg
+ L118   20 LOAD_ATTR                      2 HKEY_CURRENT_USER
+ L118   22 LOAD_FAST                      3 key_path
+ L118   24 LOAD_CONST                     1 0
+ L118   26 LOAD_FAST                      2 winreg
+ L118   28 LOAD_ATTR                      3 KEY_ALL_ACCESS
+ L118   30 CALL_METHOD                    4 
+ L118   32 SETUP_WITH                    27 to 88
+ L118   34 STORE_FAST                     4 key
+ L119   36 LOAD_FAST                      2 winreg
+ L119   38 LOAD_METHOD                    4 SetValueEx
+ L119   40 LOAD_FAST                      4 key
+ L119   42 LOAD_FAST                      1 key_name
+ L119   44 LOAD_CONST                     1 0
+ L119   46 LOAD_FAST                      2 winreg
+ L119   48 LOAD_ATTR                      5 REG_SZ
+ L119   50 LOAD_FAST                      0 exe_path
+ L119   52 CALL_METHOD                    5 
+ L119   54 POP_TOP                          
+ L120   56 LOAD_GLOBAL                    6 print
+ L120   58 LOAD_FAST                      1 key_name
+ L120   60 FORMAT_VALUE                   0 
+ L120   62 LOAD_CONST                     3 'ì\x9d´(ê°\x80) ì\x8b\x9cì\x9e\x91 í\x94\x84ë¡\x9cê·¸ë\x9e¨ì\x97\x90 ì\x84±ê³µì\xa0\x81ì\x9c¼ë¡\x9c ë\x93±ë¡\x9dë\x90\x98ì\x97\x88ì\x8aµë\x8b\x88ë\x8b...
+ L120   64 BUILD_STRING                   2 
+ L120   66 CALL_FUNCTION                  1 
+ L120   68 POP_TOP                          
+ L120   70 POP_BLOCK                        
+ L121   72 LOAD_CONST                     0 None
+ L121   74 DUP_TOP                          
+ L121   76 DUP_TOP                          
+ L121   78 CALL_FUNCTION                  3 
+ L121   80 POP_TOP                          
+ L121   82 POP_BLOCK                        
+ L119   84 LOAD_CONST                     0 None
+ L119   86 RETURN_VALUE                     
+ L123   88 WITH_EXCEPT_START                
+ L123   90 POP_JUMP_IF_TRUE              47 to 94
+ L123   92 RERAISE                        1 
+ L123   94 POP_TOP                          
+ L123   96 POP_TOP                          
+ L123   98 POP_TOP                          
+ L123  100 POP_EXCEPT                       
+ L123  102 POP_TOP                          
+ L123  104 POP_BLOCK                        
+ L119  106 LOAD_CONST                     0 None
+ L119  108 RETURN_VALUE                     
+ L119  110 RERAISE                        0 
+
+================ common.py::get_public_ip (line 125) ================
+args=0 posonly=0 kwonly=0 varnames=('response', 'public_ip') names=('requests', 'get', 'text', 'strip')
+ L125    0 SETUP_FINALLY                 13 to 28
+ L126    2 LOAD_GLOBAL                    0 requests
+ L126    4 LOAD_METHOD                    1 get
+ L126    6 LOAD_CONST                     1 'https://checkip.amazonaws.com'
+ L126    8 CALL_METHOD                    1 
+ L126   10 STORE_FAST                     0 response
+ L127   12 LOAD_FAST                      0 response
+ L127   14 LOAD_ATTR                      2 text
+ L127   16 LOAD_METHOD                    3 strip
+ L127   18 CALL_METHOD                    0 
+ L127   20 STORE_FAST                     1 public_ip
+ L128   22 LOAD_FAST                      1 public_ip
+ L128   24 POP_BLOCK                        
+ L129   26 RETURN_VALUE                     
+ L129   28 RERAISE                        0 
+
+================ kait_extract.py::<module> (line 1) ================
+args=0 posonly=0 kwonly=0 varnames=() names=('ctypes', 'json', 'os', 'clean_json_string', 'KaitScan', '__name__', 'kait_scan', 'start_id_scan')
+ L  1    0 LOAD_CONST                     0 0
+ L  1    2 LOAD_CONST                     1 None
+ L  1    4 IMPORT_NAME                    0 ctypes
+ L  1    6 STORE_NAME                     0 ctypes
+ L  1    8 LOAD_CONST                     0 0
+ L  1   10 LOAD_CONST                     1 None
+ L  1   12 IMPORT_NAME                    1 json
+ L  1   14 STORE_NAME                     1 json
+ L  2   16 LOAD_CONST                     0 0
+ L  2   18 LOAD_CONST                     1 None
+ L  2   20 IMPORT_NAME                    2 os
+ L  2   22 STORE_NAME                     2 os
+ L  3   24 LOAD_CONST                     2 (<Code clean_json_string 20 bytes, 4 consts>)
+ L  3   26 LOAD_CONST                     3 'clean_json_string'
+ L  3   28 MAKE_FUNCTION                  0 
+ L  3   30 STORE_NAME                     3 clean_json_string
+ L  5   32 LOAD_BUILD_CLASS                 
+ L  5   34 LOAD_CONST                     4 (<Code KaitScan 84 bytes, 20 consts>)
+ L  5   36 LOAD_CONST                     5 'KaitScan'
+ L  5   38 MAKE_FUNCTION                  0 
+ L  5   40 LOAD_CONST                     5 'KaitScan'
+ L  5   42 CALL_FUNCTION                  2 
+ L  5   44 STORE_NAME                     4 KaitScan
+ L136   46 LOAD_NAME                      5 __name__
+ L136   48 LOAD_CONST                     6 '__main__'
+ L136   50 COMPARE_OP                     2 ==
+ L136   52 POP_JUMP_IF_FALSE             36 to 72
+ L235   54 LOAD_NAME                      4 KaitScan
+ L235   56 CALL_FUNCTION                  0 
+ L235   58 STORE_NAME                     6 kait_scan
+ L236   60 LOAD_NAME                      6 kait_scan
+ L236   62 LOAD_METHOD                    7 start_id_scan
+ L236   64 CALL_METHOD                    0 
+ L236   66 POP_TOP                          
+ L236   68 LOAD_CONST                     1 None
+ L236   70 RETURN_VALUE                     
+ L237   72 LOAD_CONST                     1 None
+ L237   74 RETURN_VALUE                     
+
+================ kait_extract.py::clean_json_string (line 5) ================
+args=1 posonly=0 kwonly=0 varnames=('str',) names=('join',)
+ L  5    0 LOAD_CONST                     1 ''
+ L  5    2 LOAD_METHOD                    0 join
+ L  5    4 LOAD_CONST                     2 (<Code <genexpr> 32 bytes, 2 consts>)
+ L  5    6 LOAD_CONST                     3 'clean_json_string.<locals>.<genexpr>'
+ L  5    8 MAKE_FUNCTION                  0 
+ L  5   10 LOAD_FAST                      0 str
+ L  5   12 GET_ITER                         
+ L  5   14 CALL_FUNCTION                  1 
+ L  5   16 CALL_METHOD                    1 
+ L  5   18 RETURN_VALUE                     
+
+================ kait_extract.py::<genexpr> (line 6) ================
+args=1 posonly=0 kwonly=0 varnames=('.0', 'char') names=('ord',)
+ L  6    0 GEN_START                      0 
+ L-122    2 LOAD_FAST                      0 .0
+ L-122    4 FOR_ITER                      11 to 28
+ L-122    6 STORE_FAST                     1 char
+ L-122    8 LOAD_GLOBAL                    0 ord
+ L-122   10 LOAD_FAST                      1 char
+ L-122   12 CALL_FUNCTION                  1 
+ L-122   14 LOAD_CONST                     0 32
+ L-122   16 COMPARE_OP                     5 >=
+ L-122   18 POP_JUMP_IF_FALSE              2 to 4
+ L-122   20 LOAD_FAST                      1 char
+ L-122   22 YIELD_VALUE                      
+ L-122   24 POP_TOP                          
+ L-122   26 JUMP_ABSOLUTE                  2 to 4
+ L-122   28 LOAD_CONST                     1 None
+ L-122   30 RETURN_VALUE                     
+
+================ kait_extract.py::KaitScan (line 9) ================
+args=0 posonly=0 kwonly=0 varnames=() names=('__name__', '__module__', '__qualname__', '__init__', 'load_kp_code', 'kait_server_start', 'kait_infosel', 'kait_cryptpwdstr', 'kait_certify', 'kait_onlyidscan', 'check_modules', 'start_id_scan')
+ L  9    0 LOAD_NAME                      0 __name__
+ L  9    2 STORE_NAME                     1 __module__
+ L  9    4 LOAD_CONST                     0 'KaitScan'
+ L  9    6 STORE_NAME                     2 __qualname__
+ L  9    8 LOAD_CONST                     1 (<Code __init__ 268 bytes, 22 consts>)
+ L  9   10 LOAD_CONST                     2 'KaitScan.__init__'
+ L  9   12 MAKE_FUNCTION                  0 
+ L  9   14 STORE_NAME                     3 __init__
+ L 11   16 LOAD_CONST                     3 (<Code load_kp_code 274 bytes, 13 consts>)
+ L 11   18 LOAD_CONST                     4 'KaitScan.load_kp_code'
+ L 11   20 MAKE_FUNCTION                  0 
+ L 11   22 STORE_NAME                     4 load_kp_code
+ L 56   24 LOAD_CONST                     5 (<Code kait_server_start 118 bytes, 8 consts>)
+ L 56   26 LOAD_CONST                     6 'KaitScan.kait_server_start'
+ L 56   28 MAKE_FUNCTION                  0 
+ L 56   30 STORE_NAME                     5 kait_server_start
+ L 88   32 LOAD_CONST                     7 (<Code kait_infosel 242 bytes, 8 consts>)
+ L 88   34 LOAD_CONST                     8 'KaitScan.kait_infosel'
+ L 88   36 MAKE_FUNCTION                  0 
+ L 88   38 STORE_NAME                     6 kait_infosel
+ L103   40 LOAD_CONST                     9 (<Code kait_cryptpwdstr 144 bytes, 11 consts>)
+ L103   42 LOAD_CONST                    10 'KaitScan.kait_cryptpwdstr'
+ L103   44 MAKE_FUNCTION                  0 
+ L103   46 STORE_NAME                     7 kait_cryptpwdstr
+ L134   48 LOAD_CONST                    11 (<Code kait_certify 182 bytes, 14 consts>)
+ L134   50 LOAD_CONST                    12 'KaitScan.kait_certify'
+ L134   52 MAKE_FUNCTION                  0 
+ L134   54 STORE_NAME                     8 kait_certify
+ L154   56 LOAD_CONST                    13 (<Code kait_onlyidscan 228 bytes, 14 consts>)
+ L154   58 LOAD_CONST                    14 'KaitScan.kait_onlyidscan'
+ L154   60 MAKE_FUNCTION                  0 
+ L154   62 STORE_NAME                     9 kait_onlyidscan
+ L177   64 LOAD_CONST                    15 (<Code check_modules 166 bytes, 13 consts>)
+ L177   66 LOAD_CONST                    16 'KaitScan.check_modules'
+ L177   68 MAKE_FUNCTION                  0 
+ L177   70 STORE_NAME                    10 check_modules
+ L211   72 LOAD_CONST                    17 (<Code start_id_scan 52 bytes, 8 consts>)
+ L211   74 LOAD_CONST                    18 'KaitScan.start_id_scan'
+ L211   76 MAKE_FUNCTION                  0 
+ L211   78 STORE_NAME                    11 start_id_scan
+ L211   80 LOAD_CONST                    19 None
+ L211   82 RETURN_VALUE                     
+
+================ kait_extract.py::__init__ (line 11) ================
+args=3 posonly=0 kwonly=0 varnames=('self', 'kait_dll', 'apiis_dll', 'kait_dll_path', 'result') names=('apiis_dll', 'kait_dll', 'kp_err_msg', 'os', 'path', 'exists', 'ctypes', 'WinDLL', 'telecom_id', 'kp_no', 'p_code', 'load_kp_code', 'err_msg', 'err_code', 'ocr_data')
+ L 11    0 LOAD_CONST                     1 'C:\\apps\\KAIT\\KAITIdLib32.dll'
+ L 11    2 STORE_FAST                     3 kait_dll_path
+ L 12    4 LOAD_FAST                      2 apiis_dll
+ L 12    6 LOAD_FAST                      0 self
+ L 12    8 STORE_ATTR                     0 apiis_dll
+ L 13   10 LOAD_FAST                      1 kait_dll
+ L 13   12 LOAD_FAST                      0 self
+ L 13   14 STORE_ATTR                     1 kait_dll
+ L 14   16 LOAD_CONST                     0 None
+ L 14   18 LOAD_FAST                      0 self
+ L 14   20 STORE_ATTR                     2 kp_err_msg
+ L 15   22 LOAD_GLOBAL                    3 os
+ L 15   24 LOAD_ATTR                      4 path
+ L 15   26 LOAD_METHOD                    5 exists
+ L 15   28 LOAD_FAST                      3 kait_dll_path
+ L 15   30 CALL_METHOD                    1 
+ L 15   32 POP_JUMP_IF_FALSE             24 to 48
+ L 16   34 LOAD_GLOBAL                    6 ctypes
+ L 16   36 LOAD_METHOD                    7 WinDLL
+ L 16   38 LOAD_FAST                      3 kait_dll_path
+ L 16   40 CALL_METHOD                    1 
+ L 16   42 LOAD_FAST                      0 self
+ L 16   44 STORE_ATTR                     1 kait_dll
+ L 16   46 JUMP_FORWARD                   5 to 58
+ L 17   48 LOAD_CONST                     2 'KAIT 모듈이 설치되어 있지 않습니다. 설치 후 다시 시도해 주세요.'
+ L 17   50 LOAD_FAST                      0 self
+ L 17   52 STORE_ATTR                     2 kp_err_msg
+ L 19   54 LOAD_CONST                     0 None
+ L 19   56 RETURN_VALUE                     
+ L 20   58 LOAD_CONST                     3 'F3001'
+ L 20   60 LOAD_FAST                      0 self
+ L 20   62 STORE_ATTR                     8 telecom_id
+ L 21   64 LOAD_CONST                     0 None
+ L 21   66 LOAD_FAST                      0 self
+ L 21   68 STORE_ATTR                     9 kp_no
+ L 22   70 LOAD_CONST                     0 None
+ L 22   72 LOAD_FAST                      0 self
+ L 22   74 STORE_ATTR                    10 p_code
+ L 23   76 LOAD_FAST                      0 self
+ L 23   78 LOAD_METHOD                   11 load_kp_code
+ L 23   80 CALL_METHOD                    0 
+ L 23   82 STORE_FAST                     4 result
+ L 24   84 LOAD_CONST                     0 None
+ L 24   86 LOAD_FAST                      0 self
+ L 24   88 STORE_ATTR                    12 err_msg
+ L 25   90 LOAD_CONST                     0 None
+ L 25   92 LOAD_FAST                      0 self
+ L 25   94 STORE_ATTR                    13 err_code
+ L 26   96 LOAD_CONST                     0 None
+ L 26   98 LOAD_FAST                      0 self
+ L 26  100 STORE_ATTR                    14 ocr_data
+ L 27  102 LOAD_FAST                      4 result
+ L 27  104 LOAD_CONST                     4 '-1'
+ L 27  106 COMPARE_OP                     2 ==
+ L 27  108 POP_JUMP_IF_FALSE             60 to 120
+ L 28  110 LOAD_CONST                     5 '공통 모듈 초기화 실패'
+ L 28  112 LOAD_FAST                      0 self
+ L 28  114 STORE_ATTR                     2 kp_err_msg
+ L 29  116 LOAD_CONST                     0 None
+ L 29  118 RETURN_VALUE                     
+ L 30  120 LOAD_FAST                      4 result
+ L 30  122 LOAD_CONST                     6 '-2'
+ L 30  124 COMPARE_OP                     2 ==
+ L 30  126 POP_JUMP_IF_FALSE             69 to 138
+ L 31  128 LOAD_CONST                     7 '사전승낙코드를 읽을 수 없습니다.\n(보안키가 올바로 입력되지 않았거나 MDB 파일읽기 실패)'
+ L 31  130 LOAD_FAST                      0 self
+ L 31  132 STORE_ATTR                     2 kp_err_msg
+ L 32  134 LOAD_CONST                     0 None
+ L 32  136 RETURN_VALUE                     
+ L 33  138 LOAD_FAST                      4 result
+ L 33  140 LOAD_CONST                     8 '-5071'
+ L 33  142 COMPARE_OP                     2 ==
+ L 33  144 POP_JUMP_IF_FALSE             78 to 156
+ L 34  146 LOAD_CONST                     9 '-5071 : Network 에러'
+ L 34  148 LOAD_FAST                      0 self
+ L 34  150 STORE_ATTR                     2 kp_err_msg
+ L 35  152 LOAD_CONST                     0 None
+ L 35  154 RETURN_VALUE                     
+ L 36  156 LOAD_FAST                      4 result
+ L 36  158 LOAD_CONST                    10 '-5072'
+ L 36  160 COMPARE_OP                     2 ==
+ L 36  162 POP_JUMP_IF_FALSE             87 to 174
+ L 37  164 LOAD_CONST                    11 '-5072 : Connection timeout 에러'
+ L 37  166 LOAD_FAST                      0 self
+ L 37  168 STORE_ATTR                     2 kp_err_msg
+ L 38  170 LOAD_CONST                     0 None
+ L 38  172 RETURN_VALUE                     
+ L 39  174 LOAD_FAST                      4 result
+ L 39  176 LOAD_CONST                    12 '-5073'
+ L 39  178 COMPARE_OP                     2 ==
+ L 39  180 POP_JUMP_IF_FALSE             96 to 192
+ L 40  182 LOAD_CONST                    13 '-5073 : HTTP 에러'
+ L 40  184 LOAD_FAST                      0 self
+ L 40  186 STORE_ATTR                     2 kp_err_msg
+ L 41  188 LOAD_CONST                     0 None
+ L 41  190 RETURN_VALUE                     
+ L 42  192 LOAD_FAST                      4 result
+ L 42  194 LOAD_CONST                    14 '-5074'
+ L 42  196 COMPARE_OP                     2 ==
+ L 42  198 POP_JUMP_IF_FALSE            105 to 210
+ L 43  200 LOAD_CONST                    15 '-5074 : Service 포트에 접속에러'
+ L 43  202 LOAD_FAST                      0 self
+ L 43  204 STORE_ATTR                     2 kp_err_msg
+ L 44  206 LOAD_CONST                     0 None
+ L 44  208 RETURN_VALUE                     
+ L 45  210 LOAD_FAST                      4 result
+ L 45  212 LOAD_CONST                    16 '-5075'
+ L 45  214 COMPARE_OP                     2 ==
+ L 45  216 POP_JUMP_IF_FALSE            114 to 228
+ L 46  218 LOAD_CONST                    17 '-5075 : Agent 포트에 접속에러'
+ L 46  220 LOAD_FAST                      0 self
+ L 46  222 STORE_ATTR                     2 kp_err_msg
+ L 47  224 LOAD_CONST                     0 None
+ L 47  226 RETURN_VALUE                     
+ L 48  228 LOAD_FAST                      4 result
+ L 48  230 LOAD_CONST                    18 '-5077'
+ L 48  232 COMPARE_OP                     2 ==
+ L 48  234 POP_JUMP_IF_FALSE            123 to 246
+ L 49  236 LOAD_CONST                    19 '-5077 : JSON Parsing 에러'
+ L 49  238 LOAD_FAST                      0 self
+ L 49  240 STORE_ATTR                     2 kp_err_msg
+ L 50  242 LOAD_CONST                     0 None
+ L 50  244 RETURN_VALUE                     
+ L 51  246 LOAD_FAST                      4 result
+ L 51  248 LOAD_CONST                    20 '-5078'
+ L 51  250 COMPARE_OP                     2 ==
+ L 51  252 POP_JUMP_IF_FALSE            132 to 264
+ L 52  254 LOAD_CONST                    21 '-5078 : 암/복호화 에러'
+ L 52  256 LOAD_FAST                      0 self
+ L 52  258 STORE_ATTR                     2 kp_err_msg
+ L 53  260 LOAD_CONST                     0 None
+ L 53  262 RETURN_VALUE                     
+ L 54  264 LOAD_CONST                     0 None
+ L 54  266 RETURN_VALUE                     
+
+================ kait_extract.py::load_kp_code (line 56) ================
+args=1 posonly=0 kwonly=0 varnames=('self', 'num1', 'alloc1', 'stringUni1', 'data1', 'num2', 'num3', 'alloc2', 'stringUni2', 'data2', 'num4', 'str_val') names=('kait_dll', 'kait_serverstart', 'telecom_id', 'str', 'KAIT_JsonToAlloc', 'ctypes', 'c_wchar_p', 'value', 'KAIT_JsonToFree', 'json', 'loads', 'clean_json_string', 'kait_infosel', 'split', 'print', 'kp_no', 'p_code')
+ L 56    0 LOAD_FAST                      0 self
+ L 56    2 LOAD_ATTR                      0 kait_dll
+ L 56    4 LOAD_METHOD                    1 kait_serverstart
+ L 56    6 LOAD_CONST                     1 0
+ L 56    8 LOAD_CONST                     1 0
+ L 56   10 LOAD_CONST                     2 3091
+ L 56   12 LOAD_CONST                     3 3095
+ L 56   14 LOAD_FAST                      0 self
+ L 56   16 LOAD_ATTR                      2 telecom_id
+ L 56   18 CALL_METHOD                    5 
+ L 56   20 STORE_FAST                     1 num1
+ L 57   22 LOAD_FAST                      1 num1
+ L 57   24 LOAD_CONST                     1 0
+ L 57   26 COMPARE_OP                     3 !=
+ L 57   28 POP_JUMP_IF_FALSE             19 to 38
+ L 58   30 LOAD_GLOBAL                    3 str
+ L 58   32 LOAD_FAST                      1 num1
+ L 58   34 CALL_FUNCTION                  1 
+ L 58   36 RETURN_VALUE                     
+ L 59   38 LOAD_FAST                      0 self
+ L 59   40 LOAD_ATTR                      0 kait_dll
+ L 59   42 LOAD_METHOD                    4 KAIT_JsonToAlloc
+ L 59   44 LOAD_CONST                     1 0
+ L 59   46 CALL_METHOD                    1 
+ L 59   48 STORE_FAST                     2 alloc1
+ L 60   50 LOAD_GLOBAL                    5 ctypes
+ L 60   52 LOAD_METHOD                    6 c_wchar_p
+ L 60   54 LOAD_FAST                      2 alloc1
+ L 60   56 CALL_METHOD                    1 
+ L 60   58 LOAD_ATTR                      7 value
+ L 60   60 STORE_FAST                     3 stringUni1
+ L 61   62 LOAD_FAST                      0 self
+ L 61   64 LOAD_ATTR                      0 kait_dll
+ L 61   66 LOAD_METHOD                    8 KAIT_JsonToFree
+ L 61   68 LOAD_FAST                      2 alloc1
+ L 61   70 CALL_METHOD                    1 
+ L 61   72 POP_TOP                          
+ L 62   74 LOAD_GLOBAL                    9 json
+ L 62   76 LOAD_METHOD                   10 loads
+ L 62   78 LOAD_GLOBAL                   11 clean_json_string
+ L 62   80 LOAD_FAST                      3 stringUni1
+ L 62   82 CALL_FUNCTION                  1 
+ L 62   84 CALL_METHOD                    1 
+ L 62   86 STORE_FAST                     4 data1
+ L 63   88 LOAD_FAST                      4 data1
+ L 63   90 LOAD_CONST                     4 'ERRCODE'
+ L 63   92 BINARY_SUBSCR                    
+ L 63   94 STORE_FAST                     5 num2
+ L 64   96 LOAD_FAST                      5 num2
+ L 64   98 LOAD_CONST                     1 0
+ L 64  100 COMPARE_OP                     2 ==
+ L 64  102 POP_JUMP_IF_FALSE            135 to 270
+ L 65  104 LOAD_FAST                      0 self
+ L 65  106 LOAD_ATTR                      0 kait_dll
+ L 65  108 LOAD_METHOD                   12 kait_infosel
+ L 65  110 LOAD_CONST                     1 0
+ L 65  112 LOAD_FAST                      0 self
+ L 65  114 LOAD_ATTR                      2 telecom_id
+ L 65  116 LOAD_CONST                     5 20
+ L 65  118 CALL_METHOD                    3 
+ L 65  120 STORE_FAST                     6 num3
+ L 66  122 LOAD_FAST                      6 num3
+ L 66  124 LOAD_CONST                     1 0
+ L 66  126 COMPARE_OP                     3 !=
+ L 66  128 POP_JUMP_IF_FALSE             69 to 138
+ L 67  130 LOAD_GLOBAL                    3 str
+ L 67  132 LOAD_FAST                      6 num3
+ L 67  134 CALL_FUNCTION                  1 
+ L 67  136 RETURN_VALUE                     
+ L 68  138 LOAD_FAST                      0 self
+ L 68  140 LOAD_ATTR                      0 kait_dll
+ L 68  142 LOAD_METHOD                    4 KAIT_JsonToAlloc
+ L 68  144 LOAD_CONST                     1 0
+ L 68  146 CALL_METHOD                    1 
+ L 68  148 STORE_FAST                     7 alloc2
+ L 69  150 LOAD_GLOBAL                    5 ctypes
+ L 69  152 LOAD_METHOD                    6 c_wchar_p
+ L 69  154 LOAD_FAST                      7 alloc2
+ L 69  156 CALL_METHOD                    1 
+ L 69  158 LOAD_ATTR                      7 value
+ L 69  160 STORE_FAST                     8 stringUni2
+ L 70  162 LOAD_FAST                      0 self
+ L 70  164 LOAD_ATTR                      0 kait_dll
+ L 70  166 LOAD_METHOD                    8 KAIT_JsonToFree
+ L 70  168 LOAD_FAST                      7 alloc2
+ L 70  170 CALL_METHOD                    1 
+ L 70  172 POP_TOP                          
+ L 71  174 LOAD_GLOBAL                    9 json
+ L 71  176 LOAD_METHOD                   10 loads
+ L 71  178 LOAD_GLOBAL                   11 clean_json_string
+ L 71  180 LOAD_FAST                      8 stringUni2
+ L 71  182 CALL_FUNCTION                  1 
+ L 71  184 CALL_METHOD                    1 
+ L 71  186 STORE_FAST                     9 data2
+ L 72  188 LOAD_FAST                      9 data2
+ L 72  190 LOAD_CONST                     4 'ERRCODE'
+ L 72  192 BINARY_SUBSCR                    
+ L 72  194 STORE_FAST                    10 num4
+ L 73  196 LOAD_FAST                     10 num4
+ L 73  198 LOAD_CONST                     1 0
+ L 73  200 COMPARE_OP                     2 ==
+ L 73  202 POP_JUMP_IF_FALSE            133 to 266
+ L 74  204 LOAD_FAST                      9 data2
+ L 74  206 LOAD_CONST                     6 'RET_VAL'
+ L 74  208 BINARY_SUBSCR                    
+ L 74  210 STORE_FAST                    11 str_val
+ L 75  212 LOAD_FAST                     11 str_val
+ L 75  214 LOAD_CONST                     0 None
+ L 75  216 IS_OP                          0 
+ L 75  218 POP_JUMP_IF_FALSE            112 to 224
+ L 76  220 LOAD_CONST                     7 '-2'
+ L 76  222 RETURN_VALUE                     
+ L 77  224 LOAD_FAST                     11 str_val
+ L 77  226 LOAD_METHOD                   13 split
+ L 77  228 LOAD_CONST                     8 '|'
+ L 77  230 CALL_METHOD                    1 
+ L 77  232 STORE_FAST                    11 str_val
+ L 79  234 LOAD_GLOBAL                   14 print
+ L 79  236 LOAD_FAST                     11 str_val
+ L 79  238 CALL_FUNCTION                  1 
+ L 79  240 POP_TOP                          
+ L 80  242 LOAD_FAST                     11 str_val
+ L 80  244 LOAD_CONST                     9 2
+ L 80  246 BINARY_SUBSCR                    
+ L 80  248 LOAD_FAST                      0 self
+ L 80  250 STORE_ATTR                    15 kp_no
+ L 81  252 LOAD_FAST                     11 str_val
+ L 81  254 LOAD_CONST                    10 1
+ L 81  256 BINARY_SUBSCR                    
+ L 81  258 LOAD_FAST                      0 self
+ L 81  260 STORE_ATTR                    16 p_code
+ L 82  262 LOAD_CONST                    11 '0'
+ L 82  264 RETURN_VALUE                     
+ L 83  266 LOAD_CONST                    12 '-1'
+ L 83  268 RETURN_VALUE                     
+ L 85  270 LOAD_CONST                    12 '-1'
+ L 85  272 RETURN_VALUE                     
+
+================ kait_extract.py::kait_server_start (line 88) ================
+args=1 posonly=0 kwonly=0 varnames=('self', 'retCode', 'alloc', 'stringUni', 'data', 'errMsg') names=('kait_dll', 'kait_serverstart', 'telecom_id', 'err_code', 'KAIT_JsonToAlloc', 'ctypes', 'c_wchar_p', 'value', 'KAIT_JsonToFree', 'json', 'loads', 'err_msg')
+ L 88    0 LOAD_FAST                      0 self
+ L 88    2 LOAD_ATTR                      0 kait_dll
+ L 88    4 LOAD_METHOD                    1 kait_serverstart
+ L 88    6 LOAD_CONST                     1 0
+ L 88    8 LOAD_CONST                     1 0
+ L 88   10 LOAD_CONST                     2 3091
+ L 88   12 LOAD_CONST                     3 3095
+ L 88   14 LOAD_FAST                      0 self
+ L 88   16 LOAD_ATTR                      2 telecom_id
+ L 88   18 CALL_METHOD                    5 
+ L 88   20 STORE_FAST                     1 retCode
+ L 89   22 LOAD_FAST                      1 retCode
+ L 89   24 LOAD_FAST                      0 self
+ L 89   26 STORE_ATTR                     3 err_code
+ L 90   28 LOAD_FAST                      1 retCode
+ L 90   30 LOAD_CONST                     1 0
+ L 90   32 COMPARE_OP                     2 ==
+ L 90   34 POP_JUMP_IF_FALSE             57 to 114
+ L 91   36 LOAD_FAST                      0 self
+ L 91   38 LOAD_ATTR                      0 kait_dll
+ L 91   40 LOAD_METHOD                    4 KAIT_JsonToAlloc
+ L 91   42 LOAD_CONST                     1 0
+ L 91   44 CALL_METHOD                    1 
+ L 91   46 STORE_FAST                     2 alloc
+ L 92   48 LOAD_GLOBAL                    5 ctypes
+ L 92   50 LOAD_METHOD                    6 c_wchar_p
+ L 92   52 LOAD_FAST                      2 alloc
+ L 92   54 CALL_METHOD                    1 
+ L 92   56 LOAD_ATTR                      7 value
+ L 92   58 STORE_FAST                     3 stringUni
+ L 93   60 LOAD_FAST                      0 self
+ L 93   62 LOAD_ATTR                      0 kait_dll
+ L 93   64 LOAD_METHOD                    8 KAIT_JsonToFree
+ L 93   66 LOAD_FAST                      2 alloc
+ L 93   68 CALL_METHOD                    1 
+ L 93   70 POP_TOP                          
+ L 94   72 LOAD_GLOBAL                    9 json
+ L 94   74 LOAD_METHOD                   10 loads
+ L 94   76 LOAD_FAST                      3 stringUni
+ L 94   78 CALL_METHOD                    1 
+ L 94   80 STORE_FAST                     4 data
+ L 95   82 LOAD_FAST                      4 data
+ L 95   84 LOAD_CONST                     4 'ERRCODE'
+ L 95   86 BINARY_SUBSCR                    
+ L 95   88 STORE_FAST                     1 retCode
+ L 96   90 LOAD_FAST                      4 data
+ L 96   92 LOAD_CONST                     5 'ERRMSG'
+ L 96   94 BINARY_SUBSCR                    
+ L 96   96 STORE_FAST                     5 errMsg
+ L 97   98 LOAD_FAST                      1 retCode
+ L 97  100 LOAD_FAST                      0 self
+ L 97  102 STORE_ATTR                     3 err_code
+ L 98  104 LOAD_FAST                      5 errMsg
+ L 98  106 LOAD_FAST                      0 self
+ L 98  108 STORE_ATTR                    11 err_msg
+ L 99  110 LOAD_CONST                     6 True
+ L 99  112 RETURN_VALUE                     
+ L100  114 LOAD_CONST                     7 False
+ L100  116 RETURN_VALUE                     
+
+================ kait_extract.py::kait_infosel (line 103) ================
+args=1 posonly=0 kwonly=0 varnames=('self', 'retCode', 'alloc1', 'stringUni1', 'data1', 'errMsg', 'alloc2', 'stringUni2', 'data2') names=('kait_dll', 'kait_infosel', 'telecom_id', 'err_code', 'KAIT_JsonToAlloc', 'ctypes', 'c_wchar_p', 'value', 'KAIT_JsonToFree', 'json', 'loads', 'err_msg', 'kait_infoins')
+ L103    0 LOAD_FAST                      0 self
+ L103    2 LOAD_ATTR                      0 kait_dll
+ L103    4 LOAD_METHOD                    1 kait_infosel
+ L103    6 LOAD_CONST                     1 0
+ L103    8 LOAD_FAST                      0 self
+ L103   10 LOAD_ATTR                      2 telecom_id
+ L103   12 LOAD_CONST                     2 2
+ L103   14 CALL_METHOD                    3 
+ L103   16 STORE_FAST                     1 retCode
+ L104   18 LOAD_FAST                      1 retCode
+ L104   20 LOAD_FAST                      0 self
+ L104   22 STORE_ATTR                     3 err_code
+ L105   24 LOAD_FAST                      1 retCode
+ L105   26 LOAD_CONST                     1 0
+ L105   28 COMPARE_OP                     2 ==
+ L105   30 POP_JUMP_IF_FALSE            119 to 238
+ L106   32 LOAD_FAST                      0 self
+ L106   34 LOAD_ATTR                      0 kait_dll
+ L106   36 LOAD_METHOD                    4 KAIT_JsonToAlloc
+ L106   38 LOAD_CONST                     1 0
+ L106   40 CALL_METHOD                    1 
+ L106   42 STORE_FAST                     2 alloc1
+ L107   44 LOAD_GLOBAL                    5 ctypes
+ L107   46 LOAD_METHOD                    6 c_wchar_p
+ L107   48 LOAD_FAST                      2 alloc1
+ L107   50 CALL_METHOD                    1 
+ L107   52 LOAD_ATTR                      7 value
+ L107   54 STORE_FAST                     3 stringUni1
+ L108   56 LOAD_FAST                      0 self
+ L108   58 LOAD_ATTR                      0 kait_dll
+ L108   60 LOAD_METHOD                    8 KAIT_JsonToFree
+ L108   62 LOAD_FAST                      2 alloc1
+ L108   64 CALL_METHOD                    1 
+ L108   66 POP_TOP                          
+ L109   68 LOAD_GLOBAL                    9 json
+ L109   70 LOAD_METHOD                   10 loads
+ L109   72 LOAD_FAST                      3 stringUni1
+ L109   74 CALL_METHOD                    1 
+ L109   76 STORE_FAST                     4 data1
+ L110   78 LOAD_FAST                      4 data1
+ L110   80 LOAD_CONST                     3 'ERRCODE'
+ L110   82 BINARY_SUBSCR                    
+ L110   84 STORE_FAST                     1 retCode
+ L111   86 LOAD_FAST                      4 data1
+ L111   88 LOAD_CONST                     4 'ERRMSG'
+ L111   90 BINARY_SUBSCR                    
+ L111   92 STORE_FAST                     5 errMsg
+ L112   94 LOAD_FAST                      1 retCode
+ L112   96 LOAD_FAST                      0 self
+ L112   98 STORE_ATTR                     3 err_code
+ L113  100 LOAD_FAST                      5 errMsg
+ L113  102 LOAD_FAST                      0 self
+ L113  104 STORE_ATTR                    11 err_msg
+ L114  106 LOAD_FAST                      1 retCode
+ L114  108 LOAD_CONST                     1 0
+ L114  110 COMPARE_OP                     2 ==
+ L114  112 POP_JUMP_IF_FALSE            117 to 234
+ L115  114 LOAD_FAST                      0 self
+ L115  116 LOAD_ATTR                      0 kait_dll
+ L115  118 LOAD_METHOD                   12 kait_infoins
+ L115  120 LOAD_CONST                     1 0
+ L115  122 LOAD_FAST                      0 self
+ L115  124 LOAD_ATTR                      2 telecom_id
+ L115  126 LOAD_CONST                     2 2
+ L115  128 LOAD_FAST                      4 data1
+ L115  130 LOAD_CONST                     5 'RET_VAL'
+ L115  132 BINARY_SUBSCR                    
+ L115  134 CALL_METHOD                    4 
+ L115  136 STORE_FAST                     1 retCode
+ L116  138 LOAD_FAST                      1 retCode
+ L116  140 LOAD_FAST                      0 self
+ L116  142 STORE_ATTR                     3 err_code
+ L117  144 LOAD_FAST                      1 retCode
+ L117  146 LOAD_CONST                     1 0
+ L117  148 COMPARE_OP                     2 ==
+ L117  150 POP_JUMP_IF_FALSE            115 to 230
+ L118  152 LOAD_FAST                      0 self
+ L118  154 LOAD_ATTR                      0 kait_dll
+ L118  156 LOAD_METHOD                    4 KAIT_JsonToAlloc
+ L118  158 LOAD_CONST                     1 0
+ L118  160 CALL_METHOD                    1 
+ L118  162 STORE_FAST                     6 alloc2
+ L119  164 LOAD_GLOBAL                    5 ctypes
+ L119  166 LOAD_METHOD                    6 c_wchar_p
+ L119  168 LOAD_FAST                      6 alloc2
+ L119  170 CALL_METHOD                    1 
+ L119  172 LOAD_ATTR                      7 value
+ L119  174 STORE_FAST                     7 stringUni2
+ L120  176 LOAD_FAST                      0 self
+ L120  178 LOAD_ATTR                      0 kait_dll
+ L120  180 LOAD_METHOD                    8 KAIT_JsonToFree
+ L120  182 LOAD_FAST                      6 alloc2
+ L120  184 CALL_METHOD                    1 
+ L120  186 POP_TOP                          
+ L121  188 LOAD_GLOBAL                    9 json
+ L121  190 LOAD_METHOD                   10 loads
+ L121  192 LOAD_FAST                      7 stringUni2
+ L121  194 CALL_METHOD                    1 
+ L121  196 STORE_FAST                     8 data2
+ L122  198 LOAD_FAST                      8 data2
+ L122  200 LOAD_CONST                     3 'ERRCODE'
+ L122  202 BINARY_SUBSCR                    
+ L122  204 STORE_FAST                     1 retCode
+ L123  206 LOAD_FAST                      8 data2
+ L123  208 LOAD_CONST                     4 'ERRMSG'
+ L123  210 BINARY_SUBSCR                    
+ L123  212 STORE_FAST                     5 errMsg
+ L124  214 LOAD_FAST                      1 retCode
+ L124  216 LOAD_FAST                      0 self
+ L124  218 STORE_ATTR                     3 err_code
+ L125  220 LOAD_FAST                      5 errMsg
+ L125  222 LOAD_FAST                      0 self
+ L125  224 STORE_ATTR                    11 err_msg
+ L126  226 LOAD_CONST                     6 True
+ L126  228 RETURN_VALUE                     
+ L127  230 LOAD_CONST                     0 None
+ L127  232 RETURN_VALUE                     
+ L129  234 LOAD_CONST                     7 False
+ L129  236 RETURN_VALUE                     
+ L131  238 LOAD_CONST                     7 False
+ L131  240 RETURN_VALUE                     
+
+================ kait_extract.py::kait_cryptpwdstr (line 134) ================
+args=1 posonly=0 kwonly=0 varnames=('self', 'nResTmOut', 'szPwdVal', 'szAskVal', 'retCode', 'alloc', 'stringUni', 'data', 'errMsg') names=('kait_dll', 'kait_cryptpwdstr', 'telecom_id', 'err_code', 'KAIT_JsonToAlloc', 'ctypes', 'c_wchar_p', 'value', 'KAIT_JsonToFree', 'json', 'loads', 'err_msg')
+ L134    0 LOAD_CONST                     1 0
+ L134    2 STORE_FAST                     1 nResTmOut
+ L135    4 LOAD_CONST                     2 '1234'
+ L135    6 STORE_FAST                     2 szPwdVal
+ L136    8 LOAD_CONST                     3 '암호화대상 평문'
+ L136   10 STORE_FAST                     3 szAskVal
+ L137   12 LOAD_FAST                      0 self
+ L137   14 LOAD_ATTR                      0 kait_dll
+ L137   16 LOAD_METHOD                    1 kait_cryptpwdstr
+ L137   18 LOAD_FAST                      1 nResTmOut
+ L137   20 LOAD_FAST                      0 self
+ L137   22 LOAD_ATTR                      2 telecom_id
+ L137   24 LOAD_FAST                      2 szPwdVal
+ L137   26 LOAD_FAST                      3 szAskVal
+ L137   28 CALL_METHOD                    4 
+ L137   30 STORE_FAST                     4 retCode
+ L138   32 LOAD_FAST                      4 retCode
+ L138   34 LOAD_FAST                      0 self
+ L138   36 STORE_ATTR                     3 err_code
+ L139   38 LOAD_FAST                      4 retCode
+ L139   40 LOAD_CONST                     1 0
+ L139   42 COMPARE_OP                     2 ==
+ L139   44 POP_JUMP_IF_FALSE             70 to 140
+ L140   46 LOAD_FAST                      0 self
+ L140   48 LOAD_ATTR                      0 kait_dll
+ L140   50 LOAD_METHOD                    4 KAIT_JsonToAlloc
+ L140   52 LOAD_CONST                     1 0
+ L140   54 CALL_METHOD                    1 
+ L140   56 STORE_FAST                     5 alloc
+ L141   58 LOAD_GLOBAL                    5 ctypes
+ L141   60 LOAD_METHOD                    6 c_wchar_p
+ L141   62 LOAD_FAST                      5 alloc
+ L141   64 CALL_METHOD                    1 
+ L141   66 LOAD_ATTR                      7 value
+ L141   68 STORE_FAST                     6 stringUni
+ L142   70 LOAD_FAST                      0 self
+ L142   72 LOAD_ATTR                      0 kait_dll
+ L142   74 LOAD_METHOD                    8 KAIT_JsonToFree
+ L142   76 LOAD_FAST                      5 alloc
+ L142   78 CALL_METHOD                    1 
+ L142   80 POP_TOP                          
+ L143   82 LOAD_GLOBAL                    9 json
+ L143   84 LOAD_METHOD                   10 loads
+ L143   86 LOAD_FAST                      6 stringUni
+ L143   88 CALL_METHOD                    1 
+ L143   90 STORE_FAST                     7 data
+ L144   92 LOAD_FAST                      7 data
+ L144   94 LOAD_CONST                     4 'ERRCODE'
+ L144   96 BINARY_SUBSCR                    
+ L144   98 STORE_FAST                     4 retCode
+ L145  100 LOAD_FAST                      7 data
+ L145  102 LOAD_CONST                     5 'ERRMSG'
+ L145  104 BINARY_SUBSCR                    
+ L145  106 STORE_FAST                     8 errMsg
+ L146  108 LOAD_FAST                      7 data
+ L146  110 LOAD_CONST                     6 'RET_VAL'
+ L146  112 BINARY_SUBSCR                    
+ L146  114 LOAD_CONST                     7 ''
+ L146  116 COMPARE_OP                     2 ==
+ L146  118 POP_JUMP_IF_FALSE             62 to 124
+ L147  120 LOAD_CONST                     8 -1
+ L147  122 STORE_FAST                     4 retCode
+ L148  124 LOAD_FAST                      4 retCode
+ L148  126 LOAD_FAST                      0 self
+ L148  128 STORE_ATTR                     3 err_code
+ L149  130 LOAD_FAST                      8 errMsg
+ L149  132 LOAD_FAST                      0 self
+ L149  134 STORE_ATTR                    11 err_msg
+ L150  136 LOAD_CONST                     9 True
+ L150  138 RETURN_VALUE                     
+ L151  140 LOAD_CONST                    10 False
+ L151  142 RETURN_VALUE                     
+
+================ kait_extract.py::kait_certify (line 154) ================
+args=1 posonly=0 kwonly=0 varnames=('self', 'nResTmOut', 'szKaitSvrAddr', 'szCertCmd', 'szShopNo', 'szKPNo', 'nScnId', 'szSysVCmd', 'retCode', 'alloc', 'stringUni', 'data', 'errMsg') names=('kp_no', 'kait_dll', 'kait_certify', 'telecom_id', 'ctypes', 'c_void_p', 'err_code', 'KAIT_JsonToAlloc', 'c_wchar_p', 'value', 'print', 'KAIT_JsonToFree', 'json', 'loads', 'err_msg')
+ L154    0 LOAD_CONST                     1 0
+ L154    2 STORE_FAST                     1 nResTmOut
+ L155    4 LOAD_CONST                     2 'https://scn.ictmarket.or.kr:8443/'
+ L155    6 STORE_FAST                     2 szKaitSvrAddr
+ L156    8 LOAD_CONST                     3 'IcsmKey/'
+ L156   10 STORE_FAST                     3 szCertCmd
+ L157   12 LOAD_CONST                     4 'P12345'
+ L157   14 STORE_FAST                     4 szShopNo
+ L158   16 LOAD_FAST                      0 self
+ L158   18 LOAD_ATTR                      0 kp_no
+ L158   20 STORE_FAST                     5 szKPNo
+ L159   22 LOAD_CONST                     5 1001
+ L159   24 STORE_FAST                     6 nScnId
+ L160   26 LOAD_CONST                     6 'KP'
+ L160   28 LOAD_FAST                      5 szKPNo
+ L160   30 CONTAINS_OP                    0 
+ L160   32 POP_JUMP_IF_FALSE             19 to 38
+ L160   34 LOAD_CONST                     7 'IctClean/IcsmRequest.do'
+ L160   36 JUMP_FORWARD                   1 to 40
+ L160   38 LOAD_CONST                     8 'IcsmSvc/IcsmRequestPage'
+ L160   40 STORE_FAST                     7 szSysVCmd
+ L161   42 LOAD_FAST                      0 self
+ L161   44 LOAD_ATTR                      1 kait_dll
+ L161   46 LOAD_METHOD                    2 kait_certify
+ L161   48 LOAD_FAST                      1 nResTmOut
+ L161   50 LOAD_FAST                      0 self
+ L161   52 LOAD_ATTR                      3 telecom_id
+ L161   54 LOAD_FAST                      2 szKaitSvrAddr
+ L161   56 LOAD_FAST                      3 szCertCmd
+ L161   58 LOAD_FAST                      4 szShopNo
+ L161   60 LOAD_FAST                      5 szKPNo
+ L161   62 LOAD_FAST                      6 nScnId
+ L161   64 LOAD_FAST                      7 szSysVCmd
+ L161   66 LOAD_CONST                     9 ''
+ L161   68 LOAD_GLOBAL                    4 ctypes
+ L161   70 LOAD_METHOD                    5 c_void_p
+ L161   72 CALL_METHOD                    0 
+ L161   74 CALL_METHOD                   10 
+ L161   76 STORE_FAST                     8 retCode
+ L162   78 LOAD_FAST                      8 retCode
+ L162   80 LOAD_FAST                      0 self
+ L162   82 STORE_ATTR                     6 err_code
+ L163   84 LOAD_FAST                      8 retCode
+ L163   86 LOAD_CONST                     1 0
+ L163   88 COMPARE_OP                     2 ==
+ L163   90 POP_JUMP_IF_FALSE             89 to 178
+ L164   92 LOAD_FAST                      0 self
+ L164   94 LOAD_ATTR                      1 kait_dll
+ L164   96 LOAD_METHOD                    7 KAIT_JsonToAlloc
+ L164   98 LOAD_CONST                     1 0
+ L164  100 CALL_METHOD                    1 
+ L164  102 STORE_FAST                     9 alloc
+ L165  104 LOAD_GLOBAL                    4 ctypes
+ L165  106 LOAD_METHOD                    8 c_wchar_p
+ L165  108 LOAD_FAST                      9 alloc
+ L165  110 CALL_METHOD                    1 
+ L165  112 LOAD_ATTR                      9 value
+ L165  114 STORE_FAST                    10 stringUni
+ L166  116 LOAD_GLOBAL                   10 print
+ L166  118 LOAD_FAST                     10 stringUni
+ L166  120 CALL_FUNCTION                  1 
+ L166  122 POP_TOP                          
+ L167  124 LOAD_FAST                      0 self
+ L167  126 LOAD_ATTR                      1 kait_dll
+ L167  128 LOAD_METHOD                   11 KAIT_JsonToFree
+ L167  130 LOAD_FAST                      9 alloc
+ L167  132 CALL_METHOD                    1 
+ L167  134 POP_TOP                          
+ L168  136 LOAD_GLOBAL                   12 json
+ L168  138 LOAD_METHOD                   13 loads
+ L168  140 LOAD_FAST                     10 stringUni
+ L168  142 CALL_METHOD                    1 
+ L168  144 STORE_FAST                    11 data
+ L169  146 LOAD_FAST                     11 data
+ L169  148 LOAD_CONST                    10 'ERRCODE'
+ L169  150 BINARY_SUBSCR                    
+ L169  152 STORE_FAST                     8 retCode
+ L170  154 LOAD_FAST                     11 data
+ L170  156 LOAD_CONST                    11 'ERRMSG'
+ L170  158 BINARY_SUBSCR                    
+ L170  160 STORE_FAST                    12 errMsg
+ L171  162 LOAD_FAST                      8 retCode
+ L171  164 LOAD_FAST                      0 self
+ L171  166 STORE_ATTR                     6 err_code
+ L172  168 LOAD_FAST                     12 errMsg
+ L172  170 LOAD_FAST                      0 self
+ L172  172 STORE_ATTR                    14 err_msg
+ L173  174 LOAD_CONST                    12 True
+ L173  176 RETURN_VALUE                     
+ L174  178 LOAD_CONST                    13 False
+ L174  180 RETURN_VALUE                     
+
+================ kait_extract.py::kait_onlyidscan (line 177) ================
+args=1 posonly=0 kwonly=0 varnames=('self', 'nResTmOut', 'nOcrYn', 'nTwnDlg', 'nValiChk', 'nScnDpi', 'nScnBits', 'nScnSide', 'nScnRotate', 'nSaveFormat', 'nSaveComp', 'szCaption', 'THandle', 'nScnId', 'retCode', 'alloc', 'stringUni', 'data', 'errMsg') names=('ctypes', 'c_void_p', 'kait_dll', 'kait_onlyidscan', 'telecom_id', 'byref', 'err_code', 'KAIT_JsonToAlloc', 'c_wchar_p', 'value', 'KAIT_JsonToFree', 'json', 'loads', 'clean_json_string', 'err_msg', 'ocr_data')
+ L177    0 SETUP_FINALLY                112 to 226
+ L178    2 LOAD_CONST                     1 0
+ L178    4 STORE_FAST                     1 nResTmOut
+ L179    6 LOAD_CONST                     2 1
+ L179    8 STORE_FAST                     2 nOcrYn
+ L180   10 LOAD_CONST                     1 0
+ L180   12 STORE_FAST                     3 nTwnDlg
+ L181   14 LOAD_CONST                     2 1
+ L181   16 STORE_FAST                     4 nValiChk
+ L182   18 LOAD_CONST                     3 300
+ L182   20 STORE_FAST                     5 nScnDpi
+ L183   22 LOAD_CONST                     4 24
+ L183   24 STORE_FAST                     6 nScnBits
+ L184   26 LOAD_CONST                     5 2
+ L184   28 STORE_FAST                     7 nScnSide
+ L185   30 LOAD_CONST                     6 270
+ L185   32 STORE_FAST                     8 nScnRotate
+ L186   34 LOAD_CONST                     5 2
+ L186   36 STORE_FAST                     9 nSaveFormat
+ L187   38 LOAD_CONST                     7 64
+ L187   40 STORE_FAST                    10 nSaveComp
+ L188   42 LOAD_CONST                     8 ''
+ L188   44 STORE_FAST                    11 szCaption
+ L189   46 LOAD_GLOBAL                    0 ctypes
+ L189   48 LOAD_METHOD                    1 c_void_p
+ L189   50 CALL_METHOD                    0 
+ L189   52 STORE_FAST                    12 THandle
+ L190   54 LOAD_CONST                     9 1001
+ L190   56 STORE_FAST                    13 nScnId
+ L191   58 LOAD_FAST                      0 self
+ L191   60 LOAD_ATTR                      2 kait_dll
+ L191   62 LOAD_METHOD                    3 kait_onlyidscan
+ L191   64 LOAD_FAST                      1 nResTmOut
+ L191   66 LOAD_FAST                      0 self
+ L191   68 LOAD_ATTR                      4 telecom_id
+ L191   70 LOAD_FAST                      2 nOcrYn
+ L191   72 LOAD_FAST                      3 nTwnDlg
+ L191   74 LOAD_FAST                      4 nValiChk
+ L191   76 LOAD_FAST                      5 nScnDpi
+ L191   78 LOAD_FAST                      6 nScnBits
+ L191   80 LOAD_FAST                      7 nScnSide
+ L191   82 LOAD_FAST                      8 nScnRotate
+ L191   84 LOAD_FAST                      9 nSaveFormat
+ L191   86 LOAD_FAST                     10 nSaveComp
+ L191   88 LOAD_FAST                     11 szCaption
+ L191   90 LOAD_GLOBAL                    0 ctypes
+ L191   92 LOAD_METHOD                    5 byref
+ L191   94 LOAD_FAST                     12 THandle
+ L191   96 CALL_METHOD                    1 
+ L191   98 LOAD_FAST                     13 nScnId
+ L191  100 CALL_METHOD                   14 
+ L191  102 STORE_FAST                    14 retCode
+ L192  104 LOAD_FAST                     14 retCode
+ L192  106 LOAD_FAST                      0 self
+ L192  108 STORE_ATTR                     6 err_code
+ L193  110 LOAD_FAST                     14 retCode
+ L193  112 LOAD_CONST                     1 0
+ L193  114 COMPARE_OP                     2 ==
+ L193  116 POP_JUMP_IF_FALSE            110 to 220
+ L194  118 LOAD_FAST                      0 self
+ L194  120 LOAD_ATTR                      2 kait_dll
+ L194  122 LOAD_METHOD                    7 KAIT_JsonToAlloc
+ L194  124 LOAD_CONST                     1 0
+ L194  126 CALL_METHOD                    1 
+ L194  128 STORE_FAST                    15 alloc
+ L195  130 LOAD_GLOBAL                    0 ctypes
+ L195  132 LOAD_METHOD                    8 c_wchar_p
+ L195  134 LOAD_FAST                     15 alloc
+ L195  136 CALL_METHOD                    1 
+ L195  138 LOAD_ATTR                      9 value
+ L195  140 STORE_FAST                    16 stringUni
+ L196  142 LOAD_FAST                      0 self
+ L196  144 LOAD_ATTR                      2 kait_dll
+ L196  146 LOAD_METHOD                   10 KAIT_JsonToFree
+ L196  148 LOAD_FAST                     15 alloc
+ L196  150 CALL_METHOD                    1 
+ L196  152 POP_TOP                          
+ L197  154 LOAD_GLOBAL                   11 json
+ L197  156 LOAD_METHOD                   12 loads
+ L197  158 LOAD_GLOBAL                   13 clean_json_string
+ L197  160 LOAD_FAST                     16 stringUni
+ L197  162 CALL_FUNCTION                  1 
+ L197  164 CALL_METHOD                    1 
+ L197  166 STORE_FAST                    17 data
+ L198  168 LOAD_FAST                     17 data
+ L198  170 LOAD_CONST                    10 'ERRCODE'
+ L198  172 BINARY_SUBSCR                    
+ L198  174 STORE_FAST                    14 retCode
+ L199  176 LOAD_FAST                     17 data
+ L199  178 LOAD_CONST                    11 'ERRMSG'
+ L199  180 BINARY_SUBSCR                    
+ L199  182 STORE_FAST                    18 errMsg
+ L200  184 LOAD_FAST                     14 retCode
+ L200  186 LOAD_CONST                     5 2
+ L200  188 COMPARE_OP                     1 <=
+ L200  190 POP_JUMP_IF_FALSE             98 to 196
+ L201  192 LOAD_CONST                     1 0
+ L201  194 STORE_FAST                    14 retCode
+ L202  196 LOAD_FAST                     14 retCode
+ L202  198 LOAD_FAST                      0 self
+ L202  200 STORE_ATTR                     6 err_code
+ L203  202 LOAD_FAST                     18 errMsg
+ L203  204 LOAD_FAST                      0 self
+ L203  206 STORE_ATTR                    14 err_msg
+ L204  208 LOAD_FAST                     17 data
+ L204  210 LOAD_FAST                      0 self
+ L204  212 STORE_ATTR                    15 ocr_data
+ L205  214 POP_BLOCK                        
+ L206  216 LOAD_CONST                    12 True
+ L206  218 RETURN_VALUE                     
+ L209  220 POP_BLOCK                        
+ L207  222 LOAD_CONST                    13 False
+ L207  224 RETURN_VALUE                     
+ L207  226 RERAISE                        0 
+
+================ kait_extract.py::check_modules (line 211) ================
+args=3 posonly=0 kwonly=0 varnames=('self', 'number', 'module_name', 'result') names=('kait_server_start', 'kait_infosel', 'kait_cryptpwdstr', 'kait_certify', 'kait_onlyidscan', 'err_code', 'print', 'err_msg')
+ L211    0 LOAD_CONST                     1 False
+ L211    2 STORE_FAST                     3 result
+ L212    4 LOAD_FAST                      1 number
+ L212    6 LOAD_CONST                     2 1
+ L212    8 COMPARE_OP                     2 ==
+ L212   10 POP_JUMP_IF_FALSE             11 to 22
+ L213   12 LOAD_FAST                      0 self
+ L213   14 LOAD_METHOD                    0 kait_server_start
+ L213   16 CALL_METHOD                    0 
+ L213   18 STORE_FAST                     3 result
+ L213   20 JUMP_FORWARD                  35 to 92
+ L214   22 LOAD_FAST                      1 number
+ L214   24 LOAD_CONST                     3 2
+ L214   26 COMPARE_OP                     2 ==
+ L214   28 POP_JUMP_IF_FALSE             20 to 40
+ L215   30 LOAD_FAST                      0 self
+ L215   32 LOAD_METHOD                    1 kait_infosel
+ L215   34 CALL_METHOD                    0 
+ L215   36 STORE_FAST                     3 result
+ L215   38 JUMP_FORWARD                  26 to 92
+ L216   40 LOAD_FAST                      1 number
+ L216   42 LOAD_CONST                     4 3
+ L216   44 COMPARE_OP                     2 ==
+ L216   46 POP_JUMP_IF_FALSE             29 to 58
+ L217   48 LOAD_FAST                      0 self
+ L217   50 LOAD_METHOD                    2 kait_cryptpwdstr
+ L217   52 CALL_METHOD                    0 
+ L217   54 STORE_FAST                     3 result
+ L217   56 JUMP_FORWARD                  17 to 92
+ L218   58 LOAD_FAST                      1 number
+ L218   60 LOAD_CONST                     5 4
+ L218   62 COMPARE_OP                     2 ==
+ L218   64 POP_JUMP_IF_FALSE             38 to 76
+ L219   66 LOAD_FAST                      0 self
+ L219   68 LOAD_METHOD                    3 kait_certify
+ L219   70 CALL_METHOD                    0 
+ L219   72 STORE_FAST                     3 result
+ L219   74 JUMP_FORWARD                   8 to 92
+ L220   76 LOAD_FAST                      1 number
+ L220   78 LOAD_CONST                     6 5
+ L220   80 COMPARE_OP                     2 ==
+ L220   82 POP_JUMP_IF_FALSE             46 to 92
+ L221   84 LOAD_FAST                      0 self
+ L221   86 LOAD_METHOD                    4 kait_onlyidscan
+ L221   88 CALL_METHOD                    0 
+ L221   90 STORE_FAST                     3 result
+ L222   92 LOAD_FAST                      0 self
+ L222   94 LOAD_ATTR                      5 err_code
+ L222   96 LOAD_CONST                     7 0
+ L222   98 COMPARE_OP                     2 ==
+ L222  100 POP_JUMP_IF_FALSE             62 to 124
+ L222  102 LOAD_FAST                      3 result
+ L222  104 POP_JUMP_IF_FALSE             62 to 124
+ L223  106 LOAD_GLOBAL                    6 print
+ L223  108 LOAD_FAST                      2 module_name
+ L223  110 FORMAT_VALUE                   0 
+ L223  112 LOAD_CONST                     8 ' í\x99\x95ì\x9d¸ ê²°ê³¼ (OK)'
+ L223  114 BUILD_STRING                   2 
+ L223  116 CALL_FUNCTION                  1 
+ L223  118 POP_TOP                          
+ L224  120 LOAD_CONST                     9 True
+ L224  122 RETURN_VALUE                     
+ L225  124 LOAD_GLOBAL                    6 print
+ L225  126 LOAD_FAST                      2 module_name
+ L225  128 FORMAT_VALUE                   0 
+ L225  130 LOAD_CONST                    10 ' í\x99\x95ì\x9d¸ ê²°ê³¼ (ERR)'
+ L225  132 BUILD_STRING                   2 
+ L225  134 CALL_FUNCTION                  1 
+ L225  136 POP_TOP                          
+ L226  138 LOAD_GLOBAL                    6 print
+ L226  140 LOAD_CONST                    11 'ì\x97\x90ë\x9f¬ ì½\x94ë\x93\x9c: ['
+ L226  142 LOAD_FAST                      0 self
+ L226  144 LOAD_ATTR                      5 err_code
+ L226  146 FORMAT_VALUE                   0 
+ L226  148 LOAD_CONST                    12 '], ì\x97\x90ë\x9f¬ ë©\x94ì\x84¸ì§\x80: '
+ L226  150 LOAD_FAST                      0 self
+ L226  152 LOAD_ATTR                      7 err_msg
+ L226  154 FORMAT_VALUE                   0 
+ L226  156 BUILD_STRING                   4 
+ L226  158 CALL_FUNCTION                  1 
+ L226  160 POP_TOP                          
+ L227  162 LOAD_CONST                     1 False
+ L227  164 RETURN_VALUE                     
+
+================ kait_extract.py::start_id_scan (line 230) ================
+args=1 posonly=0 kwonly=0 varnames=('self',) names=('check_modules', 'print')
+ L230    0 LOAD_FAST                      0 self
+ L230    2 LOAD_METHOD                    0 check_modules
+ L230    4 LOAD_CONST                     1 1
+ L230    6 LOAD_CONST                     2 'MDB,암호화모듈 상태'
+ L230    8 CALL_METHOD                    2 
+ L230   10 POP_JUMP_IF_FALSE             18 to 36
+ L230   12 LOAD_FAST                      0 self
+ L230   14 LOAD_METHOD                    0 check_modules
+ L230   16 LOAD_CONST                     3 4
+ L230   18 LOAD_CONST                     4 '유효성검증 요청'
+ L230   20 CALL_METHOD                    2 
+ L230   22 POP_JUMP_IF_FALSE             18 to 36
+ L230   24 LOAD_FAST                      0 self
+ L230   26 LOAD_METHOD                    0 check_modules
+ L230   28 LOAD_CONST                     5 5
+ L230   30 LOAD_CONST                     6 '신분증스캐너 동작 상태'
+ L230   32 CALL_METHOD                    2 
+ L230   34 POP_JUMP_IF_TRUE              20 to 40
+ L231   36 LOAD_CONST                     0 None
+ L231   38 RETURN_VALUE                     
+ L232   40 LOAD_GLOBAL                    1 print
+ L232   42 LOAD_CONST                     7 '신분증 스캔 완료'
+ L232   44 CALL_FUNCTION                  1 
+ L232   46 POP_TOP                          
+ L232   48 LOAD_CONST                     0 None
+ L232   50 RETURN_VALUE                     
+
+================ isc_server.py::<module> (line 1) ================
+args=0 posonly=0 kwonly=0 varnames=() names=('os', 'sys', 'traceback', 'dotenv', 'load_dotenv', 'supabase', 'create_client', 'Client', 'getcwd', 'extDataDir', 'getattr', '_MEIPASS', 'path', 'join', 'environ', 'get', 'url', 'str', '__annotations__', 'replace', 'key', 'get_center_info', 'get_version_info', 'get_center_id', 'get_version', 'get_extract_info', 'upload_id_card', 'save_ocr_data', 'get_location_info', 'get_selenium_config_file', 'download_and_save_file', 'get_value_from_config', 'save_ad_click_data', 'get_prev_ad_click_data', 'get_blog_list', 'get_clicked_ads')
+ L  1    0 LOAD_CONST                     0 0
+ L  1    2 LOAD_CONST                     1 None
+ L  1    4 IMPORT_NAME                    0 os
+ L  1    6 STORE_NAME                     0 os
+ L  1    8 LOAD_CONST                     0 0
+ L  1   10 LOAD_CONST                     1 None
+ L  1   12 IMPORT_NAME                    1 sys
+ L  1   14 STORE_NAME                     1 sys
+ L  2   16 LOAD_CONST                     0 0
+ L  2   18 LOAD_CONST                     1 None
+ L  2   20 IMPORT_NAME                    2 traceback
+ L  2   22 STORE_NAME                     2 traceback
+ L  3   24 LOAD_CONST                     0 0
+ L  3   26 LOAD_CONST                     2 ('load_dotenv',)
+ L  3   28 IMPORT_NAME                    3 dotenv
+ L  3   30 IMPORT_FROM                    4 load_dotenv
+ L  3   32 STORE_NAME                     4 load_dotenv
+ L  3   34 POP_TOP                          
+ L  4   36 LOAD_CONST                     0 0
+ L  4   38 LOAD_CONST                     3 ('create_client', 'Client')
+ L  4   40 IMPORT_NAME                    5 supabase
+ L  4   42 IMPORT_FROM                    6 create_client
+ L  4   44 STORE_NAME                     6 create_client
+ L  4   46 IMPORT_FROM                    7 Client
+ L  4   48 STORE_NAME                     7 Client
+ L  4   50 POP_TOP                          
+ L  5   52 LOAD_NAME                      0 os
+ L  5   54 LOAD_METHOD                    8 getcwd
+ L  5   56 CALL_METHOD                    0 
+ L  5   58 STORE_NAME                     9 extDataDir
+ L  6   60 LOAD_NAME                     10 getattr
+ L  6   62 LOAD_NAME                      1 sys
+ L  6   64 LOAD_CONST                     4 'frozen'
+ L  6   66 LOAD_CONST                     5 False
+ L  6   68 CALL_FUNCTION                  3 
+ L  6   70 POP_JUMP_IF_FALSE             39 to 78
+ L  7   72 LOAD_NAME                      1 sys
+ L  7   74 LOAD_ATTR                     11 _MEIPASS
+ L  7   76 STORE_NAME                     9 extDataDir
+ L  8   78 LOAD_NAME                      4 load_dotenv
+ L  8   80 LOAD_NAME                      0 os
+ L  8   82 LOAD_ATTR                     12 path
+ L  8   84 LOAD_METHOD                   13 join
+ L  8   86 LOAD_NAME                      9 extDataDir
+ L  8   88 LOAD_CONST                     6 '.env'
+ L  8   90 CALL_METHOD                    2 
+ L  8   92 LOAD_CONST                     7 ('dotenv_path',)
+ L  8   94 CALL_FUNCTION_KW               1 
+ L  8   96 POP_TOP                          
+ L  9   98 LOAD_NAME                      0 os
+ L  9  100 LOAD_ATTR                     14 environ
+ L  9  102 LOAD_METHOD                   15 get
+ L  9  104 LOAD_CONST                     8 'S_U'
+ L  9  106 CALL_METHOD                    1 
+ L  9  108 STORE_NAME                    16 url
+ L 10  110 LOAD_NAME                     17 str
+ L 10  112 LOAD_NAME                     18 __annotations__
+ L 10  114 LOAD_CONST                     9 'url'
+ L 10  116 STORE_SUBSCR                     
+ L 11  118 LOAD_NAME                     16 url
+ L 11  120 LOAD_METHOD                   19 replace
+ L 11  122 LOAD_CONST                    10 'kawergbaz'
+ L 11  124 LOAD_CONST                    11 ''
+ L 11  126 CALL_METHOD                    2 
+ L 11  128 STORE_NAME                    16 url
+ L 12  130 LOAD_NAME                     16 url
+ L 12  132 LOAD_METHOD                   19 replace
+ L 12  134 LOAD_CONST                    12 'abnsdrew'
+ L 12  136 LOAD_CONST                    13 'supabase'
+ L 12  138 CALL_METHOD                    2 
+ L 12  140 STORE_NAME                    16 url
+ L 13  142 LOAD_NAME                      0 os
+ L 13  144 LOAD_ATTR                     14 environ
+ L 13  146 LOAD_METHOD                   15 get
+ L 13  148 LOAD_CONST                    14 'S_K'
+ L 13  150 CALL_METHOD                    1 
+ L 13  152 STORE_NAME                    20 key
+ L 14  154 LOAD_NAME                     17 str
+ L 14  156 LOAD_NAME                     18 __annotations__
+ L 14  158 LOAD_CONST                    15 'key'
+ L 14  160 STORE_SUBSCR                     
+ L 15  162 LOAD_NAME                     20 key
+ L 15  164 LOAD_METHOD                   19 replace
+ L 15  166 LOAD_CONST                    16 'LdWEtrAKjODS'
+ L 15  168 LOAD_CONST                    11 ''
+ L 15  170 CALL_METHOD                    2 
+ L 15  172 STORE_NAME                    20 key
+ L 16  174 LOAD_NAME                      6 create_client
+ L 16  176 LOAD_NAME                     16 url
+ L 16  178 LOAD_NAME                     20 key
+ L 16  180 CALL_FUNCTION                  2 
+ L 16  182 STORE_NAME                     5 supabase
+ L 17  184 LOAD_NAME                      7 Client
+ L 17  186 LOAD_NAME                     18 __annotations__
+ L 17  188 LOAD_CONST                    13 'supabase'
+ L 17  190 STORE_SUBSCR                     
+ L 18  192 LOAD_CONST                    17 (<Code get_center_info 54 bytes, 4 consts>)
+ L 18  194 LOAD_CONST                    18 'get_center_info'
+ L 18  196 MAKE_FUNCTION                  0 
+ L 18  198 STORE_NAME                    21 get_center_info
+ L 20  200 LOAD_CONST                    19 (<Code get_version_info 64 bytes, 5 consts>)
+ L 20  202 LOAD_CONST                    20 'get_version_info'
+ L 20  204 MAKE_FUNCTION                  0 
+ L 20  206 STORE_NAME                    22 get_version_info
+ L 30  208 LOAD_CONST                    21 (<Code get_center_id 12 bytes, 2 consts>)
+ L 30  210 LOAD_CONST                    22 'get_center_id'
+ L 30  212 MAKE_FUNCTION                  0 
+ L 30  214 STORE_NAME                    23 get_center_id
+ L 40  216 LOAD_CONST                    23 (<Code get_version 26 bytes, 2 consts>)
+ L 40  218 LOAD_CONST                    24 'get_version'
+ L 40  220 MAKE_FUNCTION                  0 
+ L 40  222 STORE_NAME                    24 get_version
+ L 43  224 LOAD_CONST                    25 (<Code get_extract_info 62 bytes, 6 consts>)
+ L 43  226 LOAD_CONST                    26 'get_extract_info'
+ L 43  228 MAKE_FUNCTION                  0 
+ L 43  230 STORE_NAME                    25 get_extract_info
+ L 46  232 LOAD_CONST                    27 (<Code upload_id_card 48 bytes, 6 consts>)
+ L 46  234 LOAD_CONST                    28 'upload_id_card'
+ L 46  236 MAKE_FUNCTION                  0 
+ L 46  238 STORE_NAME                    26 upload_id_card
+ L 53  240 LOAD_CONST                     1 None
+ L 53  242 BUILD_MAP                      0 
+ L 53  244 BUILD_MAP                      0 
+ L 53  246 BUILD_TUPLE                    3 
+ L 53  248 LOAD_CONST                    29 (<Code save_ocr_data 120 bytes, 10 consts>)
+ L 53  250 LOAD_CONST                    30 'save_ocr_data'
+ L 53  252 MAKE_FUNCTION                  1 
+ L 53  254 STORE_NAME                    27 save_ocr_data
+ L 60  256 LOAD_CONST                    31 (<Code get_location_info 100 bytes, 10 consts>)
+ L 60  258 LOAD_CONST                    32 'get_location_info'
+ L 60  260 MAKE_FUNCTION                  0 
+ L 60  262 STORE_NAME                    28 get_location_info
+ L 91  264 LOAD_CONST                    33 (<Code get_selenium_config_file 44 bytes, 4 consts>)
+ L 91  266 LOAD_CONST                    34 'get_selenium_config_file'
+ L 91  268 MAKE_FUNCTION                  0 
+ L 91  270 STORE_NAME                    29 get_selenium_config_file
+ L106  272 LOAD_CONST                    35 (<Code download_and_save_file 92 bytes, 4 consts>)
+ L106  274 LOAD_CONST                    36 'download_and_save_file'
+ L106  276 MAKE_FUNCTION                  0 
+ L106  278 STORE_NAME                    30 download_and_save_file
+ L115  280 LOAD_CONST                    37 (<Code get_value_from_config 226 bytes, 10 consts>)
+ L115  282 LOAD_CONST                    38 'get_value_from_config'
+ L115  284 MAKE_FUNCTION                  0 
+ L115  286 STORE_NAME                    31 get_value_from_config
+ L126  288 LOAD_CONST                    39 (<Code save_ad_click_data 48 bytes, 3 consts>)
+ L126  290 LOAD_CONST                    40 'save_ad_click_data'
+ L126  292 MAKE_FUNCTION                  0 
+ L126  294 STORE_NAME                    32 save_ad_click_data
+ L147  296 LOAD_CONST                    48 (None, None, 0, 1000)
+ L147  298 LOAD_CONST                    42 (<Code get_prev_ad_click_data 156 bytes, 8 consts>)
+ L147  300 LOAD_CONST                    43 'get_prev_ad_click_data'
+ L147  302 MAKE_FUNCTION                  1 
+ L147  304 STORE_NAME                    33 get_prev_ad_click_data
+ L154  306 LOAD_CONST                    44 (<Code get_blog_list 36 bytes, 4 consts>)
+ L154  308 LOAD_CONST                    45 'get_blog_list'
+ L154  310 MAKE_FUNCTION                  0 
+ L154  312 STORE_NAME                    34 get_blog_list
+ L164  314 LOAD_CONST                    48 (None, None, 0, 1000)
+ L164  316 LOAD_CONST                    46 (<Code get_clicked_ads 192 bytes, 7 consts>)
+ L164  318 LOAD_CONST                    47 'get_clicked_ads'
+ L164  320 MAKE_FUNCTION                  1 
+ L164  322 STORE_NAME                    35 get_clicked_ads
+ L164  324 LOAD_CONST                     1 None
+ L164  326 RETURN_VALUE                     
+
+================ isc_server.py::get_center_info (line 20) ================
+args=0 posonly=0 kwonly=0 varnames=('center_id', 'response') names=('get_center_id', 'supabase', 'table', 'select', 'eq', 'execute')
+ L 20    0 SETUP_FINALLY                 25 to 52
+ L 21    2 LOAD_GLOBAL                    0 get_center_id
+ L 21    4 CALL_FUNCTION                  0 
+ L 21    6 STORE_FAST                     0 center_id
+ L 22    8 LOAD_FAST                      0 center_id
+ L 22   10 POP_JUMP_IF_TRUE               9 to 18
+ L 23   12 POP_BLOCK                        
+ L 24   14 LOAD_CONST                     0 None
+ L 24   16 RETURN_VALUE                     
+ L 28   18 LOAD_GLOBAL                    1 supabase
+ L 28   20 LOAD_METHOD                    2 table
+ L 28   22 LOAD_CONST                     1 'centers'
+ L 28   24 CALL_METHOD                    1 
+ L 28   26 LOAD_METHOD                    3 select
+ L 28   28 LOAD_CONST                     2 '*'
+ L 28   30 CALL_METHOD                    1 
+ L 28   32 LOAD_METHOD                    4 eq
+ L 28   34 LOAD_CONST                     3 'id'
+ L 28   36 LOAD_FAST                      0 center_id
+ L 28   38 CALL_METHOD                    2 
+ L 28   40 LOAD_METHOD                    5 execute
+ L 28   42 CALL_METHOD                    0 
+ L 28   44 STORE_FAST                     1 response
+ L 25   46 LOAD_FAST                      1 response
+ L 25   48 POP_BLOCK                        
+ L 26   50 RETURN_VALUE                     
+ L 26   52 RERAISE                        0 
+
+================ isc_server.py::get_version_info (line 30) ================
+args=1 posonly=0 kwonly=0 varnames=('program_name', 'version', 'response') names=('get_version', 'supabase', 'table', 'select', 'eq', 'execute')
+ L 30    0 SETUP_FINALLY                 30 to 62
+ L 31    2 LOAD_GLOBAL                    0 get_version
+ L 31    4 LOAD_FAST                      0 program_name
+ L 31    6 CALL_FUNCTION                  1 
+ L 31    8 STORE_FAST                     1 version
+ L 32   10 LOAD_FAST                      1 version
+ L 32   12 POP_JUMP_IF_TRUE              10 to 20
+ L 33   14 POP_BLOCK                        
+ L 34   16 LOAD_CONST                     0 None
+ L 34   18 RETURN_VALUE                     
+ L 38   20 LOAD_GLOBAL                    1 supabase
+ L 38   22 LOAD_METHOD                    2 table
+ L 38   24 LOAD_CONST                     1 'versions'
+ L 38   26 CALL_METHOD                    1 
+ L 38   28 LOAD_METHOD                    3 select
+ L 38   30 LOAD_CONST                     2 'is_deprecated'
+ L 38   32 CALL_METHOD                    1 
+ L 38   34 LOAD_METHOD                    4 eq
+ L 38   36 LOAD_CONST                     3 'version'
+ L 38   38 LOAD_FAST                      1 version
+ L 38   40 CALL_METHOD                    2 
+ L 38   42 LOAD_METHOD                    4 eq
+ L 38   44 LOAD_CONST                     4 'program_name'
+ L 38   46 LOAD_FAST                      0 program_name
+ L 38   48 CALL_METHOD                    2 
+ L 38   50 LOAD_METHOD                    5 execute
+ L 38   52 CALL_METHOD                    0 
+ L 38   54 STORE_FAST                     2 response
+ L 35   56 LOAD_FAST                      2 response
+ L 35   58 POP_BLOCK                        
+ L 36   60 RETURN_VALUE                     
+ L 36   62 RERAISE                        0 
+
+================ isc_server.py::get_center_id (line 40) ================
+args=0 posonly=0 kwonly=0 varnames=() names=('os', 'environ', 'get')
+ L 40    0 LOAD_GLOBAL                    0 os
+ L 40    2 LOAD_ATTR                      1 environ
+ L 40    4 LOAD_METHOD                    2 get
+ L 40    6 LOAD_CONST                     1 'C_I'
+ L 40    8 CALL_METHOD                    1 
+ L 40   10 RETURN_VALUE                     
+
+================ isc_server.py::get_version (line 43) ================
+args=1 posonly=0 kwonly=0 varnames=('program_name',) names=('os', 'environ', 'get', 'str', 'upper')
+ L 43    0 LOAD_GLOBAL                    0 os
+ L 43    2 LOAD_ATTR                      1 environ
+ L 43    4 LOAD_METHOD                    2 get
+ L 43    6 LOAD_GLOBAL                    3 str
+ L 43    8 LOAD_FAST                      0 program_name
+ L 43   10 CALL_FUNCTION                  1 
+ L 43   12 LOAD_METHOD                    4 upper
+ L 43   14 CALL_METHOD                    0 
+ L 43   16 FORMAT_VALUE                   0 
+ L 43   18 LOAD_CONST                     1 '_VERSION'
+ L 43   20 BUILD_STRING                   2 
+ L 43   22 CALL_METHOD                    1 
+ L 43   24 RETURN_VALUE                     
+
+================ isc_server.py::get_extract_info (line 46) ================
+args=4 posonly=0 kwonly=0 varnames=('id_type', 'name', 'jumin', 'issue_date', 'response') names=('supabase', 'table', 'select', 'eq', 'execute')
+ L 46    0 SETUP_FINALLY                 29 to 60
+ L 47    2 LOAD_GLOBAL                    0 supabase
+ L 47    4 LOAD_METHOD                    1 table
+ L 47    6 LOAD_CONST                     1 'extracts'
+ L 47    8 CALL_METHOD                    1 
+ L 47   10 LOAD_METHOD                    2 select
+ L 47   12 LOAD_CONST                     2 'name'
+ L 47   14 CALL_METHOD                    1 
+ L 47   16 LOAD_METHOD                    3 eq
+ L 47   18 LOAD_CONST                     3 'id_type'
+ L 47   20 LOAD_FAST                      0 id_type
+ L 47   22 CALL_METHOD                    2 
+ L 47   24 LOAD_METHOD                    3 eq
+ L 47   26 LOAD_CONST                     2 'name'
+ L 47   28 LOAD_FAST                      1 name
+ L 47   30 CALL_METHOD                    2 
+ L 47   32 LOAD_METHOD                    3 eq
+ L 47   34 LOAD_CONST                     4 'jumin'
+ L 47   36 LOAD_FAST                      2 jumin
+ L 47   38 CALL_METHOD                    2 
+ L 47   40 LOAD_METHOD                    3 eq
+ L 47   42 LOAD_CONST                     5 'issue_date'
+ L 47   44 LOAD_FAST                      3 issue_date
+ L 47   46 CALL_METHOD                    2 
+ L 47   48 LOAD_METHOD                    4 execute
+ L 47   50 CALL_METHOD                    0 
+ L 47   52 STORE_FAST                     4 response
+ L 48   54 LOAD_FAST                      4 response
+ L 48   56 POP_BLOCK                        
+ L 49   58 RETURN_VALUE                     
+ L 49   60 RERAISE                        0 
+
+================ isc_server.py::upload_id_card (line 53) ================
+args=3 posonly=0 kwonly=0 varnames=('id_type', 'jumin', 'file', 'response') names=('supabase', 'storage', 'from_', 'upload')
+ L 53    0 SETUP_FINALLY                 22 to 46
+ L 54    2 LOAD_GLOBAL                    0 supabase
+ L 54    4 LOAD_ATTR                      1 storage
+ L 54    6 LOAD_METHOD                    2 from_
+ L 54    8 LOAD_CONST                     1 'idcards'
+ L 54   10 CALL_METHOD                    1 
+ L 54   12 LOAD_METHOD                    3 upload
+ L 54   14 LOAD_FAST                      0 id_type
+ L 54   16 FORMAT_VALUE                   0 
+ L 54   18 LOAD_CONST                     2 '/'
+ L 54   20 LOAD_FAST                      1 jumin
+ L 54   22 FORMAT_VALUE                   0 
+ L 54   24 BUILD_STRING                   3 
+ L 54   26 LOAD_FAST                      2 file
+ L 54   28 LOAD_CONST                     3 'image/jpg'
+ L 54   30 LOAD_CONST                     4 'true'
+ L 54   32 LOAD_CONST                     5 ('content-type', 'x-upsert')
+ L 54   34 BUILD_CONST_KEY_MAP            2 
+ L 54   36 CALL_METHOD                    3 
+ L 54   38 STORE_FAST                     3 response
+ L 55   40 LOAD_FAST                      3 response
+ L 55   42 POP_BLOCK                        
+ L 56   44 RETURN_VALUE                     
+ L 56   46 RERAISE                        0 
+
+================ isc_server.py::save_ocr_data (line 60) ================
+args=17 posonly=0 kwonly=0 varnames=('id_type', 'name', 'jumin', 'address', 'issue_date', 'issue_place', 'jumin_back_left', 'jumin_back_top', 'jumin_back_right', 'jumin_back_bottom', 'uv_ir_tr', 'kp_no', 'p_code', 'valid_msg', 'license_no', 'program_info', 'scanner_info', 'center_id', 'location_info', 'response') names=('get_center_id', 'get_location_info', 'print', 'get', 'supabase', 'table', 'insert', 'execute')
+ L 60    0 SETUP_FINALLY                 58 to 118
+ L 61    2 LOAD_GLOBAL                    0 get_center_id
+ L 61    4 CALL_FUNCTION                  0 
+ L 61    6 STORE_FAST                    17 center_id
+ L 62    8 LOAD_FAST                     17 center_id
+ L 62   10 POP_JUMP_IF_TRUE               9 to 18
+ L 63   12 POP_BLOCK                        
+ L 64   14 LOAD_CONST                     0 None
+ L 64   16 RETURN_VALUE                     
+ L 89   18 LOAD_GLOBAL                    1 get_location_info
+ L 89   20 CALL_FUNCTION                  0 
+ L 89   22 STORE_FAST                    18 location_info
+ L 65   24 LOAD_GLOBAL                    2 print
+ L 65   26 LOAD_FAST                     18 location_info
+ L 65   28 CALL_FUNCTION                  1 
+ L 65   30 POP_TOP                          
+ L 66   32 LOAD_CONST                     1 'https://www.google.co.kr/maps/search/'
+ L 66   34 LOAD_FAST                     18 location_info
+ L 66   36 LOAD_METHOD                    3 get
+ L 66   38 LOAD_CONST                     2 'location'
+ L 66   40 BUILD_MAP                      0 
+ L 66   42 CALL_METHOD                    2 
+ L 66   44 LOAD_METHOD                    3 get
+ L 66   46 LOAD_CONST                     3 'lat'
+ L 66   48 CALL_METHOD                    1 
+ L 66   50 FORMAT_VALUE                   0 
+ L 66   52 LOAD_CONST                     4 ','
+ L 66   54 LOAD_FAST                     18 location_info
+ L 66   56 LOAD_METHOD                    3 get
+ L 66   58 LOAD_CONST                     2 'location'
+ L 66   60 BUILD_MAP                      0 
+ L 66   62 CALL_METHOD                    2 
+ L 66   64 LOAD_METHOD                    3 get
+ L 66   66 LOAD_CONST                     5 'lng'
+ L 66   68 CALL_METHOD                    1 
+ L 66   70 FORMAT_VALUE                   0 
+ L 66   72 LOAD_CONST                     6 '?hl=ko'
+ L 66   74 BUILD_STRING                   5 
+ L 66   76 LOAD_FAST                     18 location_info
+ L 66   78 LOAD_CONST                     7 'google_map_url'
+ L 66   80 STORE_SUBSCR                     
+ L 67   82 LOAD_FAST                     15 program_info
+ L 67   84 LOAD_FAST                     16 scanner_info
+ L 67   86 LOAD_CONST                     8 ('program_info', 'scanner_info')
+ L 67   88 BUILD_CONST_KEY_MAP            2 
+ L 67   90 POP_TOP                          
+ L 85   92 LOAD_GLOBAL                    4 supabase
+ L 85   94 LOAD_METHOD                    5 table
+ L 85   96 LOAD_CONST                     9 'extracts'
+ L 85   98 CALL_METHOD                    1 
+ L 85  100 LOAD_METHOD                    6 insert
+ L 85  102 BUILD_MAP                      0 
+ L 85  104 CALL_METHOD                    1 
+ L 85  106 LOAD_METHOD                    7 execute
+ L 85  108 CALL_METHOD                    0 
+ L 85  110 STORE_FAST                    19 response
+ L 86  112 LOAD_FAST                     19 response
+ L 86  114 POP_BLOCK                        
+ L 87  116 RETURN_VALUE                     
+ L 87  118 RERAISE                        0 
+
+================ isc_server.py::get_location_info (line 91) ================
+args=0 posonly=0 kwonly=0 varnames=('location_api_key', 'json', 'requests', 'url', 'data', 'result') names=('os', 'environ', 'get', 'replace', 'json', 'requests', 'post', 'loads', 'text')
+ L 91    0 LOAD_GLOBAL                    0 os
+ L 91    2 LOAD_ATTR                      1 environ
+ L 91    4 LOAD_METHOD                    2 get
+ L 91    6 LOAD_CONST                     1 'G_L_K'
+ L 91    8 CALL_METHOD                    1 
+ L 91   10 STORE_FAST                     0 location_api_key
+ L 92   12 LOAD_FAST                      0 location_api_key
+ L 92   14 LOAD_METHOD                    3 replace
+ L 92   16 LOAD_CONST                     2 'QteqIWjEdyXWLDJQu88R'
+ L 92   18 LOAD_CONST                     3 ''
+ L 92   20 CALL_METHOD                    2 
+ L 92   22 STORE_FAST                     0 location_api_key
+ L 93   24 LOAD_FAST                      0 location_api_key
+ L 93   26 POP_JUMP_IF_TRUE              18 to 36
+ L 94   28 LOAD_CONST                     4 'error'
+ L 94   30 LOAD_CONST                     5 'G_L_K 정보가 없습니다.'
+ L 94   32 BUILD_MAP                      1 
+ L 94   34 RETURN_VALUE                     
+ L 95   36 SETUP_FINALLY                 30 to 98
+ L 96   38 LOAD_CONST                     6 0
+ L 96   40 LOAD_CONST                     0 None
+ L 96   42 IMPORT_NAME                    4 json
+ L 96   44 STORE_FAST                     1 json
+ L 97   46 LOAD_CONST                     6 0
+ L 97   48 LOAD_CONST                     0 None
+ L 97   50 IMPORT_NAME                    5 requests
+ L 97   52 STORE_FAST                     2 requests
+ L 98   54 LOAD_CONST                     7 'https://www.googleapis.com/geolocation/v1/geolocate?key='
+ L 98   56 LOAD_FAST                      0 location_api_key
+ L 98   58 FORMAT_VALUE                   0 
+ L 98   60 BUILD_STRING                   2 
+ L 98   62 STORE_FAST                     3 url
+ L 99   64 LOAD_CONST                     8 'considerIp'
+ L 99   66 LOAD_CONST                     9 True
+ L 99   68 BUILD_MAP                      1 
+ L 99   70 STORE_FAST                     4 data
+ L100   72 LOAD_FAST                      2 requests
+ L100   74 LOAD_METHOD                    6 post
+ L100   76 LOAD_FAST                      3 url
+ L100   78 LOAD_FAST                      4 data
+ L100   80 CALL_METHOD                    2 
+ L100   82 STORE_FAST                     5 result
+ L101   84 LOAD_FAST                      1 json
+ L101   86 LOAD_METHOD                    7 loads
+ L101   88 LOAD_FAST                      5 result
+ L101   90 LOAD_ATTR                      8 text
+ L101   92 CALL_METHOD                    1 
+ L101   94 POP_BLOCK                        
+ L102   96 RETURN_VALUE                     
+ L102   98 RERAISE                        0 
+
+================ isc_server.py::get_selenium_config_file (line 106) ================
+args=0 posonly=0 kwonly=0 varnames=('response',) names=('supabase', 'storage', 'from_', 'download', 'decode')
+ L106    0 SETUP_FINALLY                 20 to 42
+ L107    2 LOAD_GLOBAL                    0 supabase
+ L107    4 LOAD_ATTR                      1 storage
+ L107    6 LOAD_METHOD                    2 from_
+ L107    8 LOAD_CONST                     1 'extract_config'
+ L107   10 CALL_METHOD                    1 
+ L107   12 LOAD_METHOD                    3 download
+ L107   14 LOAD_CONST                     2 'config.txt'
+ L107   16 CALL_METHOD                    1 
+ L107   18 STORE_FAST                     0 response
+ L108   20 LOAD_FAST                      0 response
+ L108   22 POP_JUMP_IF_FALSE             18 to 36
+ L109   24 LOAD_FAST                      0 response
+ L109   26 LOAD_METHOD                    4 decode
+ L109   28 LOAD_CONST                     3 'utf-8'
+ L109   30 CALL_METHOD                    1 
+ L109   32 POP_BLOCK                        
+ L110   34 RETURN_VALUE                     
+ L113   36 POP_BLOCK                        
+ L111   38 LOAD_CONST                     0 None
+ L111   40 RETURN_VALUE                     
+ L111   42 RERAISE                        0 
+
+================ isc_server.py::download_and_save_file (line 115) ================
+args=3 posonly=0 kwonly=0 varnames=('bucket_name', 'file_name', 'save_path', 'response', 'file') names=('supabase', 'storage', 'from_', 'download', 'open', 'write', 'print')
+ L115    0 SETUP_FINALLY                 44 to 90
+ L116    2 LOAD_GLOBAL                    0 supabase
+ L116    4 LOAD_ATTR                      1 storage
+ L116    6 LOAD_METHOD                    2 from_
+ L116    8 LOAD_FAST                      0 bucket_name
+ L116   10 CALL_METHOD                    1 
+ L116   12 LOAD_METHOD                    3 download
+ L116   14 LOAD_FAST                      1 file_name
+ L116   16 CALL_METHOD                    1 
+ L116   18 STORE_FAST                     3 response
+ L117   20 LOAD_FAST                      3 response
+ L117   22 POP_JUMP_IF_FALSE             38 to 76
+ L118   24 LOAD_GLOBAL                    4 open
+ L118   26 LOAD_FAST                      2 save_path
+ L118   28 LOAD_CONST                     1 'wb'
+ L118   30 CALL_FUNCTION                  2 
+ L118   32 SETUP_WITH                    13 to 60
+ L118   34 STORE_FAST                     4 file
+ L119   36 LOAD_FAST                      4 file
+ L119   38 LOAD_METHOD                    5 write
+ L119   40 LOAD_FAST                      3 response
+ L119   42 CALL_METHOD                    1 
+ L119   44 POP_TOP                          
+ L119   46 POP_BLOCK                        
+ L120   48 LOAD_CONST                     0 None
+ L120   50 DUP_TOP                          
+ L120   52 DUP_TOP                          
+ L120   54 CALL_FUNCTION                  3 
+ L120   56 POP_TOP                          
+ L120   58 JUMP_FORWARD                   8 to 76
+ L120   60 WITH_EXCEPT_START                
+ L120   62 POP_JUMP_IF_TRUE              33 to 66
+ L120   64 RERAISE                        1 
+ L120   66 POP_TOP                          
+ L120   68 POP_TOP                          
+ L120   70 POP_TOP                          
+ L120   72 POP_EXCEPT                       
+ L120   74 POP_TOP                          
+ L119   76 LOAD_GLOBAL                    6 print
+ L119   78 LOAD_CONST                     2 'Failed to download file'
+ L119   80 CALL_FUNCTION                  1 
+ L119   82 POP_TOP                          
+ L121   84 POP_BLOCK                        
+ L122   86 LOAD_CONST                     3 False
+ L122   88 RETURN_VALUE                     
+ L122   90 RERAISE                        0 
+
+================ isc_server.py::get_value_from_config (line 126) ================
+args=2 posonly=0 kwonly=0 varnames=('config_str', 'key', 'ast', 'line', 'k', 'v') names=('ast', 'splitlines', 'strip', 'startswith', 'split', 'endswith', 'literal_eval', 'lower')
+ L126    0 LOAD_CONST                     1 0
+ L126    2 LOAD_CONST                     0 None
+ L126    4 IMPORT_NAME                    0 ast
+ L126    6 STORE_FAST                     2 ast
+ L127    8 SETUP_FINALLY                107 to 224
+ L128   10 LOAD_FAST                      0 config_str
+ L128   12 LOAD_METHOD                    1 splitlines
+ L128   14 CALL_METHOD                    0 
+ L128   16 GET_ITER                         
+ L128   18 FOR_ITER                      99 to 218
+ L128   20 STORE_FAST                     3 line
+ L129   22 LOAD_FAST                      3 line
+ L129   24 LOAD_METHOD                    2 strip
+ L129   26 CALL_METHOD                    0 
+ L129   28 POP_JUMP_IF_FALSE            108 to 216
+ L129   30 LOAD_FAST                      3 line
+ L129   32 LOAD_METHOD                    3 startswith
+ L129   34 LOAD_FAST                      1 key
+ L129   36 CALL_METHOD                    1 
+ L129   38 POP_JUMP_IF_FALSE            108 to 216
+ L129   40 LOAD_CONST                     2 '='
+ L129   42 LOAD_FAST                      3 line
+ L129   44 CONTAINS_OP                    0 
+ L129   46 POP_JUMP_IF_FALSE            108 to 216
+ L130   48 LOAD_FAST                      3 line
+ L130   50 LOAD_METHOD                    4 split
+ L130   52 LOAD_CONST                     2 '='
+ L130   54 LOAD_CONST                     3 1
+ L130   56 CALL_METHOD                    2 
+ L130   58 UNPACK_SEQUENCE                2 
+ L130   60 STORE_FAST                     4 k
+ L130   62 STORE_FAST                     5 v
+ L131   64 LOAD_FAST                      4 k
+ L131   66 LOAD_METHOD                    2 strip
+ L131   68 CALL_METHOD                    0 
+ L131   70 STORE_FAST                     4 k
+ L132   72 LOAD_FAST                      5 v
+ L132   74 LOAD_METHOD                    2 strip
+ L132   76 CALL_METHOD                    0 
+ L132   78 LOAD_METHOD                    2 strip
+ L132   80 LOAD_CONST                     4 '"'
+ L132   82 CALL_METHOD                    1 
+ L132   84 STORE_FAST                     5 v
+ L133   86 LOAD_FAST                      4 k
+ L133   88 LOAD_FAST                      1 key
+ L133   90 COMPARE_OP                     2 ==
+ L133   92 POP_JUMP_IF_FALSE            104 to 208
+ L134   94 LOAD_FAST                      5 v
+ L134   96 LOAD_METHOD                    3 startswith
+ L134   98 LOAD_CONST                     5 '['
+ L134  100 CALL_METHOD                    1 
+ L134  102 POP_JUMP_IF_FALSE             65 to 130
+ L134  104 LOAD_FAST                      5 v
+ L134  106 LOAD_METHOD                    5 endswith
+ L134  108 LOAD_CONST                     6 ']'
+ L134  110 CALL_METHOD                    1 
+ L134  112 POP_JUMP_IF_FALSE             65 to 130
+ L135  114 LOAD_FAST                      2 ast
+ L135  116 LOAD_METHOD                    6 literal_eval
+ L135  118 LOAD_FAST                      5 v
+ L135  120 CALL_METHOD                    1 
+ L135  122 ROT_TWO                          
+ L135  124 POP_TOP                          
+ L135  126 POP_BLOCK                        
+ L136  128 RETURN_VALUE                     
+ L145  130 LOAD_FAST                      5 v
+ L145  132 LOAD_METHOD                    7 lower
+ L145  134 CALL_METHOD                    0 
+ L145  136 LOAD_CONST                     7 ('true', 'false')
+ L145  138 CONTAINS_OP                    0 
+ L145  140 POP_JUMP_IF_FALSE             80 to 160
+ L137  142 LOAD_FAST                      5 v
+ L137  144 LOAD_METHOD                    7 lower
+ L137  146 CALL_METHOD                    0 
+ L137  148 LOAD_CONST                     8 'true'
+ L137  150 COMPARE_OP                     2 ==
+ L137  152 ROT_TWO                          
+ L137  154 POP_TOP                          
+ L137  156 POP_BLOCK                        
+ L138  158 RETURN_VALUE                     
+ L145  160 LOAD_FAST                      5 v
+ L145  162 LOAD_METHOD                    3 startswith
+ L145  164 LOAD_CONST                     4 '"'
+ L145  166 CALL_METHOD                    1 
+ L145  168 POP_JUMP_IF_FALSE             99 to 198
+ L145  170 LOAD_FAST                      5 v
+ L145  172 LOAD_METHOD                    5 endswith
+ L145  174 LOAD_CONST                     4 '"'
+ L145  176 CALL_METHOD                    1 
+ L145  178 POP_JUMP_IF_FALSE             99 to 198
+ L139  180 LOAD_FAST                      5 v
+ L139  182 LOAD_CONST                     3 1
+ L139  184 LOAD_CONST                     9 -1
+ L139  186 BUILD_SLICE                    2 
+ L139  188 BINARY_SUBSCR                    
+ L139  190 ROT_TWO                          
+ L139  192 POP_TOP                          
+ L139  194 POP_BLOCK                        
+ L140  196 RETURN_VALUE                     
+ L145  198 LOAD_FAST                      5 v
+ L145  200 ROT_TWO                          
+ L145  202 POP_TOP                          
+ L145  204 POP_BLOCK                        
+ L141  206 RETURN_VALUE                     
+ L145  208 POP_TOP                          
+ L142  210 POP_BLOCK                        
+ L143  212 LOAD_CONST                     0 None
+ L143  214 RETURN_VALUE                     
+ L145  216 JUMP_ABSOLUTE                  9 to 18
+ L 17  218 POP_BLOCK                        
+ L 15  220 LOAD_CONST                     0 None
+ L 15  222 RETURN_VALUE                     
+ L 15  224 RERAISE                        0 
+
+================ isc_server.py::save_ad_click_data (line 147) ================
+args=8 posonly=0 kwonly=0 varnames=('blog_addr', 'ad_title', 'ad_url', 'ad_type', 'search_keyword', 'site_url', 'public_ip', 'version', 'response') names=('supabase', 'table', 'insert', 'execute')
+ L147    0 SETUP_FINALLY                 22 to 46
+ L148    2 LOAD_GLOBAL                    0 supabase
+ L148    4 LOAD_METHOD                    1 table
+ L148    6 LOAD_CONST                     1 'ads'
+ L148    8 CALL_METHOD                    1 
+ L148   10 LOAD_METHOD                    2 insert
+ L148   12 LOAD_FAST                      0 blog_addr
+ L148   14 LOAD_FAST                      1 ad_title
+ L148   16 LOAD_FAST                      2 ad_url
+ L148   18 LOAD_FAST                      3 ad_type
+ L148   20 LOAD_FAST                      4 search_keyword
+ L148   22 LOAD_FAST                      5 site_url
+ L148   24 LOAD_FAST                      6 public_ip
+ L148   26 LOAD_FAST                      7 version
+ L148   28 LOAD_CONST                     2 ('blog_addr', 'ad_title', 'ad_url', 'ad_type', 'search_keyword', 'site_url', 'public_ip', 'version')
+ L148   30 BUILD_CONST_KEY_MAP            8 
+ L148   32 CALL_METHOD                    1 
+ L148   34 LOAD_METHOD                    3 execute
+ L148   36 CALL_METHOD                    0 
+ L148   38 STORE_FAST                     8 response
+ L149   40 LOAD_FAST                      8 response
+ L149   42 POP_BLOCK                        
+ L150   44 RETURN_VALUE                     
+ L150   46 RERAISE                        0 
+
+================ isc_server.py::get_prev_ad_click_data (line 154) ================
+args=6 posonly=0 kwonly=0 varnames=('blog_addr', 'public_ip', 'start_datetime', 'end_datetime', 'start_range', 'end_range', 'response') names=('supabase', 'table', 'select', 'eq', 'gte', 'str', 'lte', 'range', 'order', 'execute')
+ L154    0 SETUP_FINALLY                 76 to 154
+ L155    2 LOAD_FAST                      2 start_datetime
+ L155    4 POP_JUMP_IF_FALSE             47 to 94
+ L155    6 LOAD_FAST                      3 end_datetime
+ L155    8 POP_JUMP_IF_FALSE             47 to 94
+ L156   10 LOAD_GLOBAL                    0 supabase
+ L156   12 LOAD_METHOD                    1 table
+ L156   14 LOAD_CONST                     1 'ads'
+ L156   16 CALL_METHOD                    1 
+ L156   18 LOAD_METHOD                    2 select
+ L156   20 LOAD_CONST                     2 '*'
+ L156   22 CALL_METHOD                    1 
+ L156   24 LOAD_METHOD                    3 eq
+ L156   26 LOAD_CONST                     3 'blog_addr'
+ L156   28 LOAD_FAST                      0 blog_addr
+ L156   30 CALL_METHOD                    2 
+ L156   32 LOAD_METHOD                    3 eq
+ L156   34 LOAD_CONST                     4 'public_ip'
+ L156   36 LOAD_FAST                      1 public_ip
+ L156   38 CALL_METHOD                    2 
+ L156   40 LOAD_METHOD                    4 gte
+ L156   42 LOAD_CONST                     5 'clicked_at'
+ L156   44 LOAD_GLOBAL                    5 str
+ L156   46 LOAD_FAST                      2 start_datetime
+ L156   48 CALL_FUNCTION                  1 
+ L156   50 CALL_METHOD                    2 
+ L156   52 LOAD_METHOD                    6 lte
+ L156   54 LOAD_CONST                     5 'clicked_at'
+ L156   56 LOAD_GLOBAL                    5 str
+ L156   58 LOAD_FAST                      3 end_datetime
+ L156   60 CALL_FUNCTION                  1 
+ L156   62 CALL_METHOD                    2 
+ L156   64 LOAD_METHOD                    7 range
+ L156   66 LOAD_FAST                      4 start_range
+ L156   68 LOAD_FAST                      5 end_range
+ L156   70 CALL_METHOD                    2 
+ L156   72 LOAD_ATTR                      8 order
+ L156   74 LOAD_CONST                     5 'clicked_at'
+ L156   76 LOAD_CONST                     6 False
+ L156   78 LOAD_CONST                     7 ('desc',)
+ L156   80 CALL_FUNCTION_KW               2 
+ L156   82 LOAD_METHOD                    9 execute
+ L156   84 CALL_METHOD                    0 
+ L156   86 STORE_FAST                     6 response
+ L157   88 LOAD_FAST                      6 response
+ L157   90 POP_BLOCK                        
+ L158   92 RETURN_VALUE                     
+ L162   94 LOAD_GLOBAL                    0 supabase
+ L162   96 LOAD_METHOD                    1 table
+ L162   98 LOAD_CONST                     1 'ads'
+ L162  100 CALL_METHOD                    1 
+ L162  102 LOAD_METHOD                    2 select
+ L162  104 LOAD_CONST                     2 '*'
+ L162  106 CALL_METHOD                    1 
+ L162  108 LOAD_METHOD                    3 eq
+ L162  110 LOAD_CONST                     3 'blog_addr'
+ L162  112 LOAD_FAST                      0 blog_addr
+ L162  114 CALL_METHOD                    2 
+ L162  116 LOAD_METHOD                    3 eq
+ L162  118 LOAD_CONST                     4 'public_ip'
+ L162  120 LOAD_FAST                      1 public_ip
+ L162  122 CALL_METHOD                    2 
+ L162  124 LOAD_METHOD                    7 range
+ L162  126 LOAD_FAST                      4 start_range
+ L162  128 LOAD_FAST                      5 end_range
+ L162  130 CALL_METHOD                    2 
+ L162  132 LOAD_ATTR                      8 order
+ L162  134 LOAD_CONST                     5 'clicked_at'
+ L162  136 LOAD_CONST                     6 False
+ L162  138 LOAD_CONST                     7 ('desc',)
+ L162  140 CALL_FUNCTION_KW               2 
+ L162  142 LOAD_METHOD                    9 execute
+ L162  144 CALL_METHOD                    0 
+ L162  146 STORE_FAST                     6 response
+ L159  148 LOAD_FAST                      6 response
+ L159  150 POP_BLOCK                        
+ L160  152 RETURN_VALUE                     
+ L160  154 RERAISE                        0 
+
+================ isc_server.py::get_blog_list (line 164) ================
+args=0 posonly=0 kwonly=0 varnames=('response',) names=('supabase', 'table', 'select', 'order', 'execute')
+ L164    0 SETUP_FINALLY                 16 to 34
+ L165    2 LOAD_GLOBAL                    0 supabase
+ L165    4 LOAD_METHOD                    1 table
+ L165    6 LOAD_CONST                     1 'blogs'
+ L165    8 CALL_METHOD                    1 
+ L165   10 LOAD_METHOD                    2 select
+ L165   12 LOAD_CONST                     2 '*'
+ L165   14 CALL_METHOD                    1 
+ L165   16 LOAD_METHOD                    3 order
+ L165   18 LOAD_CONST                     3 'created_at'
+ L165   20 CALL_METHOD                    1 
+ L165   22 LOAD_METHOD                    4 execute
+ L165   24 CALL_METHOD                    0 
+ L165   26 STORE_FAST                     0 response
+ L166   28 LOAD_FAST                      0 response
+ L166   30 POP_BLOCK                        
+ L167   32 RETURN_VALUE                     
+ L167   34 RERAISE                        0 
+
+================ isc_server.py::get_clicked_ads (line 171) ================
+args=5 posonly=0 kwonly=0 varnames=('blog_addr', 'start_datetime', 'end_datetime', 'start_range', 'end_range', 'clicked_ads_cnt', 'response') names=('supabase', 'table', 'select', 'eq', 'gte', 'str', 'lte', 'range', 'execute', 'data', 'len', 'get_clicked_ads')
+ L171    0 LOAD_CONST                     1 0
+ L171    2 STORE_FAST                     5 clicked_ads_cnt
+ L172    4 SETUP_FINALLY                 92 to 190
+ L173    6 LOAD_FAST                      1 start_datetime
+ L173    8 POP_JUMP_IF_FALSE             38 to 76
+ L173   10 LOAD_FAST                      2 end_datetime
+ L173   12 POP_JUMP_IF_FALSE             38 to 76
+ L174   14 LOAD_GLOBAL                    0 supabase
+ L174   16 LOAD_METHOD                    1 table
+ L174   18 LOAD_CONST                     2 'ads'
+ L174   20 CALL_METHOD                    1 
+ L174   22 LOAD_METHOD                    2 select
+ L174   24 LOAD_CONST                     3 'blog_addr,clicked_at'
+ L174   26 CALL_METHOD                    1 
+ L174   28 LOAD_METHOD                    3 eq
+ L174   30 LOAD_CONST                     4 'blog_addr'
+ L174   32 LOAD_FAST                      0 blog_addr
+ L174   34 CALL_METHOD                    2 
+ L174   36 LOAD_METHOD                    4 gte
+ L174   38 LOAD_CONST                     5 'clicked_at'
+ L174   40 LOAD_GLOBAL                    5 str
+ L174   42 LOAD_FAST                      1 start_datetime
+ L174   44 CALL_FUNCTION                  1 
+ L174   46 CALL_METHOD                    2 
+ L174   48 LOAD_METHOD                    6 lte
+ L174   50 LOAD_CONST                     5 'clicked_at'
+ L174   52 LOAD_GLOBAL                    5 str
+ L174   54 LOAD_FAST                      2 end_datetime
+ L174   56 CALL_FUNCTION                  1 
+ L174   58 CALL_METHOD                    2 
+ L174   60 LOAD_METHOD                    7 range
+ L174   62 LOAD_FAST                      3 start_range
+ L174   64 LOAD_FAST                      4 end_range
+ L174   66 CALL_METHOD                    2 
+ L174   68 LOAD_METHOD                    8 execute
+ L174   70 CALL_METHOD                    0 
+ L174   72 STORE_FAST                     6 response
+ L174   74 JUMP_FORWARD                  18 to 112
+ L175   76 LOAD_GLOBAL                    0 supabase
+ L175   78 LOAD_METHOD                    1 table
+ L175   80 LOAD_CONST                     2 'ads'
+ L175   82 CALL_METHOD                    1 
+ L175   84 LOAD_METHOD                    2 select
+ L175   86 LOAD_CONST                     3 'blog_addr,clicked_at'
+ L175   88 CALL_METHOD                    1 
+ L175   90 LOAD_METHOD                    3 eq
+ L175   92 LOAD_CONST                     4 'blog_addr'
+ L175   94 LOAD_FAST                      0 blog_addr
+ L175   96 CALL_METHOD                    2 
+ L175   98 LOAD_METHOD                    7 range
+ L175  100 LOAD_FAST                      3 start_range
+ L175  102 LOAD_FAST                      4 end_range
+ L175  104 CALL_METHOD                    2 
+ L175  106 LOAD_METHOD                    8 execute
+ L175  108 CALL_METHOD                    0 
+ L175  110 STORE_FAST                     6 response
+ L177  112 LOAD_FAST                      6 response
+ L177  114 POP_JUMP_IF_FALSE             61 to 122
+ L177  116 LOAD_FAST                      6 response
+ L177  118 LOAD_ATTR                      9 data
+ L177  120 POP_JUMP_IF_TRUE              64 to 128
+ L178  122 POP_BLOCK                        
+ L179  124 LOAD_CONST                     1 0
+ L179  126 RETURN_VALUE                     
+ L185  128 LOAD_FAST                      5 clicked_ads_cnt
+ L185  130 LOAD_GLOBAL                   10 len
+ L185  132 LOAD_FAST                      6 response
+ L185  134 LOAD_ATTR                      9 data
+ L185  136 CALL_FUNCTION                  1 
+ L185  138 INPLACE_ADD                      
+ L185  140 STORE_FAST                     5 clicked_ads_cnt
+ L180  142 LOAD_GLOBAL                   10 len
+ L180  144 LOAD_FAST                      6 response
+ L180  146 LOAD_ATTR                      9 data
+ L180  148 CALL_FUNCTION                  1 
+ L180  150 LOAD_CONST                     6 1000
+ L180  152 COMPARE_OP                     5 >=
+ L180  154 POP_JUMP_IF_FALSE             92 to 184
+ L181  156 LOAD_FAST                      5 clicked_ads_cnt
+ L181  158 LOAD_GLOBAL                   11 get_clicked_ads
+ L181  160 LOAD_FAST                      0 blog_addr
+ L181  162 LOAD_FAST                      1 start_datetime
+ L181  164 LOAD_FAST                      2 end_datetime
+ L181  166 LOAD_FAST                      3 start_range
+ L181  168 LOAD_CONST                     6 1000
+ L181  170 BINARY_ADD                       
+ L181  172 LOAD_FAST                      4 end_range
+ L181  174 LOAD_CONST                     6 1000
+ L181  176 BINARY_ADD                       
+ L181  178 CALL_FUNCTION                  5 
+ L181  180 INPLACE_ADD                      
+ L181  182 STORE_FAST                     5 clicked_ads_cnt
+ L182  184 LOAD_FAST                      5 clicked_ads_cnt
+ L182  186 POP_BLOCK                        
+ L183  188 RETURN_VALUE                     
+ L183  190 RERAISE                        0 
