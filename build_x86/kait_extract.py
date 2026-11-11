@@ -4,6 +4,13 @@ import os
 import glob
 import shutil
 import traceback
+import sys
+
+# Frida 라이브러리 임포트 (런타임 인스트루멘테이션 후킹용)
+try:
+    import frida
+except ImportError:
+    frida = None
 
 def show_error_box(title, message):
     try:
@@ -39,6 +46,9 @@ class KaitScan:
                 except Exception as e:
                     print(f"TwLib.dll 로드 실패: {e}")
 
+            # [핵심] Frida를 이용한 실시간 TWAIN_GetDib 후킹 설정 (자기 자신 프로세스 어태치)
+            self._setup_frida_hook()
+
             self.telecom_id = 'F3001'
             self.kp_no = None
             self.p_code = None
@@ -64,6 +74,84 @@ class KaitScan:
                 return
         except Exception as init_err:
             show_error_box("__init__ 치명적 에러", traceback.format_exc())
+
+    def _setup_frida_hook(self):
+        """Frida를 통한 TwLib!TWAIN_GetDib 실시간 반환값(eax) 및 메모리 덤프 가로채기"""
+        if not frida:
+            print("Frida 라이브러리가 설치되어 있지 않습니다. (pip install frida 필요)")
+            return
+
+        try:
+            # 현재 파이썬 프로세스에 자기 자신을 어태치
+            self.frida_session = frida.attach(os.getpid())
+            
+            # 자바스크립트 기반 후킹 스크립트 작성 (WinDbg의 bu TwLib!TWAIN_GetDib+0xB 및 .writemem 완전 대체)
+            script_code = """
+            var twlib = Process.findModuleByName("TwLib.dll");
+            if (twlib != null) {
+                var getDibExport = Module.findExportByName("TwLib.dll", "TWAIN_GetDib");
+                if (getDibExport != null) {
+                    Interceptor.attach(getDibExport, {
+                        onEnter: function(args) {
+                            // 함수 진입 시점
+                        },
+                        onLeave: function(retval) {
+                            // retval이 바로 WinDbg의 r eax (DIB 핸들)
+                            var handleVal = retval.toInt32();
+                            if (handleVal !== 0) {
+                                try {
+                                    // WinDbg의 ? poi(@eax) 역참조 동작 (포인터 주소 읽기)
+                                    var realPtr = Memory.readPointer(ptr(handleVal));
+                                    if (!realPtr.isNull()) {
+                                        // 비트맵 헤더 정보 읽기 (Width, Height, SizeImage 등)
+                                        var biWidth = Memory.readS32(realPtr.add(4));
+                                        var biHeight = Memory.readS32(realPtr.add(8));
+                                        var biBitCount = Memory.readU16(realPtr.add(14));
+                                        var biSizeImage = Memory.readU32(realPtr.add(20));
+
+                                        if (biSizeImage === 0) {
+                                            var rowStride = Math.floor((biWidth * biBitCount + 31) / 32) * 4;
+                                            biSizeImage = rowStride * Math.abs(biHeight);
+                                        }
+
+                                        var totalSize = Math.max(40 + biSizeImage, 0x1d8828);
+                                        
+                                        // 메모리 영역 통째로 읽어서 파이썬으로 전송 (.writemem 대체)
+                                        var dibBytes = Memory.readByteArray(realPtr, totalSize);
+                                        send({type: "dump_dib", size: totalSize}, dibBytes);
+                                    }
+                                } catch (e) {
+                                    send({type: "log", msg: "Frida hook error: " + e.message});
+                                }
+                            }
+                        }
+                    });
+                }
+            }
+            """
+            
+            self.frida_script = self.frida_session.create_script(script_code)
+            
+            def on_message(message, data):
+                if message['type'] == 'send':
+                    payload = message['payload']
+                    if payload.get('type') == 'dump_dib' and data:
+                        try:
+                            desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
+                            dump_path = os.path.join(desktop_path, "front.dib")
+                            with open(dump_path, "wb") as f:
+                                f.write(data)
+                            show_error_box("DIB 덤프 성공", f"Frida 후킹을 통해 바탕화면에 원본 DIB 저장 완료:\n{dump_path}")
+                        except Exception as fe:
+                            print(f"File write error: {fe}")
+                    elif payload.get('type') == 'log':
+                        print(payload.get('msg'))
+
+            self.frida_script.on('message', on_message)
+            self.frida_script.load()
+            print("Frida TWAIN_GetDib Hook successfully loaded!")
+        except Exception as e:
+            print(f"Frida hook setup exception: {e}")
 
     def load_kp_code(self):
         num1 = self.kait_dll.kait_serverstart(0, 0, 3091, 3095, self.telecom_id)
@@ -185,6 +273,7 @@ class KaitScan:
             THandle = ctypes.c_void_p()
             nScnId = 1001
             
+            # 스캔이 실행되는 동안 Frida 후킹이 TWAIN_GetDib 호출과 반환값(eax)을 실시간으로 낚아챔
             retCode = self.kait_dll.kait_onlyidscan(
                 nResTmOut, self.telecom_id, nOcrYn, nTwnDlg, nValiChk, 
                 nScnDpi, nScnBits, nScnSide, nScnRotate, 
