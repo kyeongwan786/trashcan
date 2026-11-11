@@ -8,7 +8,7 @@ from datetime import datetime
 import ctypes
 # sympy의 false를 가져오지만, 이 복원 파일에서는 사용하는 부분이 보이지않음 
 from sympy import false
-from common import (get_program_info, add_windows_defender_exclusion, is_admin, read_from_txt_file, write_to_txt_file)
+from common import (add_windows_defender_exclusion, is_admin, read_from_txt_file, write_to_txt_file)
 # PySide2는 창 버튼 이미지를 그리는 Qt라이브러리이고, QThread는 작업을 별도 스레드로 실행할 때 사용함
 from PySide2 import QtCore
 from PySide2.QtCore import QFile, QStandardPaths, QThread, Signal, QByteArray, QIODevice
